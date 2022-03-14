@@ -3,7 +3,8 @@
 2. [매뉴얼과 명세서](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/01-%EC%86%8C%EA%B0%9C.md#02-%EB%A7%A4%EB%89%B4%EC%96%BC%EA%B3%BC-%EB%AA%85%EC%84%B8%EC%84%9C)
 3. [코드 에디터](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/01-%EC%86%8C%EA%B0%9C.md#03-%EC%BD%94%EB%93%9C-%EC%97%90%EB%94%94%ED%84%B0)
 
-## [02] [자바스크립트 기본](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8.md#02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B8%B0%EB%B3%B8)
+## [02] [자바스크립트 기본](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8.md)
+자바스크립트의 기본 문법에 대해 알아본다.
 1. [Hello, world!](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8.md#01-hello-world)
 2. [코드 구조](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8.md#02-%EC%BD%94%EB%93%9C-%EA%B5%AC%EC%A1%B0)
 3. [엄격 모드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8.md#03-%EC%97%84%EA%B2%A9-%EB%AA%A8%EB%93%9C)
@@ -23,7 +24,8 @@
 17. [화살표 함수 기본](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8.md#17-%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-%EA%B8%B0%EB%B3%B8)
 18. [요약 링크](https://ko.javascript.info/javascript-specials)
 
-## [03] [코드 품질](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#03-%EC%BD%94%EB%93%9C-%ED%92%88%EC%A7%88)
+## [03] [코드 품질](https://github.com/autroshot/studyroom/blob/eebf3536a8e6b47b6b83e0fe00cc0f5904acfbef/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md)
+코딩 관례(coding practice)에 대해 알아본다.
 1. [Chrome으로 디버깅하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#01-chrome%EC%9C%BC%EB%A1%9C-%EB%94%94%EB%B2%84%EA%B9%85%ED%95%98%EA%B8%B0)
 2. [코딩 스타일](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#02-%EC%BD%94%EB%94%A9-%EC%8A%A4%ED%83%80%EC%9D%BC)
 3. [주석](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#03-%EC%A3%BC%EC%84%9D)
@@ -31,7 +33,7 @@
 5. [테스트 자동화와 Mocha](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#05-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94%EC%99%80-mocha)
 6. [폴리필](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#06-%ED%8F%B4%EB%A6%AC%ED%95%84)
 
-## [04] [객체: 기본](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#04-%EA%B0%9D%EC%B2%B4-%EA%B8%B0%EB%B3%B8)
+## [04] [객체: 기본](https://github.com/autroshot/studyroom/blob/8eaae0b7a583b09d3294a5b281a803a7ed83c515/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md)
 1. [객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#01-%EA%B0%9D%EC%B2%B4)
 2. [참조에 의한 객체 복사](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#02-%EC%B0%B8%EC%A1%B0%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B0%9D%EC%B2%B4-%EB%B3%B5%EC%82%AC)
 3. [가비지 컬렉션](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#03-%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%EC%85%98)
@@ -41,7 +43,7 @@
 7. [심볼형](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#07-%EC%8B%AC%EB%B3%BC%ED%98%95)
 8. [객체를 원시형으로 변환하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#08-%EA%B0%9D%EC%B2%B4%EB%A5%BC-%EC%9B%90%EC%8B%9C%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0)
 
-## [05] [자료구조와 자료형](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95)
+## [05] [자료구조와 자료형](https://github.com/autroshot/studyroom/blob/a2e52df72413c2ad1d2dfbf58c7816d9b85ad3a5/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md)
 1. [원시값의 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#01-%EC%9B%90%EC%8B%9C%EA%B0%92%EC%9D%98-%EB%A9%94%EC%84%9C%EB%93%9C)
 2. [숫자형](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#02-%EC%88%AB%EC%9E%90%ED%98%95)
 3. [문자열](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#03-%EB%AC%B8%EC%9E%90%EC%97%B4)
