@@ -115,7 +115,7 @@ p {
 ```
 
 ---
-:information_source: 태그(tag)와 요소(element)의 차이
+:information_source: **태그(tag)와 요소(element)의 차이**
 
 태그는 태그 자체를 가리키는 반면, 요소는 태그가 적용된 것을 가리킨다.
 ```html
