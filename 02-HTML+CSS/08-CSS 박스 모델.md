@@ -199,3 +199,38 @@ box-shadow: none | <그림자 값> [, <그림자 값>];
 |inset|그림자를 박스 안쪽으로 그린다.|
 
 <br></br>
+# 3. 여백을 조절하는 속성들
+## margin 속성 - 요소 주변 여백 설정하기
+```css
+margin-top: <크기> | <백분율> | auto
+margin-right: <크기> | <백분율> | auto
+margin-bottom: <크기> | <백분율> | auto
+margin-left: <크기> | <백분율> | auto
+margin: <크기> | <백분율> | auto
+```
+`margin` 속성은 `border-width` 속성과 사용법이 유사하다.
+
+|속성 값|설명|
+|---|---|
+|<크기>|너비나 높이 값을 `px`이나 `cm` 같은 단위와 함께 수치로 지정한다. 기본값은 `0`이다.|
+|<백분율>|부모 요소를 기준으로 너비나 높이 값을 백분율(`%`)로 지정한다.|
+|auto|`display` 속성에서 지정한 값에 맞게 적절한 값을 자동으로 지정한다.|
+
+`margin-left`와 `margin-right` 속성을 `auto`로 지정하면 요소를 중앙에 정렬할 수 있다.
+
+## 마진 중첩(margin overlap)
+요소를 세로로 배치할 때 마진과 마진이 만나면 마진 값이 큰 쪽으로 겹쳐진다. 이런 현상을 마진 중첩 또는 마진 상쇄(margin collapse)라고 부른다.
+
+여러 요소를 세로로 배치할 때 맨 위나 맨 아래 마진에 비해 중간의 마진들이 너무 커지는 것을 방지하기 위해 이렇게 설계되었다.
+
+가로 마진에 대해서는 마진 중첩이 발생하지 않는다.
+
+## padding 속성 - 콘텐츠 영역과 테두리 사이의 여백 설정하기
+```css
+padding-top: <크기> | <백분율> | auto
+padding-right: <크기> | <백분율> | auto
+padding-bottom: <크기> | <백분율> | auto
+padding-left: <크기> | <백분율> | auto
+padding: <크기> | <백분율> | auto
+```
+margin 속성과 사용법이 유사하다.
