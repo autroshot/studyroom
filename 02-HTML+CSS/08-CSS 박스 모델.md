@@ -88,3 +88,112 @@ nav ul li {
 |table-caption|`<caption>`와 같은 효과|
 |list-item|`<li>`와 같은 효과|
 <br></br>
+# 2. 테두리 관련 속성들
+## border-style 속성 - 테두리 스타일 지정하기
+|속성 값|설명|
+|---|---|
+|none|기본값. 테두리가 나타나지 않는다.|
+|hidden|테두리가 나타나지 않는다. `border-collapse: collapse`일 경우, 다른 테두리도 표시되지 않는다.|
+|solid|테두리를 실선으로 표시한다.|
+|dashed|테두리를 짧은 선으로 표시한다.|
+|dotted|테두리를 점선으로 표시한다.|
+|double|테두리를 이중선으로 표시한다. 두 선 사이의 간격은 border-width 값으로 지정한다.|
+|groove|테두리를 창에 조각한 것처럼 표시한다. 홈이 파인 듯 입체적으로 보인다.|
+|ridge|테두리를 창에서 튀어나온 것처럼 표시한다.|
+|inset|`border-collapse: separate`일 경우, 전체 박스 테두리가 창에 박혀 있는 것처럼 표시되고 `border-collapse: collapse`일 경우, `groove`와 똑같이 표시된다.|
+|outset|`border-collapse: separate`일 경우, 전체 박스 테두리가 창에서 튀어나온 것처럼 표시되고 `border-collapse: collapse`일 경우, `ridge`와 똑같이 표시된다.|
+
+`border-collapse` 속성은 09-3장에서 자세히 배운다.
+
+## border-width 속성 - 테두리 두께 지정하기
+```css
+border-top-width: <크기> | thin | medium | thick
+border-right-width: <크기> | thin | medium | thick
+border-bottom-width: <크기> | thin | medium | thick
+border-left-width: <크기> | thin | medium | thick
+border-width: <크기> | thin | medium | thick
+```
+
+`border-width` 속성에 값을 두 개 지정하면 위아래와 좌우의 테두리 두께가 지정되며, 값을 네 개 지정하면 시계 방향(top, right, bottom, left)으로 지정한다.
+```css
+.box1 {
+  border-width: 2px;
+}
+
+.box2 {
+  border-width: thick thin;
+}
+
+.box3 {
+  border-width: 5px 10px 15px 20px;
+}
+```
+
+## border-color 속성 - 테두리 색상 지정하기
+```css
+border-top-color: <색상>
+border-right-color: <색상>
+border-bottom-color: <색상>
+border-left-color: <색상>
+border-color: <색상>
+```
+
+## border 속성 - 테두리 스타일 묶어 지정하기
+```css
+border-top: <두께> <색상> <스타일>
+border-right: <두께> <색상> <스타일>
+border-bottom: <두께> <색상> <스타일>
+border-left: <두께> <색상> <스타일>
+border: <두께> <색상> <스타일>
+```
+
+```css
+h1 {
+  border-bottom: 3px solid #ccc;
+}
+
+p {
+  border: 3px dotted black;
+}
+```
+
+## border-radius 속성 - 박스 모서리 둥글게 만들기
+```css
+border-top-left-radius: <크기> | <백분율>
+border-top-right-radius: <크기> | <백분율>
+border-bottom-right-radius: <크기> | <백분율>
+border-bottom-left-radius: <크기> | <백분율>
+border-radius: <크기> | <백분율>
+```
+`border-radius` 속성은 `border-width` 속성과 사용법이 유사하다. 속성 값 네 개를 지정하면 왼쪽 위부터 시계 방향으로 지정한다.
+
+|속성 값|설명|
+|---|---|
+|<크기>|둥글게 처리할 반지름 크기를 `px`이나 `em` 같은 단위와 함께 수치로 표시한다.|
+|<백분율>|현재 요소의 크기를 기준으로 둥글게 처리할 반지름 크기를 `%`로 지정한다.|
+
+### 타원 형태로 둥글게 만들기
+```css
+border-top-left-radius: <가로 크기> <세로 크기>
+border-top-right-radius: <가로 크기> <세로 크기>
+border-bottom-right-radius: <가로 크기> <세로 크기>
+border-bottom-left-radius: <가로 크기> <세로 크기>
+border-radius: <가로 크기> <세로 크기>
+```
+`border-radius` 속성에서는 가로 크기와 세로 크기 사이에 `/`을 넣어 구분한다.
+
+## box-shadow 속성 - 선택한 요소에 그림자 효과 내기
+```css
+box-shadow: none | <그림자 값> [, <그림자 값>];
+            <그림자 값> = <수평 거리> <수직 거리> <흐림 정도> <번짐 정도> <색상> inset
+```
+
+|속성 값|설명|
+|---|---|
+|<수평 거리>|필숫값. 그림자의 수평 offset 값이다. 양수 값이 요소의 오른쪽이다.|
+|<수직 거리>|필숫값. 그림자의 수직 offset 값이다. 양수 값이 요소의 아래쪽이다.|
+|<흐림 정도>|그림자의 흐림 정도(blur radius)를 지정한다. 기본값은 `0`으로 가장 진한 그림자를 표시한다. 값이 커질수록 부드러운 그림자를 표시한다.|
+|<번짐 정도>|그림자가 번지는 정도를 지정한다. 양수 값을 사용하면 그림자가 모든 방향으로 퍼져 나간다. 음수 값을 사용할 수 있으며 기본값은 `0`이다.|
+|<색상>|그림자의 색상을 지정한다. 여러 개의 색상을 지정할 수 있으며 기본값은 현재 글자의 색이다.|
+|inset|그림자를 박스 안쪽으로 그린다.|
+<br></br>
