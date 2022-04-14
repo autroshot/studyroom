@@ -47,7 +47,7 @@ clear: none | left | right | both
 `float: left`를 사용했다면 `clear: left`로 종료하고, `float: right`를 사용했다면 `clear: right`로 종료한다. `clear: both`는 `float` 속성 값에 상관없이 종료한다.
 ```css
 .box1{
-  background:#ffd800;
+  background: #ffd800;
   float: left;
 }
 
@@ -64,7 +64,7 @@ clear: none | left | right | both
 
 // clear 속성을 사용했기 때문에 다음 줄에 표시된다.
 .box4 {
-  background:#a874ff;
+  background: #a874ff;
   clear: both;
 }
 ```
@@ -80,11 +80,11 @@ clear: none | left | right | both
 `static`을 제외한 나머지 속성 값에서는 좌표를 이용해 요소의 위치를 지정할 수 있다. 위치는 `top`, `bottom`, `left`, `right` 속성으로 지정하며 양수, 음수 모두 가능하다.
 ```css
 div.fixed {  
-  position:  fixed;  
-  bottom:  0;  
-  right:  0;  
-  width:  300px;  
-  border:  3px solid #73AD21;  
+  position: fixed;  
+  bottom: 0;  
+  right: 0;  
+  width: 300px;  
+  border: 3px solid #73AD21;  
 }
 ```
 
@@ -101,7 +101,7 @@ z-index: <숫자>
 ```
 `z-index` 값이 클수록 위에 쌓인다.
 
-`z-index` 값을 지정하지 않을 경우, 맨 처음 요소는 `1`의 값을 가지며 그 이후의 요소는 값이 점점 커진다.
+`z-index` 값을 따로 지정하지 않을 경우, 맨 처음 요소는 `1`의 값을 가지며 그 이후의 요소는 값이 점점 커진다.
 <br></br>
 # 2. 다단으로 편집하기
 다단 관련 속성은 브라우저별 접두사를 붙여야 한다.
@@ -131,9 +131,9 @@ z-index: <숫자>
 |<크기>|단과 단 사이의 여백을 숫자로 지정한다.|
 
 ## column-rule 속성 - 구분선의 색상, 스타일, 너비 지정하기
-```css
+```html
 column-rule-color: <색상>
-column-rule-style: none | hidden | dotted | dashed | solid | double| groove | ridge | inset | outset
+column-rule-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
 column-rule-rule-width: <크기> | thin | medium | thick
 column-rule: <너비> <스타일> <색상>
 ```
@@ -141,7 +141,7 @@ column-rule: <너비> <스타일> <색상>
 `column-rule-style` 속성에서 사용할 수 있는 값은 08-2장의 `border-style` 속성의 값과 동일하다.
 
 ## break-after 속성 - 다단 위치 지정하기
-```css
+```html
 break-before: column | avoid-column
 break-inside: column | avoid-column
 break-after: column | avoid-column
@@ -210,7 +210,7 @@ border-spacing: <크기>
 |hide|빈 셀에 테두리를 그리지 않고 비워둔다.|
 
 ## width, height 속성 - 표 너비와 높이 지정하기
-너비나 높이를 따로 지정하지 않으면 셀 안의 내용에 따라 너비와 높이가 결정된다.
+너비나 높이를 따로 지정하지 않으면 셀 안의 내용에 따라 너비와 높이가 자동으로 결정된다.
 
 ## table-layout 속성 - 콘텐츠에 맞게 셀 너비 지정하기
 |속성 값|설명|
@@ -218,7 +218,7 @@ border-spacing: <크기>
 |auto|기본값. 셀 내용에 따라 셀 너비가 달라진다.|
 |fixed|셀 너비를 고정한다.|
 
-`table-layout: fixed`로 설정하고 셀 내용이 너비보다 길어지면 내용이 셀 밖으로 튀어나온다. 이때, `word-break: break-all`을 사용하면 문제를 해결할 수 있다.
+`table-layout: fixed`로 설정했을 때, 셀 내용이 너비보다 길어지면 내용이 셀 밖으로 튀어나오는 문제가 발생한다. 이때, `word-break: break-all`을 사용하면 이 문제를 해결할 수 있다.
 
 ## text-align 속성 - 셀 안에서 수평 정렬하기
 06-3장의 일반 텍스트 정렬과 동일하다.
