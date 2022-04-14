@@ -103,3 +103,66 @@ z-index: <숫자>
 
 `z-index` 값을 지정하지 않을 경우, 맨 처음 요소는 `1`의 값을 가지며 그 이후의 요소는 값이 점점 커진다.
 <br></br>
+# 2. 다단으로 편집하기
+다단 관련 속성은 브라우저별 접두사를 붙여야 한다.
+
+## column-width - 단의 너비 고정하고 다단 구성하기
+단의 너비를 고정하는 방법은 화면이 커지면 단의 개수가 많아지고 화면이 좁아지면 단의 개수가 줄어든다.
+
+|속성 값|설명|
+|---|---|
+|auto|기본값. `column-count` 같은 다른 속성에 따라 단의 너비가 자동 계산된다.|
+|<크기>|단 너비를 직접 지정한다.|
+
+## column-count 속성 - 단의 개수 고정하고 다단 구성하기
+브라우저 창의 너비에 따라 단의 너비가 달라진다.
+
+|속성 값|설명|
+|---|---|
+|auto|기본값. `column-width` 같은 다른 속성에 따라 단의 개수가 자동 계산된다.|
+|<크기>|단의 개수를 직접 지정한다. 0보다 큰 정수를 사용한다.|
+
+## column-gap 속성 - 단과 단 사이 여백 지정하기
+구분선을 넣으면 구분선도 이 여백 안에 들어간다.
+
+|속성 값|설명|
+|---|---|
+|normal|기본값. 여백을 자동으로 지정한다. W3C에서 권장하는 여백은 `1em`이다.|
+|<크기>|단과 단 사이의 여백을 숫자로 지정한다.|
+
+## column-rule 속성 - 구분선의 색상, 스타일, 너비 지정하기
+```css
+column-rule-color: <색상>
+column-rule-style: none | hidden | dotted | dashed | solid | double| groove | ridge | inset | outset
+column-rule-rule-width: <크기> | thin | medium | thick
+column-rule: <너비> <스타일> <색상>
+```
+
+`column-rule-style` 속성에서 사용할 수 있는 값은 08-2장의 `border-style` 속성의 값과 동일하다.
+
+## break-after 속성 - 다단 위치 지정하기
+```css
+break-before: column | avoid-column
+break-inside: column | avoid-column
+break-after: column | avoid-column
+```
+
+|속성|단을 나누는 위치|
+|---|---|
+|break-before|해당 요소의 앞|
+|break-inside|해당 요소의 안|
+|break-after|해당 요소의 뒤|
+<br></br>
+|속성 값|설명|
+|---|---|
+|column|단을 나눈다.|
+|avoid-column|단을 나누지 않는다.|
+
+## column-span 속성 - 여러 단을 하나로 합치기
+|속성 값|설명|
+|---|---|
+|none|기본값. 단을 합치지 않는다.|
+|all|전체 단을 하나로 합친다.|
+
+단을 일부만 합치는 것은 불가능하다.
+<br></br>
