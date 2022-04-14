@@ -152,7 +152,7 @@ break-after: column | avoid-column
 |break-before|해당 요소의 앞|
 |break-inside|해당 요소의 안|
 |break-after|해당 요소의 뒤|
-<br></br>
+
 |속성 값|설명|
 |---|---|
 |column|단을 나눈다.|
