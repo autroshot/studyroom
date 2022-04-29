@@ -191,7 +191,7 @@
 - Symbol.iterator
 - 문자열은 이터러블이다
 - 이터레이터를 명시적으로 호출하기
-- 이터러블과 유사 배열 [#array-like]
+- 이터러블과 유사 배열
 - Array.from
 ### 7. [맵과 셋](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#07-%EB%A7%B5%EA%B3%BC-%EC%85%8B)
 - 맵
