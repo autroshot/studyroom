@@ -252,7 +252,7 @@
 - ‘length’ 프로퍼티
 - 커스텀 프로퍼티
 - 기명 함수 표현식
-### 7. []()
+### 7. [new Function 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#7-new-function-%EB%AC%B8%EB%B2%95)
 ### 8. []()
 ### 9. []()
 ### 10. []()
