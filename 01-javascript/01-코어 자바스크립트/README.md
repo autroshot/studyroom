@@ -253,7 +253,11 @@
 - 커스텀 프로퍼티
 - 기명 함수 표현식
 ### 7. [new Function 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#7-new-function-%EB%AC%B8%EB%B2%95)
-### 8. []()
-### 9. []()
-### 10. []()
-### 11. []()
+### 8. [setTimeout과 setInterval을 이용한 호출 스케줄링]()
+- setTimeout
+- setInterval
+- 중첩 setTimeout
+- 대기 시간이 0인 setTimeout
+### 9. [call/apply와 데코레이터, 포워딩]()
+### 10. [함수 바인딩]()
+### 11. [화살표 함수 다시 살펴보기]()
