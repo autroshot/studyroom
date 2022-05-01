@@ -229,3 +229,31 @@
 - 커스텀 "toJSON"
 - JSON.parse
 - reviver 사용하기
+
+## [06] [함수 심화학습](https://github.com/autroshot/studyroom/blob/995b678148456f92001a4d0608d6edde44dbc0a0/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md)
+### 1. [재귀와 스택](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#1-%EC%9E%AC%EA%B7%80%EC%99%80-%EC%8A%A4%ED%83%9D)
+### 2. [나머지 매개변수와 스프레드 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#2-%EB%82%98%EB%A8%B8%EC%A7%80-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EC%99%80-%EC%8A%A4%ED%94%84%EB%A0%88%EB%93%9C-%EB%AC%B8%EB%B2%95)
+- 나머지 매개변수 ...
+- arguments 객체
+- 스프레드 문법
+- 배열과 객체의 복사본 만들기
+### 3. [변수의 유효범위와 클로저](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#3-%EB%B3%80%EC%88%98%EC%9D%98-%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80)
+- 코드 블록
+- 중첩 함수
+- 렉시컬 환경
+- 가비지 컬렉션
+### 4. [오래된 var](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#4-%EC%98%A4%EB%9E%98%EB%90%9C-var)
+- var는 블록 스코프가 없다.
+- var는 재선언을 허용한다.
+- var는 선언하기 전에 사용이 가능하다.
+### 5. [전역 객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#5-%EC%A0%84%EC%97%AD-%EA%B0%9D%EC%B2%B4)
+### 6. [객체로서의 함수와 기명 함수 표현식](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#6-%EA%B0%9D%EC%B2%B4%EB%A1%9C%EC%84%9C%EC%9D%98-%ED%95%A8%EC%88%98%EC%99%80-%EA%B8%B0%EB%AA%85-%ED%95%A8%EC%88%98-%ED%91%9C%ED%98%84%EC%8B%9D)
+- ‘name’ 프로퍼티
+- ‘length’ 프로퍼티
+- 커스텀 프로퍼티
+- 기명 함수 표현식
+### 7. []()
+### 8. []()
+### 9. []()
+### 10. []()
+### 11. []()
