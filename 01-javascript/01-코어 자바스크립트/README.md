@@ -258,6 +258,14 @@
 - setInterval
 - 중첩 setTimeout
 - 대기 시간이 0인 setTimeout
-### 9. [call/apply와 데코레이터, 포워딩]()
-### 10. [함수 바인딩]()
-### 11. [화살표 함수 다시 살펴보기]()
+### 9. [call/apply와 데코레이터, 포워딩](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#9-callapply%EC%99%80-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0-%ED%8F%AC%EC%9B%8C%EB%94%A9)
+- 코드 변경 없이 캐싱 기능 추가하기
+- 'func.call’를 사용해 컨텍스트 지정하기
+- 여러 인수 전달하기
+- func.apply
+- 메서드 빌리기
+- 데코레이터와 함수 프로퍼티
+### 10. [함수 바인딩](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#10-%ED%95%A8%EC%88%98-%EB%B0%94%EC%9D%B8%EB%94%A9)
+### 11. [화살표 함수 다시 살펴보기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#11-%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-%EB%8B%A4%EC%8B%9C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0)
+- 화살표 함수에는 'this’가 없다.
+- 화살표 함수에는 'arguments’가 없다.
