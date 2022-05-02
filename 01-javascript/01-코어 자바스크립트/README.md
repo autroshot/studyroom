@@ -253,7 +253,7 @@
 - 커스텀 프로퍼티
 - 기명 함수 표현식
 ### 7. [new Function 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#7-new-function-%EB%AC%B8%EB%B2%95)
-### 8. [setTimeout과 setInterval을 이용한 호출 스케줄링]()
+### 8. [setTimeout과 setInterval을 이용한 호출 스케줄링](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#8-settimeout%EA%B3%BC-setinterval%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%98%B8%EC%B6%9C-%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81)
 - setTimeout
 - setInterval
 - 중첩 setTimeout
