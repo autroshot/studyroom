@@ -269,3 +269,20 @@
 ### 11. [화살표 함수 다시 살펴보기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#11-%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-%EB%8B%A4%EC%8B%9C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0)
 - 화살표 함수에는 'this’가 없다.
 - 화살표 함수에는 'arguments’가 없다.
+
+## [07] [함수 심화학습](https://github.com/autroshot/studyroom/blob/d27528976c012e66f5bd4982afc7f69752cfcad0/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/07-%EA%B0%9D%EC%B2%B4%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%84%A4%EC%A0%95.md)
+### 1. [프로퍼티 플래그와 설명자](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/07-%EA%B0%9D%EC%B2%B4%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%84%A4%EC%A0%95.md#1-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%ED%94%8C%EB%9E%98%EA%B7%B8%EC%99%80-%EC%84%A4%EB%AA%85%EC%9E%90)
+- 프로퍼티 플래그
+- writable 플래그
+- enumerable 플래그
+- configurable 플래그
+- Object.defineProperties
+- Object.getOwnPropertyDescriptors
+- 객체 수정을 막아주는 다양한 메서드
+### 2. [프로퍼티 getter와 setter](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/07-%EA%B0%9D%EC%B2%B4%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%84%A4%EC%A0%95.md#2-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-getter%EC%99%80-setter)
+
+## [08] [프로토타입과 프로토타입 상속]()
+### 1. [프로토타입 상속]()
+### 2. [함수의 prototype 프로퍼티]()
+### 3. [내장 객체의 프로토타입]()
+### 4. [프로토타입 메서드와 __proto__가 없는 객체]()
