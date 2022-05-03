@@ -281,8 +281,27 @@
 - 객체 수정을 막아주는 다양한 메서드
 ### 2. [프로퍼티 getter와 setter](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/07-%EA%B0%9D%EC%B2%B4%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%84%A4%EC%A0%95.md#2-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-getter%EC%99%80-setter)
 
-## [08] [프로토타입과 프로토타입 상속]()
-### 1. [프로토타입 상속]()
-### 2. [함수의 prototype 프로퍼티]()
-### 3. [내장 객체의 프로토타입]()
-### 4. [프로토타입 메서드와 __proto__가 없는 객체]()
+## [08] [프로토타입과 프로토타입 상속](https://github.com/autroshot/studyroom/blob/ae872eef34b6a6d772007d6d94f7294ac79c1fe2/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/08-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%83%81%EC%86%8D.md)
+### 1. [프로토타입 상속](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/08-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%83%81%EC%86%8D.md#1-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%EC%83%81%EC%86%8D)
+- [[Prototype]]
+- 프로토타입은 읽기 전용이다
+- this가 나타내는 것
+- for…in 반복문
+### 2. [함수의 prototype 프로퍼티](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/08-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%83%81%EC%86%8D.md#2-%ED%95%A8%EC%88%98%EC%9D%98-prototype-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
+- 함수의 디폴트 프로퍼티 prototype과 constructor 프로퍼티
+### 3. [내장 객체의 프로토타입](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/08-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%83%81%EC%86%8D.md#3-%EB%82%B4%EC%9E%A5-%EA%B0%9D%EC%B2%B4%EC%9D%98-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85)
+- Object.prototype
+- 다양한 내장 객체의 프로토타입
+- 원시값
+- 네이티브 프로토타입 변경하기
+- 프로토타입에서 메서드 빌려오기
+### 4. [프로토타입 메서드와 __proto__가 없는 객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/08-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%83%81%EC%86%8D.md#4-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80-__proto__%EA%B0%80-%EC%97%86%EB%8A%94-%EA%B0%9D%EC%B2%B4)
+
+## [09] [클래스]()
+### 1. [클래스와 기본 문법]()
+### 2. [클래스 상속]()
+### 3. [정적 메서드와 정적 프로퍼티]()
+### 4. [private, protected 프로퍼티와 메서드]()
+### 5. [내장 클래스 확장하기]()
+### 6. ['instanceof'로 클래스 확인하기]()
+### 7. [믹스인]()
