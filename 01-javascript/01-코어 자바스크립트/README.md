@@ -316,3 +316,7 @@
 ### 5. [내장 클래스 확장하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#5-%EB%82%B4%EC%9E%A5-%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%99%95%EC%9E%A5%ED%95%98%EA%B8%B0)
 ### 6. ['instanceof'로 클래스 확인하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#6-instanceof%EB%A1%9C-%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0)
 ### 7. [믹스인](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#7-%EB%AF%B9%EC%8A%A4%EC%9D%B8)
+
+## [10] [에러 핸들링]()
+### 1. ['try..catch'와 에러 핸들링]()
+### 2. [커스텀 에러와 에러 확장]()
