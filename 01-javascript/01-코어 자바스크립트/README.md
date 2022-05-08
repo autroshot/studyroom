@@ -232,43 +232,43 @@
 - JSON.parse
 - reviver 사용하기
 
-## [06] [함수 심화학습](https://github.com/autroshot/studyroom/blob/995b678148456f92001a4d0608d6edde44dbc0a0/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md)
-### 1. [재귀와 스택](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#1-%EC%9E%AC%EA%B7%80%EC%99%80-%EC%8A%A4%ED%83%9D)
-### 2. [나머지 매개변수와 스프레드 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#2-%EB%82%98%EB%A8%B8%EC%A7%80-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EC%99%80-%EC%8A%A4%ED%94%84%EB%A0%88%EB%93%9C-%EB%AC%B8%EB%B2%95)
+## [06] 함수 심화학습
+### 1. [재귀와 스택](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/01-%EC%9E%AC%EA%B7%80%EC%99%80%20%EC%8A%A4%ED%83%9D.md#%EC%9E%AC%EA%B7%80%EC%99%80-%EC%8A%A4%ED%83%9D)
+### 2. [나머지 매개변수와 스프레드 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/02-%EB%82%98%EB%A8%B8%EC%A7%80%20%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EC%99%80%20%EC%8A%A4%ED%94%84%EB%A0%88%EB%93%9C%20%EB%AC%B8%EB%B2%95.md#%EB%82%98%EB%A8%B8%EC%A7%80-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EC%99%80-%EC%8A%A4%ED%94%84%EB%A0%88%EB%93%9C-%EB%AC%B8%EB%B2%95)
 - 나머지 매개변수 ...
 - arguments 객체
 - 스프레드 문법
 - 배열과 객체의 복사본 만들기
-### 3. [변수의 유효범위와 클로저](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#3-%EB%B3%80%EC%88%98%EC%9D%98-%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80)
+### 3. [변수의 유효범위와 클로저](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/03-%EB%B3%80%EC%88%98%EC%9D%98%20%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%EC%99%80%20%ED%81%B4%EB%A1%9C%EC%A0%80.md#%EB%B3%80%EC%88%98%EC%9D%98-%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80)
 - 코드 블록
 - 중첩 함수
 - 렉시컬 환경
 - 가비지 컬렉션
-### 4. [오래된 var](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#4-%EC%98%A4%EB%9E%98%EB%90%9C-var)
+### 4. [오래된 var](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/04-%EC%98%A4%EB%9E%98%EB%90%9C%20var.md#%EC%98%A4%EB%9E%98%EB%90%9C-var)
 - var는 블록 스코프가 없다.
 - var는 재선언을 허용한다.
 - var는 선언하기 전에 사용이 가능하다.
-### 5. [전역 객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#5-%EC%A0%84%EC%97%AD-%EA%B0%9D%EC%B2%B4)
-### 6. [객체로서의 함수와 기명 함수 표현식](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#6-%EA%B0%9D%EC%B2%B4%EB%A1%9C%EC%84%9C%EC%9D%98-%ED%95%A8%EC%88%98%EC%99%80-%EA%B8%B0%EB%AA%85-%ED%95%A8%EC%88%98-%ED%91%9C%ED%98%84%EC%8B%9D)
+### 5. [전역 객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/05-%EC%A0%84%EC%97%AD%20%EA%B0%9D%EC%B2%B4.md#%EC%A0%84%EC%97%AD-%EA%B0%9D%EC%B2%B4)
+### 6. [객체로서의 함수와 기명 함수 표현식](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/06-%EA%B0%9D%EC%B2%B4%EB%A1%9C%EC%84%9C%EC%9D%98%20%ED%95%A8%EC%88%98%EC%99%80%20%EA%B8%B0%EB%AA%85%20%ED%95%A8%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md#%EA%B0%9D%EC%B2%B4%EB%A1%9C%EC%84%9C%EC%9D%98-%ED%95%A8%EC%88%98%EC%99%80-%EA%B8%B0%EB%AA%85-%ED%95%A8%EC%88%98-%ED%91%9C%ED%98%84%EC%8B%9D)
 - ‘name’ 프로퍼티
 - ‘length’ 프로퍼티
 - 커스텀 프로퍼티
 - 기명 함수 표현식
-### 7. [new Function 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#7-new-function-%EB%AC%B8%EB%B2%95)
-### 8. [setTimeout과 setInterval을 이용한 호출 스케줄링](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#8-settimeout%EA%B3%BC-setinterval%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%98%B8%EC%B6%9C-%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81)
+### 7. [new Function 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/07-new%20Function%20%EB%AC%B8%EB%B2%95.md#new-function-%EB%AC%B8%EB%B2%95)
+### 8. [setTimeout과 setInterval을 이용한 호출 스케줄링](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/08-setTimeout%EA%B3%BC%20setInterval%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%ED%98%B8%EC%B6%9C%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81.md#settimeout%EA%B3%BC-setinterval%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%98%B8%EC%B6%9C-%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81)
 - setTimeout
 - setInterval
 - 중첩 setTimeout
 - 대기 시간이 0인 setTimeout
-### 9. [call/apply와 데코레이터, 포워딩](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#9-callapply%EC%99%80-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0-%ED%8F%AC%EC%9B%8C%EB%94%A9)
+### 9. [call/apply와 데코레이터, 포워딩](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/09-call%C2%B7apply%EC%99%80%20%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0%2C%20%ED%8F%AC%EC%9B%8C%EB%94%A9.md#callapply%EC%99%80-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0-%ED%8F%AC%EC%9B%8C%EB%94%A9)
 - 코드 변경 없이 캐싱 기능 추가하기
 - 'func.call’를 사용해 컨텍스트 지정하기
 - 여러 인수 전달하기
 - func.apply
 - 메서드 빌리기
 - 데코레이터와 함수 프로퍼티
-### 10. [함수 바인딩](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#10-%ED%95%A8%EC%88%98-%EB%B0%94%EC%9D%B8%EB%94%A9)
-### 11. [화살표 함수 다시 살펴보기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5.md#11-%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-%EB%8B%A4%EC%8B%9C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0)
+### 10. [함수 바인딩](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/10-%ED%95%A8%EC%88%98%20%EB%B0%94%EC%9D%B8%EB%94%A9.md#%ED%95%A8%EC%88%98-%EB%B0%94%EC%9D%B8%EB%94%A9)
+### 11. [화살표 함수 다시 살펴보기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/11-%ED%99%94%EC%82%B4%ED%91%9C%20%ED%95%A8%EC%88%98%20%EB%8B%A4%EC%8B%9C%20%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-%EB%8B%A4%EC%8B%9C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0)
 - 화살표 함수에는 'this’가 없다.
 - 화살표 함수에는 'arguments’가 없다.
 
