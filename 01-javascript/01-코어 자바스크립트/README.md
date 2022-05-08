@@ -1,3 +1,5 @@
+# 코어 자바스크립트
+호스트 환경에 종속되지 않는 코어 자바스크립트에 대해 학습한다.
 ## [01] [소개](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/01-%EC%86%8C%EA%B0%9C.md)
 ### 1. [자바스크립트란?](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/01-%EC%86%8C%EA%B0%9C.md#01-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%9E%80)
 ### 2. [매뉴얼과 명세서](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/01-%EC%86%8C%EA%B0%9C.md#02-%EB%A7%A4%EB%89%B4%EC%96%BC%EA%B3%BC-%EB%AA%85%EC%84%B8%EC%84%9C)
