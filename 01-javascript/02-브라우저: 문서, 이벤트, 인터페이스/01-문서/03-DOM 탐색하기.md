@@ -161,7 +161,7 @@ alert(document.body.previousSibling); // HTMLHeadElement
 ## 요소 간 이동
 지금까지 언급한 탐색 관련 프로퍼티는 모든 종류의 노드를 참조한다.  `childNodes`를 이용하면 텍스트 노드, 요소 노드, 심지어 주석 노드까지 참조할 수 있다.
 
-하지만 실무에서 텍스트 노드나 주석 노드는 잘 다루지 않는다. 웹 페이지를 구성하는 태그의 분신인 요소 노드를 조작하는 작업이 대다수이다.
+하지만 실무에서는 텍스트 노드나 주석 노드는 잘 다루지 않는다. 웹 페이지를 구성하는 태그의 분신인 요소 노드를 조작하는 작업이 대다수이다.
 
 ![dom-links-elements](https://user-images.githubusercontent.com/95019875/167324472-7215bbd7-96a0-4d9a-a201-45e2b2c649a2.svg)
 
