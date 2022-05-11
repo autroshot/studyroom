@@ -50,7 +50,7 @@
 ### 11. [HTML5와 멀티미디어](https://github.com/autroshot/studyroom/blob/612af3cbe71f603e615e8c1605461489fcb36a94/02-HTML+CSS/03-HTML,%20CSS%20%ED%95%9C%20%EA%B1%B8%EC%9D%8C%20%EB%8D%94%20%EB%82%98%EA%B0%80%EA%B8%B0/11-HTML5%EC%99%80%20%EB%A9%80%ED%8B%B0%EB%AF%B8%EB%94%94%EC%96%B4.md)
 1. 웹과 멀티미디어
 2. 오디오 & 비디오 재생하기
-### 12. [다재다능한 CSS3 선택자](https://github.com/autroshot/studyroom/blob/612af3cbe71f603e615e8c1605461489fcb36a94/02-HTML+CSS/03-HTML,%20CSS%20%ED%95%9C%20%EA%B1%B8%EC%9D%8C%20%EB%8D%94%20%EB%82%98%EA%B0%80%EA%B8%B0/12-%EB%8B%A4%EC%9E%AC%EB%8B%A4%EB%8A%A5%ED%95%9C%20CSS3%20%EC%84%A0%ED%83%9D%EC%9E%90.md)
+### 12. [다재다능한 CSS3 선택자](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/03-HTML%2C%20CSS%20%ED%95%9C%20%EA%B1%B8%EC%9D%8C%20%EB%8D%94%20%EB%82%98%EA%B0%80%EA%B8%B0/12-%EB%8B%A4%EC%9E%AC%EB%8B%A4%EB%8A%A5%ED%95%9C%20CSS3%20%EC%84%A0%ED%83%9D%EC%9E%90.md#1-%EC%97%B0%EA%B2%B0-%EC%84%A0%ED%83%9D%EC%9E%90)
 1. 연결 선택자
 2. 속성 선택자
 3. 가상 클래스와 가상 요소
