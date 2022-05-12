@@ -50,6 +50,14 @@
 - style 프로퍼티 재지정하기
 - 단위에 주의하기
 - getComputedStyle로 계산된 스타일 얻기
-### 9. [요소 사이즈와 스크롤]()
+### 9. [요소 사이즈와 스크롤](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/09-%EC%9A%94%EC%86%8C%20%EC%82%AC%EC%9D%B4%EC%A6%88%EC%99%80%20%EC%8A%A4%ED%81%AC%EB%A1%A4.md#%EC%9A%94%EC%86%8C-%EC%82%AC%EC%9D%B4%EC%A6%88%EC%99%80-%EC%8A%A4%ED%81%AC%EB%A1%A4)
+- 기하 프로퍼티
+- offsetParent와 offsetLeft, offsetTop
+- offsetWidth와 offsetHeight
+- clientTop과 clientLeft
+- clientWidth와 clientHeight
+- scrollWidth와 scrollHeight
+- scrollLeft와 scrollTop
+- CSS에서 너비와 높이를 얻지 말아야 한다.
 ### 10. [브라우저 창 사이즈와 스크롤]()
 ### 11. [좌표]()
