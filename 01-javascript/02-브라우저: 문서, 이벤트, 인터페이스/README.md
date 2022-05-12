@@ -66,4 +66,8 @@
 - scrollTo, scrollBy로 스크롤 상태 변경하기
 - scrollIntoView
 - 스크롤 막기
-### 11. [좌표]()
+### 11. [좌표](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/11-%EC%A2%8C%ED%91%9C.md#%EC%A2%8C%ED%91%9C)
+- getBoundingClientRect로 요소 좌표 얻기
+- elementFromPoint(x, y)
+- 요소를 창 내 특정 좌표에 고정하기
+- 문서 기준 좌표
