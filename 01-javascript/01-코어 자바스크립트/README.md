@@ -340,8 +340,15 @@
 ### 3. [프라미스 체이닝](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/11-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80%20async%2C%20await/03-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%20%EC%B2%B4%EC%9D%B4%EB%8B%9D.md#%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4-%EC%B2%B4%EC%9D%B4%EB%8B%9D)
 - 프라미스 반환하기
 - fetch와 체이닝 함께 응용하기
-### 4. [프라미스와 에러 핸들링]()
-### 5. [프라미스 API]()
-### 6. [프라미스화]()
-### 7. [마이크로태스크]()
-### 8. [async와 await]()
+### 4. [프라미스와 에러 핸들링](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/11-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80%20async%2C%20await/04-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80%20%EC%97%90%EB%9F%AC%20%ED%95%B8%EB%93%A4%EB%A7%81.md#%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80-%EC%97%90%EB%9F%AC-%ED%95%B8%EB%93%A4%EB%A7%81)
+- 암시적 try…catch
+- 다시 던지기
+- 처리되지 못한 거부
+### 5. [프라미스 API](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/11-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80%20async%2C%20await/05-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%20API.md#%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4-api)
+- Promise.all
+- Promise.allSettled
+- Promise.race
+- Promise.resolve와 Promise.reject
+### 6. [프라미스화](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/11-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80%20async%2C%20await/06-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%ED%99%94.md#%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%ED%99%94)
+### 7. [마이크로태스크](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/11-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80%20async%2C%20await/07-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC.md#%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC)
+### 8. [async와 await](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/11-%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80%20async%2C%20await/08-async%EC%99%80%20await.md#async%EC%99%80-await)
