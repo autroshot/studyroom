@@ -150,8 +150,8 @@
 - 추가 형 변환
 
 ## [05] 자료구조와 자료형
-### 1. [원시값의 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#01-%EC%9B%90%EC%8B%9C%EA%B0%92%EC%9D%98-%EB%A9%94%EC%84%9C%EB%93%9C)
-### 2. [숫자형](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#02-%EC%88%AB%EC%9E%90%ED%98%95)
+### 1. [원시값의 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/01-%EC%9B%90%EC%8B%9C%EA%B0%92%EC%9D%98%20%EB%A9%94%EC%84%9C%EB%93%9C.md#%EC%9B%90%EC%8B%9C%EA%B0%92%EC%9D%98-%EB%A9%94%EC%84%9C%EB%93%9C)
+### 2. [숫자형](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/02-%EC%88%AB%EC%9E%90%ED%98%95.md#%EC%88%AB%EC%9E%90%ED%98%95)
 - 숫자를 입력하는 다양한 방법
 - toString(base)
 - 어림수 구하기
@@ -159,7 +159,7 @@
 - isNaN과 isFinite
 - parseInt와 parseFloat
 - 기타 수학 메서드
-### 3. [문자열](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#03-%EB%AC%B8%EC%9E%90%EC%97%B4)
+### 3. [문자열](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/03-%EB%AC%B8%EC%9E%90%EC%97%B4.md#%EB%AC%B8%EC%9E%90%EC%97%B4)
 - 따옴표
 - 특수 기호
 - 문자열의 길이
@@ -171,7 +171,7 @@
 - 문자열 비교하기
 - 기타 문자열 메서드
 - 문자열 심화
-### 4. [배열](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#04-%EB%B0%B0%EC%97%B4)
+### 4. [배열](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/04-%EB%B0%B0%EC%97%B4.md#%EB%B0%B0%EC%97%B4)
 - 배열 선언
 - pop/push와 shift/unshift
 - 배열의 내부 동작 원리
@@ -181,7 +181,7 @@
 - new Array()
 - 다차원 배열
 - toString
-### 5. [배열과 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#05-%EB%B0%B0%EC%97%B4%EA%B3%BC-%EB%A9%94%EC%84%9C%EB%93%9C)
+### 5. [배열과 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/05-%EB%B0%B0%EC%97%B4%EA%B3%BC%20%EB%A9%94%EC%84%9C%EB%93%9C.md#%EB%B0%B0%EC%97%B4%EA%B3%BC-%EB%A9%94%EC%84%9C%EB%93%9C)
 - 요소 추가·제거 메서드
 - forEach로 반복작업 하기
 - 배열 탐색하기
@@ -189,33 +189,33 @@
 - Array.isArray로 배열 여부 알아내기
 - 배열 메서드와 'thisArg'
 - 기타 배열 메서드
-### 6. [iterable 객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#06-iterable-%EA%B0%9D%EC%B2%B4)
+### 6. [iterable 객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/06-iterable%20%EA%B0%9D%EC%B2%B4.md#iterable-%EA%B0%9D%EC%B2%B4)
 - Symbol.iterator
 - 문자열은 이터러블이다
 - 이터레이터를 명시적으로 호출하기
 - 이터러블과 유사 배열
 - Array.from
-### 7. [맵과 셋](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#07-%EB%A7%B5%EA%B3%BC-%EC%85%8B)
+### 7. [맵과 셋](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/07-%EB%A7%B5%EA%B3%BC%20%EC%85%8B.md#%EB%A7%B5%EA%B3%BC-%EC%85%8B)
 - 맵
 - 맵의 요소에 반복 작업하기
 - Object.entries: 객체를 맵으로 바꾸기
 - Object.fromEntries: 맵을 객체로 바꾸기
 - 셋
 - 셋의 값에 반복 작업하기
-### 8. [위크맵과 위크셋](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#08-%EC%9C%84%ED%81%AC%EB%A7%B5%EA%B3%BC-%EC%9C%84%ED%81%AC%EC%85%8B)
+### 8. [위크맵과 위크셋](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/08-%EC%9C%84%ED%81%AC%EB%A7%B5%EA%B3%BC%20%EC%9C%84%ED%81%AC%EC%85%8B.md#%EC%9C%84%ED%81%AC%EB%A7%B5%EA%B3%BC-%EC%9C%84%ED%81%AC%EC%85%8B)
 - 위크맵
 - 유스 케이스: 추가 데이터
 - 유스 케이스: 캐싱
 - 위크셋
-### 9. [Object.keys, values, entries](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#09-objectkeys-values-entries)
+### 9. [Object.keys, values, entries](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/09-Object.keys%2C%20values%2C%20entries.md#objectkeys-values-entries)
 - Object.keys, values, entries
 - 객체 변환하기
-### 10. [구조 분해 할당](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#10-%EA%B5%AC%EC%A1%B0-%EB%B6%84%ED%95%B4-%ED%95%A0%EB%8B%B9)
+### 10. [구조 분해 할당](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/10-%EA%B5%AC%EC%A1%B0%20%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9.md#%EA%B5%AC%EC%A1%B0-%EB%B6%84%ED%95%B4-%ED%95%A0%EB%8B%B9)
 - 배열 분해하기
 - 객체 분해하기
 - 중첩 구조 분해
 - 똑똑한 함수 매개변수
-### 11. [Date 객체와 날짜](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#11-date-%EA%B0%9D%EC%B2%B4%EC%99%80-%EB%82%A0%EC%A7%9C)
+### 11. [Date 객체와 날짜](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/11-Date%20%EA%B0%9D%EC%B2%B4%EC%99%80%20%EB%82%A0%EC%A7%9C.md#date-%EA%B0%9D%EC%B2%B4%EC%99%80-%EB%82%A0%EC%A7%9C)
 - 객체 생성하기
 - 날짜 구성요소 얻기
 - 날짜 구성요소 설정하기
@@ -224,7 +224,7 @@
 - Date.now()
 - 벤치마크 테스트
 - Date.parse와 문자열
-### 12. [JSON과 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#12-json%EA%B3%BC-%EB%A9%94%EC%84%9C%EB%93%9C)
+### 12. [JSON과 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95/12-JSON%EA%B3%BC%20%EB%A9%94%EC%84%9C%EB%93%9C.md#json%EA%B3%BC-%EB%A9%94%EC%84%9C%EB%93%9C)
 - JSON.stringify
 - replacer로 원하는 프로퍼티만 직렬화하기
 - space로 가독성 높이기
