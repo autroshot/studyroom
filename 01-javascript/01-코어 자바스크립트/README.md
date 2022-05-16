@@ -110,46 +110,46 @@
 ### 6. [폴리필](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/06-%ED%8F%B4%EB%A6%AC%ED%95%84.md#%ED%8F%B4%EB%A6%AC%ED%95%84)
 - 바벨
 
-## [04] [객체: 기본](https://github.com/autroshot/studyroom/blob/8eaae0b7a583b09d3294a5b281a803a7ed83c515/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md)
-### 1. [객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#01-%EA%B0%9D%EC%B2%B4)
+## [04] 객체: 기본
+### 1. [객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8/01-%EA%B0%9D%EC%B2%B4.md#%EA%B0%9D%EC%B2%B4)
 - 리터럴과 프로퍼티
 - 대괄호 표기법
 - 단축 프로퍼티
 - 프로퍼티 이름의 제약사항
 - ‘in’ 연산자로 프로퍼티 존재 여부 확인하기
 - 'for...in' 반복문
-### 2. [참조에 의한 객체 복사](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#02-%EC%B0%B8%EC%A1%B0%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B0%9D%EC%B2%B4-%EB%B3%B5%EC%82%AC)
+### 2. [참조에 의한 객체 복사](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8/02-%EC%B0%B8%EC%A1%B0%EC%97%90%20%EC%9D%98%ED%95%9C%20%EA%B0%9D%EC%B2%B4%20%EB%B3%B5%EC%82%AC.md#%EC%B0%B8%EC%A1%B0%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B0%9D%EC%B2%B4-%EB%B3%B5%EC%82%AC)
 - 객체 복사, 병합과 Object.assign
 - 중첩 객체 복사
-### 3. [가비지 컬렉션](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#03-%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%EC%85%98)
-### 4. [메서드와 this](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#04-%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80-this)
+### 3. [가비지 컬렉션](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8/03-%EA%B0%80%EB%B9%84%EC%A7%80%20%EC%BB%AC%EB%A0%89%EC%85%98.md#%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%EC%85%98)
+### 4. [메서드와 this](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8/04-%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20this.md#%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80-this)
 - 메서드 만들기
 - 메서드와 this
 - 자유로운 this
 - this가 없는 화살표 함수
-### 5. [new 연산자와 생성자 함수](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#05-new-%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80-%EC%83%9D%EC%84%B1%EC%9E%90-%ED%95%A8%EC%88%98)
+### 5. [new 연산자와 생성자 함수](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8/05-new%20%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80%20%EC%83%9D%EC%84%B1%EC%9E%90%20%ED%95%A8%EC%88%98.md#new-%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80-%EC%83%9D%EC%84%B1%EC%9E%90-%ED%95%A8%EC%88%98)
 - 생성자 함수
 - new.target과 생성자 함수
 - 생성자와 return문
 - 생성자 내 메서드
-### 6. [옵셔널 체이닝 '?.'](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#06-%EC%98%B5%EC%85%94%EB%84%90-%EC%B2%B4%EC%9D%B4%EB%8B%9D-)
+### 6. [옵셔널 체이닝 '?.'](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8/06-%EC%98%B5%EC%85%94%EB%84%90%20%EC%B2%B4%EC%9D%B4%EB%8B%9D%20'%3F.'.md#%EC%98%B5%EC%85%94%EB%84%90-%EC%B2%B4%EC%9D%B4%EB%8B%9D-)
 - 옵셔널 체이닝이 필요한 이유
 - 옵셔널 체이닝의 등장
 - 단락 평가
 - ?.()와 ?.[]
-### 7. [심볼형](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#07-%EC%8B%AC%EB%B3%BC%ED%98%95)
+### 7. [심볼형](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8/07-%EC%8B%AC%EB%B3%BC%ED%98%95.md#%EC%8B%AC%EB%B3%BC%ED%98%95)
 - 심볼
 - '숨김' 프로퍼티
 - 전역 심볼
 - 시스템 심볼
-### 8. [객체를 원시형으로 변환하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md#08-%EA%B0%9D%EC%B2%B4%EB%A5%BC-%EC%9B%90%EC%8B%9C%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0)
+### 8. [객체를 원시형으로 변환하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8/08-%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EC%9B%90%EC%8B%9C%ED%98%95%EC%9C%BC%EB%A1%9C%20%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0.md#%EA%B0%9D%EC%B2%B4%EB%A5%BC-%EC%9B%90%EC%8B%9C%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0)
 - ToPrimitive
 - Symbol.toPrimitive
 - toString과 valueOf
 - 반환 타입
 - 추가 형 변환
 
-## [05] [자료구조와 자료형](https://github.com/autroshot/studyroom/blob/a2e52df72413c2ad1d2dfbf58c7816d9b85ad3a5/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md)
+## [05] 자료구조와 자료형
 ### 1. [원시값의 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#01-%EC%9B%90%EC%8B%9C%EA%B0%92%EC%9D%98-%EB%A9%94%EC%84%9C%EB%93%9C)
 ### 2. [숫자형](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/05-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95.md#02-%EC%88%AB%EC%9E%90%ED%98%95)
 - 숫자를 입력하는 다양한 방법
