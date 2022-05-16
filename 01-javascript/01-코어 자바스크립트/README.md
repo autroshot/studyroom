@@ -80,10 +80,10 @@
 ### 17. [화살표 함수 기본](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8/17-%ED%99%94%EC%82%B4%ED%91%9C%20%ED%95%A8%EC%88%98%20%EA%B8%B0%EB%B3%B8.md#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-%EA%B8%B0%EB%B3%B8)
 ### 18. [요약 링크](https://ko.javascript.info/javascript-specials)
 
-## [03] [코드 품질](https://github.com/autroshot/studyroom/blob/eebf3536a8e6b47b6b83e0fe00cc0f5904acfbef/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md)
+## [03] 코드 품질
 코딩 관례(coding practice)에 대해 알아본다.
-### 1. [Chrome으로 디버깅하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#01-chrome%EC%9C%BC%EB%A1%9C-%EB%94%94%EB%B2%84%EA%B9%85%ED%95%98%EA%B8%B0)
-### 2. [코딩 스타일](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#02-%EC%BD%94%EB%94%A9-%EC%8A%A4%ED%83%80%EC%9D%BC)
+### 1. [Chrome으로 디버깅하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/01-Chrome%EC%9C%BC%EB%A1%9C%20%EB%94%94%EB%B2%84%EA%B9%85%ED%95%98%EA%B8%B0.md#chrome%EC%9C%BC%EB%A1%9C-%EB%94%94%EB%B2%84%EA%B9%85%ED%95%98%EA%B8%B0)
+### 2. [코딩 스타일](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/02-%EC%BD%94%EB%94%A9%20%EC%8A%A4%ED%83%80%EC%9D%BC.md#%EC%BD%94%EB%94%A9-%EC%8A%A4%ED%83%80%EC%9D%BC)
 - 중괄호
 - 가로 길이
 - 들여쓰기
@@ -92,11 +92,11 @@
 - 함수의 위치
 - 스타일 가이드
 - Linter
-### 3. [주석](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#03-%EC%A3%BC%EC%84%9D)
+### 3. [주석](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/03-%EC%A3%BC%EC%84%9D.md#%EC%A3%BC%EC%84%9D)
 - 좋지 않은 주석
 - 좋은 주석
-### 4. [닌자 코드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#04-%EB%8B%8C%EC%9E%90-%EC%BD%94%EB%93%9C)
-### 5. [테스트 자동화와 Mocha](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#05-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94%EC%99%80-mocha)
+### 4. [닌자 코드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/04-%EB%8B%8C%EC%9E%90%20%EC%BD%94%EB%93%9C.md#%EB%8B%8C%EC%9E%90-%EC%BD%94%EB%93%9C)
+### 5. [테스트 자동화와 Mocha](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/05-%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%90%EB%8F%99%ED%99%94%EC%99%80%20Mocha.md#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94%EC%99%80-mocha)
 - 테스트는 왜 해야 하는가?
 - 명세서
 - 개발 순서
@@ -107,7 +107,7 @@
 - before/after와 beforeEach/afterEach
 - 스펙 확장하기
 - 다양한 assertion
-### 6. [폴리필](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88.md#06-%ED%8F%B4%EB%A6%AC%ED%95%84)
+### 6. [폴리필](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/06-%ED%8F%B4%EB%A6%AC%ED%95%84.md#%ED%8F%B4%EB%A6%AC%ED%95%84)
 - 바벨
 
 ## [04] [객체: 기본](https://github.com/autroshot/studyroom/blob/8eaae0b7a583b09d3294a5b281a803a7ed83c515/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/04-%EA%B0%9D%EC%B2%B4:%20%EA%B8%B0%EB%B3%B8.md)
