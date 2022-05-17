@@ -300,7 +300,7 @@
 ### 4. [프로토타입 메서드와 __proto__가 없는 객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/08-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%83%81%EC%86%8D/04-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20__proto__%EA%B0%80%20%EC%97%86%EB%8A%94%20%EA%B0%9D%EC%B2%B4.md#%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80-__proto__%EA%B0%80-%EC%97%86%EB%8A%94-%EA%B0%9D%EC%B2%B4)
 
 ## [09] 클래스
-### 1. [클래스와 기본 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#1-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95)
+### 1. [클래스와 기본 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/01-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95)
 - 기본 문법
 - 클래스란
 - 클래스는 단순한 편의 문법이 아니다.
@@ -308,16 +308,16 @@
 - getter와 setter
 - 계산된 메서드 이름 […]
 - 클래스 필드
-### 2. [클래스 상속](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#2-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%83%81%EC%86%8D)
+### 2. [클래스 상속](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/02-%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%83%81%EC%86%8D.md#%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%83%81%EC%86%8D)
 - ‘extends’ 키워드
 - 메서드 오버라이딩
 - 생성자 오버라이딩
 - super 키워드와 [[HomeObject]]
-### 3. [정적 메서드와 정적 프로퍼티](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#3-%EC%A0%95%EC%A0%81-%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80-%EC%A0%95%EC%A0%81-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
-### 4. [private, protected 프로퍼티와 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#4-private-protected-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C)
-### 5. [내장 클래스 확장하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#5-%EB%82%B4%EC%9E%A5-%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%99%95%EC%9E%A5%ED%95%98%EA%B8%B0)
-### 6. ['instanceof'로 클래스 확인하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#6-instanceof%EB%A1%9C-%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0)
-### 7. [믹스인](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4.md#7-%EB%AF%B9%EC%8A%A4%EC%9D%B8)
+### 3. [정적 메서드와 정적 프로퍼티](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/03-%EC%A0%95%EC%A0%81%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%A0%95%EC%A0%81%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0.md#%EC%A0%95%EC%A0%81-%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80-%EC%A0%95%EC%A0%81-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
+### 4. [private, protected 프로퍼티와 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/04-private%2C%20protected%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80%20%EB%A9%94%EC%84%9C%EB%93%9C.md#private-protected-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C)
+### 5. [내장 클래스 확장하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/05-%EB%82%B4%EC%9E%A5%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%ED%99%95%EC%9E%A5%ED%95%98%EA%B8%B0.md#%EB%82%B4%EC%9E%A5-%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%99%95%EC%9E%A5%ED%95%98%EA%B8%B0)
+### 6. ['instanceof'로 클래스 확인하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/06-'instanceof'%EB%A1%9C%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0.md#instanceof%EB%A1%9C-%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0)
+### 7. [믹스인](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/07-%EB%AF%B9%EC%8A%A4%EC%9D%B8.md#%EB%AF%B9%EC%8A%A4%EC%9D%B8)
 
 ## [10] 에러 핸들링
 ### 1. ['try..catch'와 에러 핸들링](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/10-%EC%97%90%EB%9F%AC%20%ED%95%B8%EB%93%A4%EB%A7%81/01-'try..catch'%EC%99%80%20%EC%97%90%EB%9F%AC%20%ED%95%B8%EB%93%A4%EB%A7%81.md#trycatch%EC%99%80-%EC%97%90%EB%9F%AC-%ED%95%B8%EB%93%A4%EB%A7%81)
