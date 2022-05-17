@@ -273,7 +273,7 @@
 - 화살표 함수에는 'arguments’가 없다.
 
 ## [07] 객체 프로퍼티 설정
-### 1. [프로퍼티 플래그와 설명자](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/07-%EA%B0%9D%EC%B2%B4%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%84%A4%EC%A0%95.md#1-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%ED%94%8C%EB%9E%98%EA%B7%B8%EC%99%80-%EC%84%A4%EB%AA%85%EC%9E%90)
+### 1. [프로퍼티 플래그와 설명자](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/07-%EA%B0%9D%EC%B2%B4%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%84%A4%EC%A0%95/01-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%ED%94%8C%EB%9E%98%EA%B7%B8%EC%99%80%20%EC%84%A4%EB%AA%85%EC%9E%90.md#%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%ED%94%8C%EB%9E%98%EA%B7%B8%EC%99%80-%EC%84%A4%EB%AA%85%EC%9E%90)
 - 프로퍼티 플래그
 - writable 플래그
 - enumerable 플래그
@@ -281,7 +281,7 @@
 - Object.defineProperties
 - Object.getOwnPropertyDescriptors
 - 객체 수정을 막아주는 다양한 메서드
-### 2. [프로퍼티 getter와 setter](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/07-%EA%B0%9D%EC%B2%B4%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%84%A4%EC%A0%95.md#2-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-getter%EC%99%80-setter)
+### 2. [프로퍼티 getter와 setter](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/07-%EA%B0%9D%EC%B2%B4%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%84%A4%EC%A0%95/02-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20getter%EC%99%80%20setter.md#%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-getter%EC%99%80-setter)
 
 ## [08] 프로토타입과 프로토타입 상속
 ### 1. [프로토타입 상속](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/08-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%83%81%EC%86%8D.md#1-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%EC%83%81%EC%86%8D)
