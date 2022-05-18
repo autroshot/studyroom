@@ -73,7 +73,13 @@
 - 문서 기준 좌표
 
 ## [02] 이벤트 기초
-### 1. []()
+### 1. [브라우저 이벤트 소개](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/02-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EC%B4%88/01-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%86%8C%EA%B0%9C.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%86%8C%EA%B0%9C)
+- 이벤트 핸들러
+- this로 요소에 접근하기
+- 자주 하는 실수
+- addEventListener
+- 이벤트 객체
+- 객체 형태의 핸들러와 handleEvent
 ### 2. []()
 ### 3. []()
 ### 4. []()
