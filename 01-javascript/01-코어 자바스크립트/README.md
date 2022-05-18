@@ -13,9 +13,6 @@
 - 주석
 ### 3. [엄격 모드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8/03-%EC%97%84%EA%B2%A9%20%EB%AA%A8%EB%93%9C.md#%EC%97%84%EA%B2%A9-%EB%AA%A8%EB%93%9C)
 ### 4. [변수와 상수](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8/04-%EB%B3%80%EC%88%98%EC%99%80%20%EC%83%81%EC%88%98.md#%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98)
-- 변수
-- 상수
-- 대문자 상수
 ### 5. [자료형](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8/05-%EC%9E%90%EB%A3%8C%ED%98%95.md#%EC%9E%90%EB%A3%8C%ED%98%95)
 - 숫자형
 - BigInt
@@ -27,14 +24,7 @@
 - 심볼형
 - typeof 연산자
 ### 6. [alert, prompt, confirm을 이용한 상호작용](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8/06-alert%2C%20prompt%2C%20confirm%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%83%81%ED%98%B8%EC%9E%91%EC%9A%A9.md#alert-prompt-confirm%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%83%81%ED%98%B8%EC%9E%91%EC%9A%A9)
-- alert
-- prompt
-- confirm
 ### 7. [형 변환](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8/07-%ED%98%95%20%EB%B3%80%ED%99%98.md#%ED%98%95-%EB%B3%80%ED%99%98)
-- 문자형으로 변환
-- 숫자형으로 변환
-- 불린형으로 변환
-- 헷갈리기 쉬운 규칙
 ### 8. [기본 연산자와 수학](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/02-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8/08-%EA%B8%B0%EB%B3%B8%20%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80%20%EC%88%98%ED%95%99.md#%EA%B8%B0%EB%B3%B8-%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80-%EC%88%98%ED%95%99)
 - 이항 연산자 '+'의 문자열 연결
 - 단항 연산자 '+'의 형 변환
