@@ -17,7 +17,7 @@ DOM 트리 상단의 노드들은 `document`가 제공하는 프로퍼티를 사
 `<head>`  태그는 `document.head`로 접근할 수 있다.
 
 ---
-:warning: **`document.body`가 `null`일 수도 있으니 주의해야 한다.**
+:warning: **`document.body`가 `null`일 수 있다.**
 
 스크립트를 읽는 도중에 존재하지 않는 요소는 스크립트에서 접근할 수 없다.
 
