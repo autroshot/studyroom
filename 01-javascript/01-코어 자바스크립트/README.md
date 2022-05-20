@@ -235,9 +235,9 @@
 - 렉시컬 환경
 - 가비지 컬렉션
 ### 4. [오래된 var](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/04-%EC%98%A4%EB%9E%98%EB%90%9C%20var.md#%EC%98%A4%EB%9E%98%EB%90%9C-var)
-- var는 블록 스코프가 없다.
-- var는 재선언을 허용한다.
-- var는 선언하기 전에 사용이 가능하다.
+- var는 블록 스코프가 없다
+- var는 재선언을 허용한다
+- var는 선언하기 전에 사용이 가능하다
 ### 5. [전역 객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/05-%EC%A0%84%EC%97%AD%20%EA%B0%9D%EC%B2%B4.md#%EC%A0%84%EC%97%AD-%EA%B0%9D%EC%B2%B4)
 ### 6. [객체로서의 함수와 기명 함수 표현식](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/06-%EA%B0%9D%EC%B2%B4%EB%A1%9C%EC%84%9C%EC%9D%98%20%ED%95%A8%EC%88%98%EC%99%80%20%EA%B8%B0%EB%AA%85%20%ED%95%A8%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D.md#%EA%B0%9D%EC%B2%B4%EB%A1%9C%EC%84%9C%EC%9D%98-%ED%95%A8%EC%88%98%EC%99%80-%EA%B8%B0%EB%AA%85-%ED%95%A8%EC%88%98-%ED%91%9C%ED%98%84%EC%8B%9D)
 - ‘name’ 프로퍼티
@@ -293,7 +293,7 @@
 ### 1. [클래스와 기본 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/01-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95)
 - 기본 문법
 - 클래스란
-- 클래스는 단순한 편의 문법이 아니다.
+- 클래스는 단순한 편의 문법이 아니다
 - 클래스 표현식
 - getter와 setter
 - 계산된 메서드 이름 […]
