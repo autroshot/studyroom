@@ -58,7 +58,7 @@
 - clientWidth와 clientHeight
 - scrollWidth와 scrollHeight
 - scrollLeft와 scrollTop
-- CSS에서 너비와 높이를 얻지 말아야 한다.
+- CSS에서 너비와 높이를 얻지 말아야 한다
 ### 10. [브라우저 창 사이즈와 스크롤](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/10-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%B0%BD%20%EC%82%AC%EC%9D%B4%EC%A6%88%EC%99%80%20%EC%8A%A4%ED%81%AC%EB%A1%A4.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%B0%BD-%EC%82%AC%EC%9D%B4%EC%A6%88%EC%99%80-%EC%8A%A4%ED%81%AC%EB%A1%A4)
 - 브라우저 창의 너비와 높이
 - 문서의 너비와 높이
