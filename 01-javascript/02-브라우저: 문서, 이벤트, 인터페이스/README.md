@@ -84,5 +84,12 @@
 - event.target
 ### 3. [이벤트 위임](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/02-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EC%B4%88/03-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%9C%84%EC%9E%84)
 - '행동' 패턴
-### 4. []()
-### 5. []()
+### 4. [브라우저 기본 동작](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/02-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EC%B4%88/04-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EA%B8%B0%EB%B3%B8%20%EB%8F%99%EC%9E%91.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EA%B8%B0%EB%B3%B8-%EB%8F%99%EC%9E%91)
+- addEventListener의 ‘passive’ 옵션
+- event.defaultPrevented
+### 5. [커스텀 이벤트 디스패치](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/02-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EC%B4%88/05-%EC%BB%A4%EC%8A%A4%ED%85%80%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B9%98.md#%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B9%98)
+- Event 생성자
+- dispatchEvent
+- MouseEvent, KeyboardEvent를 비롯한 다양한 UI 이벤트
+- event.preventDefault()
+- 이벤트 안의 이벤트는 동기적이다
