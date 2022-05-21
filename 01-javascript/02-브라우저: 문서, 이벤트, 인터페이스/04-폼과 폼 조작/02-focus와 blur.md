@@ -20,7 +20,7 @@
 ```html
 <style>
   .invalid { border-color: red; }
-  #error { color: red }
+  #error { color: red; }
 </style>
 
 이메일: <input type="email" id="input">
