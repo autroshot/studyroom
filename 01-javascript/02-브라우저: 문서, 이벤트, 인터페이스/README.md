@@ -105,8 +105,8 @@
 ### 2. [focus와 blur](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/04-%ED%8F%BC%EA%B3%BC%20%ED%8F%BC%20%EC%A1%B0%EC%9E%91/02-focus%EC%99%80%20blur.md#focus%EC%99%80-blur)
 - tabindex를 사용해서 모든 요소 포커스 하기
 - focusin과 focusout을 사용해 이벤트 위임하기
-### 3. []()
-### 4. []()
+### 3. [이벤트: change, input, cut, copy, paste](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/04-%ED%8F%BC%EA%B3%BC%20%ED%8F%BC%20%EC%A1%B0%EC%9E%91/03-%EC%9D%B4%EB%B2%A4%ED%8A%B8:%20change%2C%20input%2C%20cut%2C%20copy%2C%20paste.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-change-input-cut-copy-paste)
+### 4. [submit 이벤트와 메서드]()
 
 ## [05] 문서와 리소스 로딩
 
