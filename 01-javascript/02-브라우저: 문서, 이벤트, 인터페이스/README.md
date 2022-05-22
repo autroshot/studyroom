@@ -109,5 +109,8 @@
 ### 4. [submit 이벤트와 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/04-%ED%8F%BC%EA%B3%BC%20%ED%8F%BC%20%EC%A1%B0%EC%9E%91/04-submit%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%99%80%20%EB%A9%94%EC%84%9C%EB%93%9C.md#submit-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C)
 
 ## [05] 문서와 리소스 로딩
+### 1. [페이지 관련 이벤트: DOMContentLoaded, load, beforeunload, unload](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/05-%EB%AC%B8%EC%84%9C%EC%99%80%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EB%A1%9C%EB%94%A9/01-DOMContentLoaded%2C%20load%2C%20beforeunload%2C%20unload%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B4%80%EB%A0%A8-%EC%9D%B4%EB%B2%A4%ED%8A%B8-domcontentloaded-load-beforeunload-unload)
+- readyState
+### 2. [defer, async 스크립트]()
 
 ## [06] 기타
