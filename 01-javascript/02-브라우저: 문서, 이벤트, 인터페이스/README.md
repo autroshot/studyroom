@@ -95,7 +95,8 @@
 - 이벤트 안의 이벤트는 동기적이다
 
 ## [03] UI 이벤트
-미번역
+- 미번역
+- 개요: 마우스, 드래그 앤 드롭, 포인터(모던 마우스), 키보드, 스크롤링 관련 이벤트에 대해 배운다.
 
 ## [04] 폼과 폼 조작
 ### 1. [폼 프로퍼티와 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/04-%ED%8F%BC%EA%B3%BC%20%ED%8F%BC%20%EC%A1%B0%EC%9E%91/01-%ED%8F%BC%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80%20%EB%A9%94%EC%84%9C%EB%93%9C.md#%ED%8F%BC-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C)
@@ -114,6 +115,14 @@
 ### 2. [defer, async 스크립트](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/05-%EB%AC%B8%EC%84%9C%EC%99%80%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EB%A1%9C%EB%94%A9/02-defer%2C%20async%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md#defer-async-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8)
 - 동적 스크립트
 ### 3. [Resource loading: onload and onerror](https://ko.javascript.info/onload-onerror)
-미번역
+- 미번역
+- 개요: `onload`와 `onerror` 이벤트를 이용해 외부 리소스(스크립트, iframe, 그림)의 로딩을 추적할 수 있다.
 
 ## [06] 기타
+### 1. [Mutation observer](https://ko.javascript.info/mutation-observer)
+- 미번역
+- 개요: `MutationObserver`는 DOM 요소를 관찰하고 변경을 감지하면 콜백을 실행하는 내장 객체이다.
+### 2. [Selection and Range](https://ko.javascript.info/selection-range)
+- 미번역
+- 개요: 마우스 드래그나 키보드에 의해 문서에서 선택된 텍스트을 다룰 때 사용한다.
+### 3. [이벤트 루프: 마이크로태스크와 매크로태스크]()
