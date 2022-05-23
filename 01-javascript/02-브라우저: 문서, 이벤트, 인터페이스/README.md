@@ -111,7 +111,8 @@
 ## [05] 문서와 리소스 로딩
 ### 1. [페이지 관련 이벤트: DOMContentLoaded, load, beforeunload, unload](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/05-%EB%AC%B8%EC%84%9C%EC%99%80%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EB%A1%9C%EB%94%A9/01-DOMContentLoaded%2C%20load%2C%20beforeunload%2C%20unload%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B4%80%EB%A0%A8-%EC%9D%B4%EB%B2%A4%ED%8A%B8-domcontentloaded-load-beforeunload-unload)
 - readyState
-### 2. [defer, async 스크립트]()
+### 2. [defer, async 스크립트](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/05-%EB%AC%B8%EC%84%9C%EC%99%80%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EB%A1%9C%EB%94%A9/02-defer%2C%20async%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md#defer-async-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8)
+- 동적 스크립트
 ### 3. [Resource loading: onload and onerror](https://ko.javascript.info/onload-onerror)
 미번역
 
