@@ -15,7 +15,7 @@
 ### 4. [Fetch: Abort]()
 - 미번역
 - `AbortController`를 이용해 비동기 작업을 중단할 수 있다.
-### 5. [CORS]()
+### 5. [CORS](https://github.com/autroshot/studyroom/blob/main/01-javascript/03-%EC%B6%94%EA%B0%80%20%EC%A3%BC%EC%A0%9C/03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%9A%94%EC%B2%AD/05-CORS.md#cors)
 ### 6. [Fetch API]()
 ### 7. [URL objects]()
 ### 8. [XMLHttpRequest]()
