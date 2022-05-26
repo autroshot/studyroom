@@ -38,8 +38,10 @@
 - 웹소켓과 유사한 기능을 하지만 더 간단하다.
 
 ## [04] 브라우저에 데이터 저장하기
-### 1. [쿠키와 document.cookie]()
+### 1. [쿠키와 document.cookie](https://github.com/autroshot/studyroom/blob/main/01-javascript/03-%EC%B6%94%EA%B0%80%20%EC%A3%BC%EC%A0%9C/04-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/01-%EC%BF%A0%ED%82%A4%EC%99%80%20document.cookie.md#%EC%BF%A0%ED%82%A4%EC%99%80-documentcookie)
 ### 2. [localStorage와 sessionStorage]()
 - 미정리
-- 
+- 웹 스토리지 객체는 쿠키와 다르게 네트워크 요청 시 서버로 전송되지 않는다. 따라서 쿠키보다 더 많은 자료를 보관할 수 있다.`localStorage`는 브라우저를 닫아도 데이터가 유지된다.
 ### 3. [IndexedDB]()
+- 미번역
+- `localStorage`보다 훨씬 더 강력한 브라우저 내장 데이터베이스다.
