@@ -36,3 +36,10 @@
 ### 12. [Server Sent Events]()
 - 미번역
 - 웹소켓과 유사한 기능을 하지만 더 간단하다.
+
+## [04] 브라우저에 데이터 저장하기
+### 1. [쿠키와 document.cookie]()
+### 2. [localStorage와 sessionStorage]()
+- 미정리
+- 
+### 3. [IndexedDB]()
