@@ -47,4 +47,4 @@
 - `localStorage`보다 훨씬 더 강력한 브라우저 내장 데이터베이스다.
 
 ## [06] 웹 컴포넌트
-### 1. [궤도의 높이에서]()
+### 1. [궤도의 높이에서](https://github.com/autroshot/studyroom/blob/main/01-javascript/03-%EC%B6%94%EA%B0%80%20%EC%A3%BC%EC%A0%9C/06-%EC%9B%B9%20%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/01-%EA%B6%A4%EB%8F%84%EC%9D%98%20%EB%86%92%EC%9D%B4%EC%97%90%EC%84%9C.md#%EA%B6%A4%EB%8F%84%EC%9D%98-%EB%86%92%EC%9D%B4%EC%97%90%EC%84%9C)
