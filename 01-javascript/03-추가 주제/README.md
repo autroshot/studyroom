@@ -10,7 +10,11 @@
 - 이미지 전송하기
 ### 2. [FormData 객체](https://github.com/autroshot/studyroom/blob/main/01-javascript/03-%EC%B6%94%EA%B0%80%20%EC%A3%BC%EC%A0%9C/03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%9A%94%EC%B2%AD/02-FormData%20%EA%B0%9D%EC%B2%B4.md#formdata-%EA%B0%9D%EC%B2%B4)
 ### 3. [Fetch: Download progress]()
+- 미번역
+- `fetch` 메소드는 다운로드 진행 상황을 추적할 수 있다.
 ### 4. [Fetch: Abort]()
+- 미번역
+- `AbortController`를 이용해 비동기 작업을 중단할 수 있다.
 ### 5. [CORS]()
 ### 6. [Fetch API]()
 ### 7. [URL objects]()
