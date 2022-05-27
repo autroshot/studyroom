@@ -1,17 +1,17 @@
 ## [01] 처음 시작하는 HTML5
-### 1. [HTML 기본 다지기](https://github.com/autroshot/studyroom/blob/7a2a86e46a0bcad96e19d72359a702496a6dff94/02-HTML+CSS/01-%EC%B2%98%EC%9D%8C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20HTML5/01-HTML%20%EA%B8%B0%EB%B3%B8%20%EB%8B%A4%EC%A7%80%EA%B8%B0.md)
+### 1. [HTML 기본 다지기](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/01-%EC%B2%98%EC%9D%8C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20HTML5/01-HTML%20%EA%B8%B0%EB%B3%B8%20%EB%8B%A4%EC%A7%80%EA%B8%B0.md#1-html%EA%B3%BC%EC%9D%98-%EC%B2%AB-%EB%A7%8C%EB%82%A8)
 1. HTML과의 첫 만남
 2. HTML 기본 문서 구조
-### 2. [텍스트 관련 태그들](https://github.com/autroshot/studyroom/blob/7a2a86e46a0bcad96e19d72359a702496a6dff94/02-HTML+CSS/01-%EC%B2%98%EC%9D%8C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20HTML5/02-%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EA%B4%80%EB%A0%A8%20%ED%83%9C%EA%B7%B8%EB%93%A4.md)
+### 2. [텍스트 관련 태그들](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/01-%EC%B2%98%EC%9D%8C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20HTML5/02-%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EA%B4%80%EB%A0%A8%20%ED%83%9C%EA%B7%B8%EB%93%A4.md#1-%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%8D%A9%EC%96%B4%EB%A6%AC%EB%A1%9C-%EB%AC%B6%EC%96%B4-%EC%A3%BC%EB%8A%94-%ED%83%9C%EA%B7%B8)
 1. 텍스트를 덩어리로 묶어 주는 태그
 2. 텍스트를 한 줄로 표시하는 태그
 3. 목록을 만드는 태그
 4. 표를 만드는 태그
-### 3. [이미지와 하이퍼링크](https://github.com/autroshot/studyroom/blob/7a2a86e46a0bcad96e19d72359a702496a6dff94/02-HTML+CSS/01-%EC%B2%98%EC%9D%8C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20HTML5/03-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%99%80%20%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A7%81%ED%81%AC.md)
+### 3. [이미지와 하이퍼링크](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/01-%EC%B2%98%EC%9D%8C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20HTML5/03-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%99%80%20%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A7%81%ED%81%AC.md#1-%EC%9D%B4%EB%AF%B8%EC%A7%80)
 1. 이미지
 2. 링크 만들기
 3. SVG 이미지
-### 4. [폼 관련 태그들](https://github.com/autroshot/studyroom/blob/7a2a86e46a0bcad96e19d72359a702496a6dff94/02-HTML+CSS/01-%EC%B2%98%EC%9D%8C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20HTML5/04-%ED%8F%BC%20%EA%B4%80%EB%A0%A8%20%ED%83%9C%EA%B7%B8%EB%93%A4.md)
+### 4. [폼 관련 태그들](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/01-%EC%B2%98%EC%9D%8C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20HTML5/04-%ED%8F%BC%20%EA%B4%80%EB%A0%A8%20%ED%83%9C%EA%B7%B8%EB%93%A4.md#1-%ED%8F%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 1. 폼 만들기
 2. 사용자 입력을 위한 \<input>
 3. \<input>의 다양한 속성
