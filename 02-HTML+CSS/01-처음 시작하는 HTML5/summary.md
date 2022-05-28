@@ -144,7 +144,8 @@ HTML(HyperText Markup Language)
 ```html
 <input type="유형">
 ```
-자주 쓰는 유형 - hidden, text, search, tel, email, password, number, reset, button
+자주 쓰는 유형값 - hidden, text, search, tel, email, password, number, reset, button
+
 자주 쓰는 속성 - value, autofocus, placeholder, readonly, required, disabled, size
 
 ## 드롭다운 목록
