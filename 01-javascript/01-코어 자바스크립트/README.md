@@ -87,16 +87,6 @@
 - 좋은 주석
 ### 4. [닌자 코드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/04-%EB%8B%8C%EC%9E%90%20%EC%BD%94%EB%93%9C.md#%EB%8B%8C%EC%9E%90-%EC%BD%94%EB%93%9C)
 ### 5. [테스트 자동화와 Mocha](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/05-%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%90%EB%8F%99%ED%99%94%EC%99%80%20Mocha.md#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94%EC%99%80-mocha)
-- 테스트는 왜 해야 하는가?
-- 명세서
-- 개발 순서
-- 스펙 실행하기
-- 스펙 개선하기
-- 코드 개선하기
-- 중첩 describe
-- before/after와 beforeEach/afterEach
-- 스펙 확장하기
-- 다양한 assertion
 ### 6. [폴리필](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/03-%EC%BD%94%EB%93%9C%20%ED%92%88%EC%A7%88/06-%ED%8F%B4%EB%A6%AC%ED%95%84.md#%ED%8F%B4%EB%A6%AC%ED%95%84)
 - 바벨
 
