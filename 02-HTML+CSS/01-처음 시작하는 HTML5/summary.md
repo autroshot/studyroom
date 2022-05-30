@@ -75,7 +75,7 @@ HTML(HyperText Markup Language)
   <dd>설명</dd>
   <dd>설명</dd>
   ...
-</ol>
+</dl>
 ```
 
 ## 표 태그
