@@ -99,7 +99,7 @@ let arrayLike = { // 인덱스와 length프로퍼티가 있으므로 유사 배�
 // Symbol.iterator가 없으므로 에러가 발생한다.
 for (let item of arrayLike) {}
 ```
-이터러블과 유사 배열은 보통 배열이 아니기 때문에  `push`, `pop` 등의 메서드를 지원하지 않는다. 이터러블과 유사 배열에 배열 메서드를 적용하는 방법은 다음 챕터에서 바로 알아보겠다.
+이터러블과 유사 배열은 보통 배열이 아니기 때문에  `push`, `pop` 등의 메서드를 지원하지 않는다. 이터러블과 유사 배열에 배열 메서드를 적용하려면 `Array.from`을 이용하면 된다.
 
 ## Array.from
 범용 메서드 [Array.from](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/from)는 이터러블이나 유사 배열을 받아 ‘진짜’ 배열을 만들어준다. 이 과정을 거치면 이터러블이나 유사 배열에 배열 메서드를 사용할 수 있다.
