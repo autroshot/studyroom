@@ -19,25 +19,25 @@
 5. 기타 다양한 폼 요소들
 
 ## [02] CSS3로 완성하는 웹 표준
-### 5. [CSS 기초](https://github.com/autroshot/studyroom/blob/612af3cbe71f603e615e8c1605461489fcb36a94/02-HTML+CSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/05-CSS%20%EA%B8%B0%EC%B4%88.md)
+### 5. [CSS 기초](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/05-CSS%20%EA%B8%B0%EC%B4%88.md#1-%EC%8A%A4%ED%83%80%EC%9D%BC%EA%B3%BC-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%8B%9C%ED%8A%B8)
 1. 스타일과 스타일 시트
 2. 주요 선택자
 3. 캐스케이딩 스타일 시트(CSS)
 4. CSS3와 CSS 모듈
-### 6. [텍스트 관련 스타일](https://github.com/autroshot/studyroom/blob/612af3cbe71f603e615e8c1605461489fcb36a94/02-HTML+CSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/06-%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EA%B4%80%EB%A0%A8%20%EC%8A%A4%ED%83%80%EC%9D%BC.md)
+### 6. [텍스트 관련 스타일](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/06-%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EA%B4%80%EB%A0%A8%20%EC%8A%A4%ED%83%80%EC%9D%BC.md#1-%EA%B8%80%EA%BC%B4-%EA%B4%80%EB%A0%A8-%EC%8A%A4%ED%83%80%EC%9D%BC)
 1. 글꼴 관련 스타일
 2. 텍스트 스타일
 3. 문단 스타일
 4. 목록 스타일
-### 7. [색상과 배경을 위한 스타일](https://github.com/autroshot/studyroom/blob/612af3cbe71f603e615e8c1605461489fcb36a94/02-HTML+CSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/07-%EC%83%89%EC%83%81%EA%B3%BC%20%EB%B0%B0%EA%B2%BD%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%8A%A4%ED%83%80%EC%9D%BC.md)
+### 7. [색상과 배경을 위한 스타일](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/07-%EC%83%89%EC%83%81%EA%B3%BC%20%EB%B0%B0%EA%B2%BD%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%8A%A4%ED%83%80%EC%9D%BC.md#1-%EC%9B%B9%EC%97%90%EC%84%9C-%EC%83%89%EC%83%81-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0)
 1. 웹에서 색상 표현하기
 2. 배경 색과 배경 이미지
 3. 그라데이션 효과로 배경 꾸미기
-### 8. [CSS 박스 모델](https://github.com/autroshot/studyroom/blob/612af3cbe71f603e615e8c1605461489fcb36a94/02-HTML+CSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/08-CSS%20%EB%B0%95%EC%8A%A4%20%EB%AA%A8%EB%8D%B8.md)
+### 8. [CSS 박스 모델](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/08-CSS%20%EB%B0%95%EC%8A%A4%20%EB%AA%A8%EB%8D%B8.md#1-css%EC%99%80-%EB%B0%95%EC%8A%A4-%EB%AA%A8%EB%8D%B8)
 1. CSS와 박스 모델
 2. 테두리 관련 속성들
 3. 여백을 조절하는 속성들
-### 9. [CSS 레이아웃](https://github.com/autroshot/studyroom/blob/612af3cbe71f603e615e8c1605461489fcb36a94/02-HTML+CSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/09-CSS%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)
+### 9. [CSS 레이아웃](https://github.com/autroshot/studyroom/blob/main/02-HTML%2BCSS/02-CSS3%EB%A1%9C%20%EC%99%84%EC%84%B1%ED%95%98%EB%8A%94%20%EC%9B%B9%20%ED%91%9C%EC%A4%80/09-CSS%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md#1-css-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D%EA%B3%BC-%EC%A3%BC%EC%9A%94-%EC%86%8D%EC%84%B1%EB%93%A4)
 1. CSS 포지셔닝과 주요 속성들
 2. 다단으로 편집하기
 3. 표 스타일
