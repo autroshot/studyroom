@@ -158,7 +158,7 @@ HTML(HyperText Markup Language)
 </select>
 ```
 
-- 여러 줄 텍스트 입력 태그: `<textarea>`
+## 여러 줄 텍스트 입력 태그: \<textarea>
 
 ## 버튼 태그
 - `type` 속성값: submit, reset, button
