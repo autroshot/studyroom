@@ -227,7 +227,7 @@ rgba(red 값, green 값, blue 값, alpha 값);
 ```
 a는 알파(alpha)로 불투명도 값을 나타낸다.
 
-rgb는 0~255, a는 0~1이 가능하다.
+rgb는 0\~255, a는 0\~1이 가능하다.
 
 ### hsl과 hsla 표기법
 hsl은 차례대로 hue(색상), saturation(채도), lightness(밝기)를 나타낸다.
@@ -299,7 +299,7 @@ border-bottom-right-radius: <크기> | <백분율>
 border-bottom-left-radius: <크기> | <백분율>
 border-radius: <크기> | <백분율>
 ```
-`border-radius` 속성은 `border-width` 속성과 사용법이 유사하다. 속성 값 네 개를 지정하면 왼쪽 위부터 시계 방향으로 지정한다.
+`border-radius` 속성은 `border-width` 속성과 사용법이 유사하다. 속성 값 네 개를 지정하면 왼쪽 위부터 시계 방향으로 지정된다.
 
 ### box-shadow 속성 - 선택한 요소에 그림자 효과 내기
 
