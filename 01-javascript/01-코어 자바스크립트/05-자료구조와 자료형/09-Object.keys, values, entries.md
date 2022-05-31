@@ -10,7 +10,7 @@
 일반 객체에서는 다음과 같은 메서드를 사용할 수 있다.
 -   [Object.keys(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)  – 객체의 키만 담은 배열을 반환한다.
 -   [Object.values(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/values)  – 객체의 값만 담은 배열을 반환한다.
--   [Object.entries(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)  –  `[키, 값]`  쌍을 담은 배열을 반환한다.
+-   [Object.entries(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)  –  `[키, 값]`  쌍을 담은 배열을 반환한다. 즉 2차원 배열을 반환한다.
 
 `Map`, `Set`, `Array` 전용 메서드와 일반 객체용 메서드의 차이를 (맵을 기준으로) 비교하면 다음과 같다.
 |        |맵           |객체                          |
