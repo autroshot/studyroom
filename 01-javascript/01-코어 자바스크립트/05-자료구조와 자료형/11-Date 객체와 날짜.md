@@ -1,5 +1,5 @@
 # Date 객체와 날짜
-날짜를 저장할 수 있으며 날짜와 관련된 메서드를 제공하는 내장 객체 [Date](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date)에 대해 알아볼 것이다.
+날짜를 저장할 수 있고, 날짜와 관련된 메서드를 제공하는 내장 객체 [Date](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date)에 대해 알아볼 것이다.
 
 ## 객체 생성하기
 `new Date()`를 호출하면 새로운 `Date` 객체가 만들어지는데, `new Date()`는 다음과 같이 다양한 형태로 호출할 수 있다.
