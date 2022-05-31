@@ -62,8 +62,8 @@ alert(JSON.stringify([1, 2, 3])); // [1,2,3]
 JSON은 데이터 교환을 목적으로 만들어진 언어에 종속되지 않는 포맷이다. 따라서 자바스크립트 특유의 객체 프로퍼티는 `JSON.stringify`가 처리할 수 없다.
 
 `JSON.stringify` 호출 시 무시되는 프로퍼티는 다음과 같다.
--   함수 프로퍼티 (메서드)
--   심볼형 프로퍼티 (키가 심볼인 프로퍼티)
+-   함수 프로퍼티(메서드)
+-   심볼형 프로퍼티(키가 심볼인 프로퍼티)
 -   값이  `undefined`인 프로퍼티
 
 ```js
@@ -325,5 +325,5 @@ schedule = JSON.parse(schedule, function(key, value) {
   return value;
 });
 
-alert( schedule.meetups[1].date.getDate() ); // 잘 동작한다.
+alert(schedule.meetups[1].date.getDate()); // 잘 동작한다.
 ```
