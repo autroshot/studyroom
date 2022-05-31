@@ -8,9 +8,9 @@
 
 ## Object.keys, values, entries
 일반 객체에서는 다음과 같은 메서드를 사용할 수 있다.
--   [Object.keys(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)  – 객체의 키만 담은 배열을 반환합니다.
--   [Object.values(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/values)  – 객체의 값만 담은 배열을 반환합니다.
--   [Object.entries(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)  –  `[키, 값]`  쌍을 담은 배열을 반환합니다.
+-   [Object.keys(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)  – 객체의 키만 담은 배열을 반환한다.
+-   [Object.values(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/values)  – 객체의 값만 담은 배열을 반환한다.
+-   [Object.entries(obj)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)  –  `[키, 값]`  쌍을 담은 배열을 반환한다.
 
 `Map`, `Set`, `Array` 전용 메서드와 일반 객체용 메서드의 차이를 (맵을 기준으로) 비교하면 다음과 같다.
 |        |맵           |객체                          |
@@ -33,14 +33,14 @@ let user = {
 -   `Object.values(user) = ['John', 30]`
 -   `Object.entries(user) = [['name','John'], ['age',30]]`
 
-아래 예시처럼 `Object.values`를 사용하면 프로퍼티 값을 대상으로 원하는 작업을 할 수 있다.
+다음 예시처럼 `Object.values`를 사용하면 프로퍼티 값을 대상으로 원하는 작업을 할 수 있다.
 ```js
 let user = {
   name: 'Violet',
   age: 30
 };
 
-// 값을 순회합니다.
+// 값을 순회한다.
 for (let value of Object.values(user)) {
   alert(value); // Violet과 30이 출력된다.
 }
