@@ -219,7 +219,7 @@
 - arguments 객체
 - 스프레드 문법
 - 배열과 객체의 복사본 만들기
-### 3. [변수의 유효범위와 클로저](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/03-%EB%B3%80%EC%88%98%EC%9D%98%20%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%EC%99%80%20%ED%81%B4%EB%A1%9C%EC%A0%80.md#%EB%B3%80%EC%88%98%EC%9D%98-%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80)
+### 3. [변수의 스코프와 클로저](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/06-%ED%95%A8%EC%88%98%20%EC%8B%AC%ED%99%94%ED%95%99%EC%8A%B5/03-%EB%B3%80%EC%88%98%EC%9D%98%20%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84%EC%99%80%20%ED%81%B4%EB%A1%9C%EC%A0%80.md#%EB%B3%80%EC%88%98%EC%9D%98-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80)
 - 코드 블록
 - 중첩 함수
 - 렉시컬 환경
