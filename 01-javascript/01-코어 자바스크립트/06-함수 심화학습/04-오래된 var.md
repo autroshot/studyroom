@@ -116,11 +116,9 @@ sayHi(); // undefined
 `let`, `const`가 없던 과거에는 `var`가 블록 레벨 스코프를 가질 수 있게 여러가지 방안을 고려했다. 이때 만들어진 것이 '즉시 실행 함수 표현식(immediately-invoked function expressions)'이다. 즉시 실행 함수 표현식은 `IIFE`라고 부르기도 한다.
 ```js
 (function() {
-
   let message = 'Hello';
 
   alert(message); // Hello
-
 })();
 ```
 함수 표현식이 만들어지고 바로 호출되면서, 해당 함수가 바로 실행되었다. 이 함수는 자신만의 변수를 갖는다.
