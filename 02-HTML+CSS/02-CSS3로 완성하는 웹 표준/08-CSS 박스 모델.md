@@ -8,9 +8,10 @@
 |종류|해당 태그|
 |---|---|
 |블록 레벨 태그|`<p>`, `<h1>~<h6>`, `<ul>`, `<ol>`, `<div>`, `<blockquote>`, `<form>`, `<hr>`, `<table>`, `<fieldset>`, `<address>`|
-|인라인 레벨 태그|`<img>`, `<object>`, `<br>`, `<sub>`, `<sup>`, `<span>`, `<input>`, `<textarea>`, `<label>`, `<button>`|
+|인라인 레벨 태그|`<object>`, `<br>`, `<sub>`, `<sup>`, `<span>`, `<textarea>`, `<label>`|
+|인라인 블록 레벨 태그|`<img>`, `<input>`, `<button>`|
 
-***인라인 요소 안에는 블록 요소를 넣을 수 없다.***
+참고로 ***인라인 요소 안에는 블록 요소를 넣을 수 없다.***
 
 ## 박스 모델(box model) - 박스 형태의 콘텐츠
 ***블록 요소는 모두 박스 모델 요소이다.***
