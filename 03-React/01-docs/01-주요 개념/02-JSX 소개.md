@@ -66,7 +66,7 @@ const element = <img src={user.avatarUrl}></img>;
 ---
 :warning: **경고**
 
-JSX는 HTML보다 JavaScript에 가깝기 때문에, React DOM은 HTML 속성 이름 대신 JavaScript의 **카멜 표기법**을 사용한다.
+JSX는 HTML보다 JavaScript에 가깝기 때문에, React DOM은 HTML 속성 이름 대신 **카멜 표기법**을 사용한다.
 
 예를 들어, `class`는 `className`가 되고 tabindex는 `tabIndex`가 된다.
 
