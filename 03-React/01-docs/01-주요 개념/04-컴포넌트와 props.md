@@ -85,6 +85,9 @@ function App() {
     </div>
   );
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 ```
 
 일반적으로 새로운 React 앱은 최상위에 `App` 컴포넌트가 있다. 하지만 기존 앱에 React를 통합하는 경우에는 `Button`과 같은 작은 컴포넌트부터 시작해서 뷰(view) 계층의 상단으로 올라갈 수 있다.
@@ -175,7 +178,7 @@ function Comment(props) {
 처음에는 컴포넌트를 추출하는 작업이 지루해 보일 수 있다. 하지만 재사용 가능한 컴포넌트를 만들어 놓는 것은 큰 앱을 만들 때 두각을 나타낸다. UI 일부가 여러 번 사용되거나(`Button`, `Panel`, `Avatar`), 복잡한 UI가 있는 경우(`App`, `FeedStory`, `Comment`)에는 별도의 컴포넌트로 추출하는 게 좋다.
 
 ## props는 읽기 전용이다
-**함수 컴포넌트나 클래스 컴포넌트 모두 자신의 props를 수정하면 안 된다.**
+**함수 컴포넌트나 클래스 컴포넌트는 자신의 props를 수정하면 안 된다.**
 
 다음 `sum` 함수를 살펴보겠다.
 
