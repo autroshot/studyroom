@@ -1,14 +1,14 @@
 # JSX 소개
 JSX(JavaScript XML)는 JavaScript를 확장한 문법으로 React 요소(element)를 생성한다.
 
-## JSX란?
+### JSX란?
 React에서는 본질적으로 렌더링 로직이 UI 로직(이벤트, state)과 묶여있다고 본다.
 
 React는 마크업과 로직을 모두 포함하는 **컴포넌트**라는 느슨하게 연결된 유닛으로 SoC(관심사의 분리)를 실현한다.
 
 React에서 JSX를 반드시 사용해야 하는 것은 아니다. 하지만 대부분의 사람들은 JavaScript 코드 안에서 UI 관련 작업을 할 때 JSX가 시각적으로 더 도움이 된다고 생각한다. 또한 JSX를 사용하면 React는 도움이 되는 에러나 경고 메시지를 표시할 수 있다.
 
-## JSX에 표현식 포함하기
+### JSX에 표현식 넣기
 아래 예시에서는 `name`이라는 변수를 중괄호로 감싸 JSX 안에 사용하였다.
 ```js
 const name = 'Josh Perez';
@@ -34,7 +34,7 @@ const element = (
 ```
 가독성을 좋게 하기 위해 JSX를 여러 줄로 나눴다. 이때  자동 세미콜론 삽입을 피하기 위해 **괄호로 묶는 것**을 권장한다.
 
-## JSX도 표현식이다
+### JSX도 표현식이다
 컴파일이 끝나면 JSX 표현식은 JavaScript **객체**로 인식된다.
 
 따라서 JSX를 `if`문이나 `for` 반복문 안에서 사용하거나, 변수에 할당하거나, 인자로 넣거나, 함수의 반환값이 될 수 있다.
@@ -48,7 +48,7 @@ function getGreeting(user) {
 }
 ```
 
-## JSX로 속성 지정하기
+### JSX로 속성 지정하기
 따옴표를 사용해 문자열 리터럴을 속성으로 지정할 수 있다.
 
 ```js
@@ -72,7 +72,7 @@ JSX는 HTML보다 JavaScript에 가깝기 때문에, React DOM은 HTML 속성 �
 
 ---
 
-## JSX로 자식 지정하기
+### JSX로 자식 지정하기
 태크 내부가 비어있다면 XML처럼 `/>` 를 이용해 바로 닫아줘야 한다.
 
 ```js
@@ -90,7 +90,7 @@ const element = (
 );
 ```
 
-## JSX는 주입 공격(injection attack)을 방지한다
+### JSX는 주입 공격(injection attack)을 방지한다
 JSX에 사용자 입력을 넣는 것은 **안전**하다.
 
 ```js
@@ -101,7 +101,7 @@ const element = <h1>{title}</h1>;
 
 기본적으로 React DOM은 JSX에 삽입된 모든 값을 렌더링하기 전에 이스케이프 처리한다. 이런 특성 덕분에  [XSS (cross-site-scripting)](https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%ED%8A%B8_%EA%B0%84_%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8C%85)  공격을 방지할 수 있다.
 
-## JSX는 객체를 나타낸다
+### JSX는 객체를 나타낸다
 Babel은 JSX를  `React.createElement()`  호출로 컴파일한다.
 
 다음 두 예시는 동일하다.
@@ -144,7 +144,7 @@ ES6 및 JSX 코드가 올바르게 표시되도록 편집기에 [Babel 언어 �
 
 ---
 
-## JSX의 주석
+### JSX의 주석
 주석은 중괄호 안에 JavaScript 주석을 넣으면 된다.
 
 ```js
@@ -162,5 +162,5 @@ ES6 및 JSX 코드가 올바르게 표시되도록 편집기에 [Babel 언어 �
 </div>
 ```
 
-## JSX는 문법 설탕이다
+### JSX는 문법 설탕이다
 각 JSX 요소는 `React.createElement(component, props, ...children)`를 호출하기 위한 문법 설탕(sugar syntax)이다. 따라서 JSX로 할 수 있는 모든 것은 순수 JavaScript로도 할 수 있다.
