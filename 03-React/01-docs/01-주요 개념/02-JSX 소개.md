@@ -1,5 +1,5 @@
 # JSX 소개
-JSX는 JavaScript를 확장한 문법으로 React 요소(element)를 생성한다.
+JSX(JavaScript XML)는 JavaScript를 확장한 문법으로 React 요소(element)를 생성한다.
 
 ## JSX란?
 React에서는 본질적으로 렌더링 로직이 UI 로직(이벤트, state)과 묶여있다고 본다.
