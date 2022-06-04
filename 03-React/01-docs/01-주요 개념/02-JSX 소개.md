@@ -144,5 +144,23 @@ ES6 및 JSX 코드가 올바르게 표시되도록 편집기에 [Babel 언어 �
 
 ---
 
+## JSX의 주석
+주석은 중괄호 안에 JavaScript 주석을 넣으면 된다.
+
+```js
+<div>
+  {/* 주석은 여기에 */}
+  Hello, {name}!
+</div>
+```
+
+```js
+<div>
+  {/* 여러 줄의 
+  주석도 가능합니다. */}
+  Hello, {name}!
+</div>
+```
+
 ## JSX는 문법 설탕이다
 각 JSX 요소는 `React.createElement(component, props, ...children)`를 호출하기 위한 문법 설탕(sugar syntax)이다. 따라서 JSX로 할 수 있는 모든 것은 순수 JavaScript로도 할 수 있다.
