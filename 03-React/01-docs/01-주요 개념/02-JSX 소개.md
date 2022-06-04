@@ -135,7 +135,7 @@ const element = {
 };
 ```
 
-이 객체를 <strong>React 요소(React element)</strong>라고 부른다. 화면에서 보고 싶은 것에 대한 설명이라고 볼 수 있다. React는 이 객체를 읽어서 DOM을 구성하고 최신 상태로 유지하는 데 사용한다.
+이 객체를 <strong>React 요소(React element)</strong>라고 부른다. React 요소는 화면에서 보고 싶은 것에 대한 설명이다. React는 이 객체를 읽어서 DOM을 구성하고 최신 상태로 유지하는 데 사용한다.
 
 ---
 :information_source: 팁
