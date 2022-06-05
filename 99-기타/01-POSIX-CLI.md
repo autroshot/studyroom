@@ -62,8 +62,10 @@
 - CLI는 풍부하고 정확한 표현이 가능하다. CLI는 새로운 언어를 배우는 것과 비슷하다. 배우기는 어렵지만 한 번 배우고 나면 원활한 소통이 가능해진다.
 
 ## 자동화하기
-- `;` - 명령어 구분자
-  예시: `mkdir dummy;cd dummy;touch hello.txt;cd ..;`
+`;` - 명령어 구분자
 
-- `&&` - AND 연산자로 실패하면 이후의 명령어는 무시된다.
-  예시: `mkdir dummy&&cd dummy&&touch hello.txt;cd ..;`
+`mkdir dummy;cd dummy;touch hello.txt;cd ..;`
+
+`&&` - AND 연산자로 실패하면 이후의 명령어는 무시된다.
+
+`mkdir dummy&&cd dummy&&touch hello.txt;cd ..;`
