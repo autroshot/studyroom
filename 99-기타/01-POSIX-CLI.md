@@ -15,6 +15,9 @@
 |Update|editor, mv|mv|
 |Delete|rm|rm|
 
+- 복사 - ctrl+ins
+- 붙여넣기 - shift+ins
+
 ## 디렉토리
 
 - `pwd` - 현재 디렉토리
