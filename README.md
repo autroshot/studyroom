@@ -6,3 +6,6 @@
 - HTML+CSS
   - Do it! HTML5+CSS3 웹 표준의 정석 개정 2판, 고경희, 이지스퍼블리싱
   - [W3Schools](https://www.w3schools.com/)
+- React: [React 공식 문서](https://ko.reactjs.org/)
+- 기타
+  - POSIX CLI: [생활코딩](https://opentutorials.org/module/3747)
