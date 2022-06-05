@@ -6,6 +6,11 @@
 - CLI(Command Line Interface) vs GUI(Graphic User Interface)
 - 유닉스 계열이 아닌 컴퓨터에서는 에뮬레이터가 필요하다. 윈도우에서는 Git Bash를 사용한다.
 
+## Git Bash 단축키
+
+- 복사 - ctrl+ins
+- 붙여넣기 - shift+ins
+
 ## 명령어 
 
 ||File|Directory|
@@ -14,9 +19,6 @@
 |Read|editor, cat, ls|ls|
 |Update|editor, mv|mv|
 |Delete|rm|rm|
-
-- 복사 - ctrl+ins
-- 붙여넣기 - shift+ins
 
 ## 디렉토리
 
