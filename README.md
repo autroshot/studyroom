@@ -9,3 +9,4 @@
 - React: [React 공식 문서](https://ko.reactjs.org/)
 - 기타
   - POSIX CLI: [생활코딩](https://opentutorials.org/module/3747)
+  - GIT: [생활코딩](https://opentutorials.org/course/3837)
