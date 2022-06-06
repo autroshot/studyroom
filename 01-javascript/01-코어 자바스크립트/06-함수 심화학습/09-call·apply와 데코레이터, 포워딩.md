@@ -239,4 +239,4 @@ hash(1, 2);
 
 몇몇 데코레이터는 자신만의 프로퍼티를 갖기도 한다. 데코레이터는 함수가 얼마나 많이 호출되었는지 세거나 호출 시 얼마나 많은 시간이 소모되었는지 등의 정보를 래퍼의 프로퍼티에 저장할 수 있다.
 
-함수 프로퍼티에 접근할 수 있게 해주는 데코레이터를 만드는 방법도 있다. 그런데 이걸 구현하려면 `Proxy`라는 특별한 객체를 사용해 함수를 감싸야 한다. `Proxy`에 대해서는 [Proxy와 Reflect](https://github.com/autroshot/studyroom/tree/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8#1-proxy%EC%99%80-reflect) 챕터에서 다룰 것이다.
+함수 프로퍼티에 접근할 수 있게 해주는 데코레이터를 만드는 방법도 있다. 그런데 이걸 구현하려면 `Proxy`라는 특별한 객체를 사용해 함수를 감싸야 한다. `Proxy`에 대해서는 [Proxy와 Reflect](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/14-%EA%B8%B0%ED%83%80/01-Proxy%EC%99%80%20Reflect.md#proxy%EC%99%80-reflect) 챕터에서 다룰 것이다.
