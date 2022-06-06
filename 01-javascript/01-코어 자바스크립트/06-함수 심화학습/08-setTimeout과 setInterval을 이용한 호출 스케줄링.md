@@ -164,7 +164,7 @@ alert('Hello');
 ```
 예시에서 첫 번째 줄은 '0밀리초 후에 함수 호출하기’라는 할 일을 '계획표에 기록’해주는 역할을 한다. 스케줄러는 현재 스크립트의 실행이 종료되고 나서야 '계획표에 어떤 할 일이 적혀있는지 확인’하므로, `Hello`가 먼저 출력되고 `World`가 그 이후에 출력된다.
 
-대기 시간이 0인 `setTimeout`을 활용한 브라우저 환경에서의 유스 케이스는 [이벤트 루프: 마이크로태스크와 매크로태스크](https://github.com/autroshot/studyroom/tree/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4#3-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC%EC%99%80-%EB%A7%A4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC) 챕터에서 자세히 다룰 것이다.
+대기 시간이 0인 `setTimeout`을 활용한 브라우저 환경에서의 유스 케이스는 [이벤트 루프: 마이크로태스크와 매크로태스크](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/06-%EA%B8%B0%ED%83%80/03-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84:%20%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC%EC%99%80%20%EB%A7%A4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC%EC%99%80-%EB%A7%A4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC) 챕터에서 자세히 다룰 것이다.
 
 ---
 :information_source: **브라우저 환경에서 실제 대기 시간은 0이 아니다.**
