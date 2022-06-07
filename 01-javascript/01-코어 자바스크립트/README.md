@@ -282,7 +282,7 @@
 ## [09] 클래스
 ### 1. [클래스와 기본 문법](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/01-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95.md#%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95)
 - 기본 문법
-- 클래스란
+- 클래스란?
 - 클래스는 단순한 편의 문법이 아니다
 - 클래스 표현식
 - getter와 setter
