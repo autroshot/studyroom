@@ -11,13 +11,13 @@ try {
   // 에러 핸들링
 }
 ```
-try…catch 동작 알고리즘은 다음과 같습니다.
+try…catch 동작 알고리즘은 다음과 같다.
 
 1.  `try {...}`  안의 코드가 실행된다.
 2.  에러가 없다면,  `try`  안의 마지막 줄까지 실행되고,  `catch`  블록은 건너뛴다.
 3.  에러가 있다면,  `try`  안 코드의 실행이 중단되고 `catch(err)`  블록으로 제어 흐름이 넘어간다. 변수  `err`(아무 이름이나 사용 가능)는 무슨 일이 일어났는지에 대한 설명이 담긴 에러 객체를 포함한다.
 
-`try {…}` 블록 안에서 에러가 발생해도 `catch`에서 에러를 처리하기 때문에 스크립트는 죽지 않는다.
+`try {...}` 블록 안에서 에러가 발생해도 `catch`에서 에러를 처리하기 때문에 스크립트는 죽지 않는다.
 
 ---
 :warning: **`try..catch`는 오직 런타임 에러에만 동작한다.**
@@ -64,7 +64,7 @@ setTimeout(function() {
 ---
 
 ## 에러 객체
-에러가 발생하면 자바스크립트는 에러 상세내용이 담긴 객체를 생성한다. 그 후, `catch` 블록에 이 객체를 인수로 전달한다.
+에러가 발생하면 자바스크립트는 에러 상세내용이 담긴 객체를 생성한다. 그 후 `catch` 블록에 이 객체를 인수로 전달한다.
 ```js
 try {
   // ...
@@ -132,9 +132,9 @@ let json = '{ bad json }';
 try {
   let user = JSON.parse(json); // <-- 여기서 에러가 발생하므로
 
-  alert( user.name ); // 이 코드는 동작하지 않는다.
+  alert(user.name); // 이 코드는 동작하지 않는다.
 } catch (e) {
-  // 에러가 발생하면 제어 흐름이 catch 문으로 넘어옵니다.
+  // 에러가 발생하면 제어 흐름이 catch 문으로 넘어온다.
   alert('데이터에 에러가 있어 재요청을 시도합니다.');
   alert(e.name);
   alert(e.message);
@@ -217,7 +217,7 @@ try {
 
   blabla(); // 예상치 못한 에러
 
-  alert( user.name );
+  alert(user.name);
 } catch(e) {
   if (e instanceof SyntaxError) {
     alert('JSON Error: ' + e.message);
@@ -253,7 +253,6 @@ try {
 }
 ```
 `readData`는 `SyntaxError`만 처리할 수 있고, 함수 바깥의 `try..catch`에서는 예상치 못한 에러도 처리할 수 있게 되었다.
-
 
 ## try…catch…finally
 `try..catch`는  `finally`라는 코드 절을 하나 더 가질 수 있다.
