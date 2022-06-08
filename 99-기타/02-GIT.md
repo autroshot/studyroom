@@ -53,7 +53,27 @@
 
 ## 백업
 
+- Local Repository - 로컬 저장소
+- Remote Repository - 원격 저장소
+- Git hosting - 원격 저장소를 빌려주는 곳이다. 대표적인 곳으로 GitHub와 GitLab이 있다.
 
+` git remote add <저장소 별명, 보통 origin 사용> <원격 저장소 주소>`
+
+로컬 저장소와 원격 저장소를 연결한다.
+
+`git remote -v` - 원격 저장소의 주소를 확인한다.
+
+`git clone <원격 저장소 주소>` - 저장소를 그대로 복사해온다.
+
+`git push` - 로컬 저장소에서 원격 저장소로 업로드한다.
+
+처음 push할 때는 연결 설정이 필요하다. 시키는 대로 한다.
+
+`git pull` - 원격 저장소에서 로컬 저장소로 다운로드한다.
+
+### 일반적인 Git 순서
+
+pull → 작업 → add → commit → push
 
 ## 브랜치와 충돌
 
