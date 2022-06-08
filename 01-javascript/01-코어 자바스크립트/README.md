@@ -297,6 +297,7 @@
 ### 4. [private, protected 프로퍼티와 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/04-private%2C%20protected%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80%20%EB%A9%94%EC%84%9C%EB%93%9C.md#private-protected-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C)
 ### 5. [내장 클래스 확장하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/05-%EB%82%B4%EC%9E%A5%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%ED%99%95%EC%9E%A5%ED%95%98%EA%B8%B0.md#%EB%82%B4%EC%9E%A5-%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%99%95%EC%9E%A5%ED%95%98%EA%B8%B0)
 ### 6. ['instanceof'로 클래스 확인하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/06-'instanceof'%EB%A1%9C%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0.md#instanceof%EB%A1%9C-%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0)
+- 보너스: 타입 확인을 위한 Object.prototype.toString
 ### 7. [믹스인](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/09-%ED%81%B4%EB%9E%98%EC%8A%A4/07-%EB%AF%B9%EC%8A%A4%EC%9D%B8.md#%EB%AF%B9%EC%8A%A4%EC%9D%B8)
 
 ## [10] 에러 핸들링
