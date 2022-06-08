@@ -36,7 +36,7 @@ coffeeMachine.waterAmount = 200;
 ```
 현재 프로퍼티 `waterAmount`와 `power`는 public이다. 두 프로퍼티는 쉽게 읽고 수정할 수 있다.
 
-**protected 프로퍼티 명 앞에는 밑줄  `_`이 붙는다.**
+**protected 프로퍼티 이름 앞에는 밑줄  `_`이 붙는다.**
 
 자바스크립트에서 강제한 사항은 아니지만, 밑줄은 프로그래머 사이에서 외부 접근이 불가능한 프로퍼티나 메서드를 나타낼 때 쓴다.
 
@@ -191,7 +191,7 @@ class MegaCoffeeMachine extends CoffeeMachine {
 
 private 필드는 특별하다.
 
-알다시피, 보통은 `this[name]`을 사용해 필드에 접근할 수 있다.
+알다시피 보통은 `this[name]`을 사용해 필드에 접근할 수 있다.
 ```js
 class User {
   ...
