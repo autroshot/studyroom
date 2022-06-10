@@ -145,8 +145,8 @@ Hook을 사용하면 구독을 하고 해지하는 로직 같이 서로 관련 �
 
 Hook은 JavaScript 함수이지만 다음 두 가지 규칙을 지켜야 한다.
 
-- Hook은 <strong>최상위(at the top level)</strong>에서만 호출한다. 반복문, 조건문, 중첩 함수 내부에서는 Hook을 호출하지 않는다.
-- Hook은 **React 함수 컴포넌트**에서만 호출한다. 일반 JavaScript 함수에서는 Hook을 호출하지 않는다. 예외로 커스텀 Hook에서는 가능하다.
+- <strong>최상위</strong>에서만 Hook을 호출한다. 반복문, 조건문, 중첩 함수 내부에서는 Hook을 호출하지 않는다.
+- **React 함수 컴포넌트**에서만 Hook을 호출한다. 일반 JavaScript 함수에서는 Hook을 호출하지 않는다. 예외로 커스텀 Hook에서는 가능하다.
 
 이 규칙을 자동으로 적용하는 [linter 플러그인](https://www.npmjs.com/package/eslint-plugin-react-hooks)이 제공된다. 처음에는 규칙들이 제한적이고 혼란스러울 수 있다. 하지만 이 제약들은 Hook이 잘 작동하게 만들어준다.
 
