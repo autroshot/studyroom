@@ -334,7 +334,7 @@ class FriendStatusWithCounter extends React.Component {
 
 `document.title`을 설정하는 로직이 `componentDidMount`와 `componentDidUpdate`로 쪼개진 것을 볼 수 있다. 구독 로직도 `componentDidMount`와 `componentWillUnmount`에 흩어져 있다. 그리고 `componentDidMount`에는 두 작업의 코드가 모두 들어있다.
 
-그렇다면 Hook은 이 문제를 어떻게 해결할 수 있을까? [상태 Hook을 여러 번 사용할 수 있는 것](https://github.com/autroshot/studyroom/blob/main/03-React/01-docs/02-Hook/03-%EC%83%81%ED%83%9C%20Hook%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0.md#%ED%8C%81-%EB%B3%B5%EC%88%98%EC%9D%98-%EC%83%81%ED%83%9C-%EB%B3%80%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)처럼 부작용도 여러 번 사용할 수 있다. 이렇게 하면 관련 없는 로직을 다른 부작용으로 분리할 수 있다.
+그렇다면 Hook은 이 문제를 어떻게 해결할 수 있을까? [상태 Hook을 여러 번 사용할 수 있는 것](#%ED%8C%81-%EB%B3%B5%EC%88%98%EC%9D%98-%EC%83%81%ED%83%9C-%EB%B3%80%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)처럼 부작용도 여러 번 사용할 수 있다. 이렇게 하면 관련 없는 로직을 다른 부작용으로 분리할 수 있다.
 
 ```js
 function FriendStatusWithCounter(props) {
@@ -364,7 +364,7 @@ Hook을 이용하면 생명주기 메서드 이름이 아닌 **어떤 동작을 
 
 클래스에 익숙하다면 왜 부작용 정리 단계가 언마운트될 때 한 번만 실행되는 게 아니라 모든 리렌더링 이후에 실행되는 건지 궁금할 것이다. 이런 디자인이 왜 버그가 적은 컴포넌트를 만드는 데에 도움을 주는 것인지 실용적인 예시를 통해 알아보겠다.
 
-위의 [예시]()에서 친구의 온라인 여부를 표시하는 `FriendStatus` 컴포넌트를 소개한 바 있다. 클래스는 `this.props`에서 `friend.id`를 읽어서, 컴포넌트 마운트 이후에 친구 상태를 구독하고 언마운트 이후에 구독을 해지한다.
+위의 [예시](#%ED%81%B4%EB%9E%98%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%98%88%EC%8B%9C-1)에서 친구의 온라인 여부를 표시하는 `FriendStatus` 컴포넌트를 소개한 바 있다. 클래스는 `this.props`에서 `friend.id`를 읽어서, 컴포넌트 마운트 이후에 친구 상태를 구독하고 언마운트 이후에 구독을 해지한다.
 
 ```js
   componentDidMount() {
