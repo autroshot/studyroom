@@ -39,7 +39,7 @@
 
 `git add` - 해당 파일이나 경로를 Staging Area에 올린다. `.`만 넣으면 현재 경로.
 
-`git commit` - 버전을 생성한다. `-m "Message 1"`로 메시지 입력 가능. `-a`로 add까지 수행.
+`git commit` - 버전을 생성한다. `-m "Message 1"`로 메시지 입력 가능. `-a`로 add까지 수행. `--amend`로 메시지 수정.
 
 `git log` - 버전 기록을 표시한다.
 
