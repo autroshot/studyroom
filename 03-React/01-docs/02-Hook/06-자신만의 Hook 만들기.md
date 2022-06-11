@@ -2,7 +2,7 @@
 
 자신만의 Hook을 만들면 컴포넌트 로직을 재사용 가능한 함수로 추출할 수 있다.
 
-[Effect Hook 사용하기](https://ko.reactjs.org/docs/hooks-effect.html#example-using-hooks-1)의 친구의 온라인 여부를 표시하는 채팅 애플리케이션에서 이 컴포넌트를 살펴봤었다.
+[부작용 Hook 사용하기](./04-%EB%B6%80%EC%9E%91%EC%9A%A9%20Hook%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0.md#hook%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%98%88%EC%8B%9C-1)의 친구의 온라인 여부를 표시하는 채팅 애플리케이션에서 이 컴포넌트를 살펴봤었다.
 
 ```js
 import React, { useState, useEffect } from 'react';
