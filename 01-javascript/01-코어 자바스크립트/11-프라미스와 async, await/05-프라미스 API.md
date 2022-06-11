@@ -82,7 +82,7 @@ Promise.all([
 
 ---
 
-:information_source: **`이터러블 객체`가 아닌 일반 값도 `Promise.all(iterable)`에 넘길 수 있다.**
+:information_source: **이터러블 객체가 아닌 일반 값도 `Promise.all(iterable)`에 넘길 수 있다.**
 
 `Promise.all(...)`은 대개 프라미스가 요소인 이러터블 객체(대부분 배열)를 받는다. 그런데 요소가 프라미스가 아닌 객체일 경우에는 요소 ‘그대로’ 결과 배열에 전달된다.
 ```js
@@ -150,7 +150,7 @@ Promise.allSettled(urls.map(url => fetch(url)))
 `Promise.allSettled`를 사용하면 이처럼 각 프라미스의 상태와 '값 또는 에러'를 받을 수 있다.
 
 ## Promise.race
-`Promise.race`는 `Promise.all`과 비슷하다. 다만 가장 먼저 처리되는 프라미스의 결과혹은 에러를 반환한다.
+`Promise.race`는 `Promise.all`과 비슷하다. 다만 가장 먼저 처리되는 프라미스의 결과나 에러를 반환한다.
 
 문법:
 ```js
