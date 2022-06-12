@@ -228,10 +228,10 @@ async function* fetchCommits(repo) {
   }
 }
 ```
-1.  다운로드는  [fetch](https://ko.javascript.info/fetch)  메서드를 사용한다.  `fetch`를 사용하면 인증 정보나 헤더 등을 함께 실어 요청할 수 있습니다. GitHub에서 강제하는  `User-Agent`를 헤더에 실어 보내겠다.
+1.  다운로드는  [fetch](../../03-%EC%B6%94%EA%B0%80%20%EC%A3%BC%EC%A0%9C/03-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%9A%94%EC%B2%AD/01-fetch.md)  메서드를 사용한다.  `fetch`를 사용하면 인증 정보나 헤더 등을 함께 실어 요청할 수 있습니다. GitHub에서 강제하는  `User-Agent`를 헤더에 실어 보내겠다.
 2.  `fetch`  전용 메서드인  `response.json()`을 사용해 요청 결과를 JSON으로 파싱한다.
 3.  응답의  `Link`  헤더에서 다음 페이지의 URL을 얻는다. 헤더에서  `https://api.github.com/repositories/93253246/commits?page=2`형태의 URL만 추출하기 위해 정규표현식을 사용하였다.
-4.  커밋을 하나씩 반환하는데, 전체가 다 반환되면 다음  `while(url)`  반복문이 트리거 되어 서버에 다시 요청을 보낸다.
+4.  커밋을 하나씩 반환하는데, 전체가 다 반환되면 다음  `while(url)`  반복문이 트리거되어 서버에 다시 요청을 보낸다.
 
 사용법은 다음과 같다.
 ```js
@@ -258,14 +258,14 @@ async function* fetchCommits(repo) {
 |       | iterable | async iterable |
 |-------|-----------|-----------------|
 | iterator를 반환하는 메서드 | `Symbol.iterator` | `Symbol.asyncIterator` |
-| `next()`가 반환하는 값 | `{value:…, done: true/false}`         | `{value:…, done: true/false}`를 감싸는 `Promise` |
+| `next()`가 반환하는 값 | `{value:..., done: true/false}`         | `{value:..., done: true/false}`를 감싸는 `Promise` |
 
 일반 제너레이터와 async 제너레이터의 문법 차이는 다음과 같다.
 
 |       | generators | async generator |
 |-------|-----------|-----------------|
 | 선언 | `function*` | `async function*` |
-| `next()`가 반환하는 값          | `{value:…, done: true/false}`         | `{value:…, done: true/false}`를 감싸는 `Promise`  |
+| `next()`가 반환하는 값          | `{value:..., done: true/false}`         | `{value:..., done: true/false}`를 감싸는 `Promise`  |
 
 웹 개발을 하다 보면 띄엄띄엄 들어오는 데이터 스트림을 다뤄야 하는 경우가 자주 생긴다. 용량이 큰 파일을 다운로드하거나 업로드 할 때가 그 예이다. 이런 데이터를 처리할 때 async 제너레이터를 사용할 수 있다.
 
