@@ -85,3 +85,27 @@ pull → 작업 → add → commit → push
 
 ## 브랜치와 충돌
 
+`git branch` - 브랜치 목록을 표시한다.
+
+`git branch <브랜치>` - 브랜치를 추가한다.
+
+`git checkout <브랜치>` - 해당 브랜치로 이동한다.
+
+`git merge <브랜치>` - 해당 브랜치를 현재 브랜치로 병합한다.
+
+충돌이 발생하면 충돌 부분을 해결한 뒤 add와 commit을 진행한다.
+
+3 way merge
+
+|base|here|there|3 way merge|
+|---|---|---|---|
+|A|A|A|A|
+|B|H|B|H|
+|C|C|T|T|
+|D|H|T|?|
+
+base는 브랜치의 공통 조상을 의미한다.
+
+`git mergetool` - 병합 도구를 이용한다. 예로는 WinMerge가 있다.
+
+git workflow로 브랜치 활용이 가능하다.
