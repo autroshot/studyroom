@@ -336,12 +336,6 @@
 
 ## [12] 제너레이터와 비동기 이터레이션
 ### 1. [제너레이터](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/12-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%EC%9D%B4%ED%84%B0%EB%A0%88%EC%9D%B4%EC%85%98/01-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0.md#%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0)
-- 제너레이터 함수
-- 제너레이터와 이터러블
-- 이터러블 대신 제너레이터 사용하기
-- 제너레이터 컴포지션
-- 'yield’를 사용해 제너레이터 안·밖으로 정보 교환하기
-- generator.throw
 ### 2. [async 이터레이터와 제너레이터](https://github.com/autroshot/studyroom/blob/main/01-javascript/01-%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/12-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%EC%9D%B4%ED%84%B0%EB%A0%88%EC%9D%B4%EC%85%98/02-async%20%EC%9D%B4%ED%84%B0%EB%A0%88%EC%9D%B4%ED%84%B0%EC%99%80%20%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0.md#async-%EC%9D%B4%ED%84%B0%EB%A0%88%EC%9D%B4%ED%84%B0%EC%99%80-%EC%A0%9C%EB%84%88%EB%A0%88%EC%9D%B4%ED%84%B0)
 
 ## [13] 모듈
