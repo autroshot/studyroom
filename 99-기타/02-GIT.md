@@ -12,6 +12,8 @@
 
 ## 설정
 
+`nano ~/.gitconfig` - 설정 파일 수정하기
+
 `git config --global core.editor "nano"` - 기본 에디터 변경
 
 다양한 diff tool이 존재하므로 필요하면 찾아본다.
@@ -109,3 +111,13 @@ base는 브랜치의 공통 조상을 의미한다.
 `git mergetool` - 병합 도구를 이용한다. 예로는 WinMerge가 있다.
 
 git workflow로 브랜치 활용이 가능하다.
+
+## 협업
+
+원격 저장소 설정의 Collaborators에서 협업자를 추가한다.
+
+협업자는 `git clone`으로 원격 저장소를 로컬 저장소로 다운로드한다.
+
+`git pull = git fetch + git merge FETCH_HEAD`
+
+`git fetch` - 원격 저장소의 브랜치를 가져오기만 한다. 병합은 사용자가 별도로 수행한다.
