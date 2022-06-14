@@ -124,5 +124,6 @@
 - 개요: `MutationObserver`는 DOM 요소를 관찰하고 변경을 감지하면 콜백을 실행하는 내장 객체이다.
 ### 2. [Selection and Range](https://ko.javascript.info/selection-range)
 - 미번역
-- 개요: 마우스 드래그나 키보드에 의해 문서에서 선택된 텍스트을 다룰 때 사용한다.
+- 개요: 마우스 드래그나 키보드에 의해 문서에서 선택된 텍스트를 다룰 때 사용한다.
+
 ### 3. [이벤트 루프: 마이크로태스크와 매크로태스크](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/06-%EA%B8%B0%ED%83%80/03-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84:%20%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC%EC%99%80%20%EB%A7%A4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC%EC%99%80-%EB%A7%A4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC)
