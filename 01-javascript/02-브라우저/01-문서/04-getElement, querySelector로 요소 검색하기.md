@@ -1,4 +1,4 @@
-# getElement*, querySelector*로 요소 검색하기
+# getElement\*, querySelector\*로 요소 검색하기
 ## document.getElementById 혹은 id를 사용해 요소 검색하기
 요소에 `id` 속성이 있으면 위치에 상관없이 메서드 `document.getElementById(id)`를 이용해 접근할 수 있다.
 ```html
