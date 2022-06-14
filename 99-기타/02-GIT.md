@@ -12,15 +12,24 @@
 
 ## 설정
 
+| 구분     | 사용     |
+| -------- | -------- |
+| 프로그램 | Git Bash |
+| 에디터   | nano     |
+| difftool | WinMerge |
+| 폰트     | D2Coding |
+
 `nano ~/.gitconfig` - 설정 파일 수정하기
 
 `git config --global core.editor "nano"` - 기본 에디터 변경
 
-다양한 diff tool이 존재하므로 필요하면 찾아본다.
-
 .gitignore 파일로 GIT에서 무시할 파일이나 경로를 지정할 수 있다.
 
+alias - 명령어에 별명을 붙일 수 있다. 단축키와 비슷한 역할을 한다.
+
 `warning: LF will be replaced by CRLF in bora.txt. The file will have its original line endings in your working directory`가 뜨면 `git config --global core.autocrlf true`을 적용한다.
+
+한글이 숫자로 깨져서 나오면 `git config --global core.quotepath false`을 적용한다.
 
 ## 버전관리
 `git init .`
