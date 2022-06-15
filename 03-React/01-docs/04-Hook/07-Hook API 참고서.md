@@ -74,3 +74,41 @@ function ThemedButton() {
 ```
 
 이 예시는 [고급 안내서 컨텍스트](../02-고급-안내서/컨텍스트.md)의 예시를 Hook을 사용하는 예시로 수정한 것이다.
+
+## 추가 Hook
+
+### `useRef`
+
+```jsx
+const refContainer = useRef(initialValue);
+```
+
+`useRef`는 건네준 인수(`initialValue`)로 초기화된 `.current` 프로퍼티를 가지며 변경 가능한 Ref 객체를 반환한다. 반환된 객체는 컴포넌트의 전체 생애주기 동안 유지된다.
+
+일반적인 유스 케이스는 자식에게 직접 접근하는 것이다.
+
+```jsx
+function TextInputWithFocusButton() {
+  const inputEl = useRef(null);
+  const onButtonClick = () => {
+    // `current`는 마운트된 텍스트 input 요소를 가리킨다.
+    inputEl.current.focus();
+  };
+  return (
+    <>
+      <input ref={inputEl} type="text" />
+      <button onClick={onButtonClick}>Focus the input</button>
+    </>
+  );
+}
+```
+
+기본적으로 `useRef`는 자신의 `.current` 프로퍼티에 변경 가능한 값을 담을 수 있는 '상자'와 같다.
+
+DOM에 접근하는 방법으로 Ref를 많이 사용했을 것이다. `<div ref={myRef} />`로 React에 Ref 객체를 건네주면, React는 노드가 변경될 때마다 객체의 `.current` 프로퍼티를 해당 DOM 노드로 설정할 것이다.
+
+하지만 `useRef()`가 `ref` 속성보다 더 유용하다. 클래스에서 인스턴스 필드를 사용하는 방법과 유사하게 `useRef()`는 어떤 변경 가능한 값을 유지하는 데에 편리하다(관련 내용은 [자주 묻는 질문](https://ko.reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables)에서 확인).
+
+이것은 `useRef()`가 일반적인 JavaScript 객체를 생성하기 때문이다. `useRef()`는 직접 `{ current: ... }` 객체를 만드는 것과 유사하다. `useRef()`는 매 렌더링마다 동일한 Ref 객체를 제공한다는 것이 유일한 차이점이다.
+
+`useRef`는 콘텐츠가 변경되어도 알려주지 않는다. `.current` 프로퍼티를 변경해도 리렌더링이 일어나지 않는다. React가 DOM 노드에 Ref를 붙이거나 뗄 때 어떤 코드를 실행하고 싶다면 [콜백 Ref](https://ko.reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node)을 이용한다.
