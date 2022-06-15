@@ -193,7 +193,6 @@ class CustomTextInput extends React.Component {
     super(props);
 
     this.textInput = null;
-
     this.setTextInputRef = element => {
       this.textInput = element;
     };
@@ -253,9 +252,7 @@ class Parent extends React.Component {
 }
 ```
 
-위의 예시에서 `Parent`는 자신의 콜백 ref를 `inputRef` prop으로서 `CustomTextInput`에게 전달합니다. 그리고 `CustomTextInput`은 전달받은 함수를 `<input>`에게 `ref` 어트리뷰트로서 전달합니다. 결과적으로 `Parent`에 있는 `this.inputElement`는 `CustomTextInput`의 `<input>` 엘리먼트에 대응하는 DOM 노드가 됩니다.
-
-위의 예시에서 `Parent`는 자신의 콜백 Ref를 `CustomTextInput`에게 `inputRef` prop로 건네준다. 그리고 `CustomTextInput`은 받은 함수를 `<input>`에게 `ref` 속성으로 건네준다. 그 결과 `Parent`의 `this.inputElement`는 `CustomTextInput`의 `<input>` 요소에 해당하는 DOM 노드로 설정될 것이다.
+위의 예시에서 `Parent`는 자신의 콜백 Ref를 `CustomTextInput`에게 `inputRef` prop으로 건네준다. 그리고 `CustomTextInput`은 받은 함수를 `<input>`에게 `ref` 속성으로 건네준다. 그 결과 `Parent`의 `this.inputElement`는 `CustomTextInput`의 `<input>` 요소에 해당하는 DOM 노드로 설정될 것이다.
 
 ### 콜백 Ref 관련 주의 사항
 
