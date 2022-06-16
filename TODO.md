@@ -12,7 +12,7 @@
     - [x] useRef
 
 - Git - 생활코딩
-  - [ ] Cherry-pick & rebase
+  - [x] Cherry-pick & rebase
   - [ ] github Pull reqeust
   - [ ] reflog
   - [ ] flow model
