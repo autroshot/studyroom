@@ -4,12 +4,12 @@
 
 - React - 공식 문서
   - 고급 안내서
-    - [ ] Ref와 Dom
+    - [x] Ref와 Dom
     - [ ] Render Props
   - Hook
     - [x] useContext
     - [ ] useReducer
-    - [ ] useRef
+    - [x] useRef
 
 - Git - 생활코딩
   - [ ] Cherry-pick & rebase
