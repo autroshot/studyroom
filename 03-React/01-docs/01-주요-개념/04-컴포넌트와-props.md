@@ -6,7 +6,7 @@
 ## 함수 컴포넌트와 클래스 컴포넌트
 컴포넌트를 정의하는 가장 간단한 방법은 JavaScript 함수를 작성하는 것이다.
 
-```js
+```jsx
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -18,7 +18,7 @@ function Welcome(props) {
 
 또는 다음과 같이 ES6의 클래스를 사용해 컴포넌트를 정의할 수 있다.
 
-```js
+```jsx
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
@@ -33,7 +33,7 @@ React의 관점에서 볼 때 앞의 두 가지 유형의 컴포넌트는 동일
 ## 컴포넌트 렌더링하기
 React 요소는 일반 DOM 태그가 아닌 사용자 정의 컴포넌트로도 나타낼 수 있다.
 
-```js
+```jsx
 const element = <Welcome name="Sara" />;
 ```
 
@@ -41,7 +41,7 @@ React는 사용자 정의 컴포넌트를 나타내는 요소를 만나면, 요�
 
 다음은 페이지에 `Hello, Sara`를 렌더링하는 예시이다.
 
-```js
+```jsx
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -73,7 +73,7 @@ React는 소문자로 시작하는 컴포넌트를 DOM 태그로 인식한다. �
 
 예를 들어 `Welcome`을 여러 번 렌더링하는 `App` 컴포넌트를 만들 수 있다.
 
-```js
+```jsx
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -99,7 +99,7 @@ root.render(<App />);
 
 다음 `Comment` 컴포넌트를 살펴보겠다.
 
-```js
+```jsx
 function Comment(props) {
   return (
     <div className="Comment">
@@ -129,7 +129,7 @@ function Comment(props) {
 
 먼저 컴포넌트에서 `Avatar`를 추출해 보겠다.
 
-```js
+```jsx
 function Avatar(props) {
   return (
     <img className="Avatar"
@@ -146,7 +146,7 @@ function Avatar(props) {
 
 다음으로 `UserInfo` 컴포넌트를 추출하겠다.
 
-```js
+```jsx
 function UserInfo(props) {
   return (
     <div className="UserInfo">
@@ -161,7 +161,7 @@ function UserInfo(props) {
 
 이제 `Comment`가 훨씬 단순해졌다.
 
-```js
+```jsx
 function Comment(props) {
   return (
     <div className="Comment">
