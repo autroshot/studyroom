@@ -1,6 +1,6 @@
 # fetch
 
-자바스크립트를 필요할 때마다 서버에 네트워크 요청을 보내고 새로운 정보를 로드할 수 있다.
+자바스크립트는 필요할 때마다 서버에 네트워크 요청을 보내고 새로운 정보를 로드할 수 있다.
 
 네트워크 요청을 이용해 다음 작업을 수행할 수 있다.
 - 주문 제출하기
@@ -9,7 +9,7 @@
 
 그리고 이 모든 것은 페이지를 새로고침하지 않아도 된다.
 
-자바스크립트의 네트워크 요청에 대한 포괄적인 용어 'AJAX'(<b>A</b>synchronous <b>J</b>avaScript <b>A</b>nd <b>X</b>ML)가 있다. 하지만 지금은 XML은 사용할 필요가 없다. 용어가 오래되어서 XML이 들어있는 것뿐이다.
+자바스크립트의 네트워크 요청에 대한 포괄적인 용어 'AJAX'(<b>A</b>synchronous <b>J</b>avaScript <b>A</b>nd <b>X</b>ML)가 있다. XML은 사용할 필요가 없다. 용어가 오래되어서 XML이 들어있는 것뿐이다.
 
 서버에 네트워크 요청을 보내고 정보를 받아오는 방법에는 여러 가지가 있다.
 
@@ -19,8 +19,8 @@
 ```js
 let promise = fetch(url, [options])
 ```
-- `url` -- 접근하려는 URL
-- `options` -- 선택적 매개변수로 메소드나 헤더 등을 지정할 수 있음
+- `url` - 접근하려는 URL
+- `options` - 선택적 매개변수로 메소드나 헤더 등을 지정할 수 있음
 
 `options`을 비워두면 간단한 `GET` 요청이 된다.
 
@@ -28,15 +28,15 @@ let promise = fetch(url, [options])
 
 응답은 보통 두 단계에 거쳐 진행된다.
 
-**먼저, 서버에서 응답 헤더를 받으면, `fetch`에서 반환된 `promise`가 내장 클래스 [Response](https://fetch.spec.whatwg.org/#response-class)의 객체를 결과로 받으며 이행 상태가 된다.**
+**먼저 서버에서 응답 헤더를 받으면, `fetch`에서 반환된 `promise`가 내장 클래스 [Response](https://fetch.spec.whatwg.org/#response-class)의 객체를 결과로 받으며 이행 상태가 된다.**
 
 이 단계에서는 헤더의 HTTP 상태(status)로 성공 여부는 확인할 수 있지만, 아직 본문(body)은 확인할 수 없다.
 
 네트워크 문제나 잘못된 URL 때문에 HTTP 요청을 만들 수 없었으면 프라미스는 거부 상태가 된다. 404나 500 같은 비정상적인 HTTP 상태는 오류를 일으키지 않는다.
 
 HTTP 상태는 응답 프로퍼티에서 확인할 수 있다.
-- **`status`** -- HTTP 상태 코드(예: 200)
-- **`ok`** -- 불린 값으로 HTTP 상태 코드가 200과 299 사이일 경우 `true`이다.
+- **`status`** - HTTP 상태 코드(예: 200)
+- **`ok`** - 불린 값으로 HTTP 상태 코드가 200과 299 사이일 경우 `true`이다.
 
 예시:
 ```js
@@ -172,12 +172,12 @@ let response = fetch(protectedUrl, {
 ## POST 요청
 
 `POST` 요청을 만들거나 다른 메소드로 요청을 만들려면 `fetch`의 옵션을 사용해야 한다.
-- **`method`** -- HTTP 메서드(예: `POST`)
-- **`body`** -- 요청 본문으로 다음 항목 중 하나이다.
+- **`method`** - HTTP 메서드(예: `POST`)
+- **`body`** - 요청 본문으로 다음 항목 중 하나이다.
   - 문자열(예: JSON 문자열)
-  - `FormData`객체 -- `form/multipart` 형태로 데이터를 전송하기 위해 쓰인다.
-  - `Blob`나 `BufferSource` -- 바이너리 데이터 전송을 위해 쓰인다.
-  - [URLSearchParams](info:url) -- 데이터를 `x-www-form-urlencoded` 형태로 보내기 위해 쓰이는데, 요즘엔 잘 사용하지 않는다.
+  - `FormData`객체 - `form/multipart` 형태로 데이터를 전송하기 위해 쓰인다.
+  - `Blob`나 `BufferSource` - 바이너리 데이터 전송을 위해 쓰인다.
+  - [URLSearchParams](https://ko.javascript.info/url) - 데이터를 `x-www-form-urlencoded` 형태로 보내기 위해 쓰이는데, 요즘에는 잘 사용하지 않는다.
 
 대부분은 JSON을 요청 본문에 실어 보내게 된다.
 
@@ -267,18 +267,18 @@ fetch(url, options)
   .then(result => /* 결과 처리 */)
 ```
 응답 객체의 프로퍼티는 다음과 같다.
-- `response.status` -- 응답의 HTTP 코드
-- `response.ok` -- 응답 상태가 200과 299 사이에 있는 경우 `true`
-- `response.headers` -- 맵과 유사한 형태의 HTTP 헤더
+- `response.status` - 응답의 HTTP 코드
+- `response.ok` - 응답 상태가 200과 299 사이에 있는 경우 `true`
+- `response.headers` - 맵과 유사한 형태의 HTTP 헤더
 
 응답 본문을 얻으려면 다음과 같은 메서드를 사용하면 된다.
-- `response.text()` -- 응답을 텍스트 형태로 반환함
-- `response.json()` -- 응답을 JSON 객체로 변환함
-- `response.formData()` -- 응답을 `FormData` 객체 형태로 반환(`multipart/form-data` 인코딩은 다음 챕터에서 다룸)
-- `response.blob()` -- 응답을 [Blob](https://javascript.info/blob)(타입이 있는 바이너리 데이터) 형태로 반환함
-- `response.arrayBuffer()` --  응답을 [ArrayBuffer](https://javascript.info/arraybuffer-binary-arrays)(바이너리 데이터를 로우 레벨로 표현한 것) 형태로 반환함
+- `response.text()` - 응답을 텍스트 형태로 반환함
+- `response.json()` - 응답을 JSON 객체로 변환함
+- `response.formData()` - 응답을 `FormData` 객체 형태로 반환(`multipart/form-data` 인코딩은 다음 챕터에서 다룸)
+- `response.blob()` - 응답을 [Blob](https://javascript.info/blob)(타입이 있는 바이너리 데이터) 형태로 반환함
+- `response.arrayBuffer()` -  응답을 [ArrayBuffer](https://javascript.info/arraybuffer-binary-arrays)(바이너리 데이터를 로우 레벨로 표현한 것) 형태로 반환함
 
 지금까지 배운 `fetch` 옵션은 다음과 같다.
-- `method` -- HTTP 메서드
-- `headers` -- 요청 헤드가 담긴 객체(모든 헤더가 허용되지는 않음)
-- `body` -- `string`, `FormData`, `BufferSource`, `Blob`, `UrlSearchParams` 객체 형태로 보낼 데이터
+- `method` - HTTP 메서드
+- `headers` - 요청 헤드가 담긴 객체(모든 헤더가 허용되지는 않음)
+- `body` - `string`, `FormData`, `BufferSource`, `Blob`, `UrlSearchParams` 객체 형태로 보낼 데이터

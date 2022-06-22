@@ -30,8 +30,8 @@ try {
 
 안전한 요청은 다음의 두 가지 조건을 충족하는 말 그대로 안전한 요청이다.
 
-1. 안전한 메서드(safe method) -- GET이나 POST, HEAD를 사용한 요청
-2. 안전한 헤더(safe header) -- 다음 목록에 속하는 헤더
+1. 안전한 메서드(safe method) - GET이나 POST, HEAD를 사용한 요청
+2. 안전한 헤더(safe header) - 다음 목록에 속하는 헤더
     - `Accept`
     - `Accept-Language`
     - `Content-Language`
