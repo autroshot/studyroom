@@ -4,10 +4,10 @@ HTTP(HyperText Transfer Protocol)는 HTML 문서와 같은 리소스들을 가�
 
 HTTP Request message는 다음과 같은 형식을 가진다.
 
-<이미지>
+![HTTP Request Message Format](https://user-images.githubusercontent.com/95019875/176104240-f4a20a63-e3f5-4f72-b91b-4e7ac8d2a96b.png)
 
 HTTP Response message는 다음과 같은 형식을 가진다.
 
-<이미지>
+![HTTP Response Message Format](https://user-images.githubusercontent.com/95019875/176104273-328a648a-7db1-470e-9c05-82b41879a9f5.png)
 
 HTTP 상태 코드에 대한 자세한 내용은 [이곳](../00-Terminology/01-용어.md#HTTP 상태 코드)에서 확인할 수 있다.
