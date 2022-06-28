@@ -6,7 +6,7 @@ Hook은 클래스를 작성하지 않아도 상태와 기타 React 기능을 사
 
 이 예시는 카운터를 렌더링한다. 버튼을 클릭하면 값이 증가한다.
 
-```js
+```jsx
 import React, { useState } from 'react';
 
 function Example() {
@@ -32,7 +32,7 @@ function Example() {
 
 하나의 컴포넌트 안에서 여러 개의 상태 Hook을 사용할 수 있다.
 
-```js
+```jsx
 function ExampleWithManyStates() {
   // 복수의 상태 변수를 선언한다.
   const [age, setAge] = useState(42);
@@ -60,7 +60,7 @@ React 컴포넌트에서 네트워크 요청을 하거나, 구독을 하거나, 
 
 예시의 컴포넌트는 React가 DOM을 업데이트한 후에 문서의 제목을 설정한다.
 
-```js
+```jsx
 import React, { useState, useEffect } from 'react';
 
 function Example() {
@@ -89,7 +89,7 @@ function Example() {
 
 예시의 컴포넌트는 부작용 함수에서 친구의 접속 상태를 구독하고, 정리 단계에서 구독을 해지한다.
 
-```js
+```jsx
 import React, { useState, useEffect } from 'react';
 
 function FriendStatus(props) {
@@ -118,7 +118,7 @@ function FriendStatus(props) {
 
 `useState`와 동일하게 컴포넌트 안에서 복수의 부작용 함수를 사용할 수 있다.
 
-```js
+```jsx
 function FriendStatusWithCounter(props) {
   const [count, setCount] = useState(0);
   useEffect(() => {
@@ -158,7 +158,7 @@ Hook은 JavaScript 함수이지만 다음 두 가지 규칙을 지켜야 한다.
 
 먼저 이 로직을 커스텀 Hook, `useFriendStatus`로 추출한다.
 
-```js
+```jsx
 import React, { useState, useEffect } from 'react';
 
 function useFriendStatus(friendID) {
@@ -183,7 +183,7 @@ function useFriendStatus(friendID) {
 
 이제 이 Hook을 두 컴포넌트에서 사용할 수 있다.
 
-```js
+```jsx
 function FriendStatus(props) {
   const isOnline = useFriendStatus(props.friend.id);
 
@@ -194,7 +194,7 @@ function FriendStatus(props) {
 }
 ```
 
-```js
+```jsx
 function FriendListItem(props) {
   const isOnline = useFriendStatus(props.friend.id);
 
@@ -218,7 +218,7 @@ function FriendListItem(props) {
 
 [`useContext`](https://ko.reactjs.org/docs/hooks-reference.html#usecontext)를 이용하면 중첩 없이도 React 컨텍스트를 구독할 수 있다.
 
-```js
+```jsx
 function Example() {
   const locale = useContext(LocaleContext);
   const theme = useContext(ThemeContext);
@@ -228,7 +228,7 @@ function Example() {
 
 [`useReducer`](https://ko.reactjs.org/docs/hooks-reference.html#usereducer)을 이용하면 복잡한 컴포넌트들의 상태를 reducer로 관리할 수 있다.
 
-```js
+```jsx
 function Todos() {
   const [todos, dispatch] = useReducer(todosReducer);
   // ...

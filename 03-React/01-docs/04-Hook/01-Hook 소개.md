@@ -2,7 +2,7 @@
 
 Hook은 React 16.8에서 새로 추가되었다. Hook을 이용하면 class 없이 상태와 기타 React 기능을 사용할 수 있다.
 
-```js
+```jsx
 import React, { useState } from 'react';
 
 function Example() {
