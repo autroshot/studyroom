@@ -2,7 +2,7 @@
 
 [Hook 소개](https://github.com/autroshot/studyroom/blob/main/03-React/01-docs/02-Hook/01-Hook%20%EC%86%8C%EA%B0%9C.md#hook-%EC%86%8C%EA%B0%9C)에서 다음 예시를 봤었다.
 
-```js
+```jsx
 import React, { useState } from 'react';
 
 function Example() {
@@ -26,7 +26,7 @@ function Example() {
 
 React에서 클래스를 사용해 봤다면 아래의 코드가 익숙할 것이다.
 
-```js
+```jsx
 class Example extends React.Component {
   constructor(props) {
     super(props);
@@ -54,7 +54,7 @@ class Example extends React.Component {
 
 참고로 React의 함수 컴포넌트는 이렇게 생겼다.
 
-```js
+```jsx
 const Example = (props) => {
   // 여기서 Hook을 사용할 수 있다.
   return <div />;
@@ -63,7 +63,7 @@ const Example = (props) => {
 
 또는 이렇게 생겼다.
 
-```js
+```jsx
 function Example(props) {
   // 여기서 Hook을 사용할 수 있다.
   return <div />;
@@ -78,7 +78,7 @@ Hook은 클래스 안에서 동작하지 않는다. 그러나 클래스를 작�
 
 새로운 예시는 React에서 `useState` Hook을 가져오면서 시작한다.
 
-```js
+```jsx
 import React, { useState } from 'react';
 
 function Example() {
@@ -102,7 +102,7 @@ function Example() {
 
 클래스에서는 생성자 안의 `this.state = { count: 0 }`으로 `count` 상태를 `0`으로 초기화했다.
 
-```js
+```jsx
 class Example extends React.Component {
   constructor(props) {
     super(props);
@@ -114,7 +114,7 @@ class Example extends React.Component {
 
 함수 컴포넌트에는 `this`가 없기 때문에 `this.state`로 값을 할당하거나 읽을 수 없다. 대신 컴포넌트 안에서 `useState` Hook을 직접 호출한다.
 
-```js
+```jsx
 import React, { useState } from 'react';
 
 function Example() {
@@ -141,7 +141,7 @@ function Example() {
 
 이제 `useState` Hook이 무엇을 하는지 알았으니 예시가 잘 이해될 것이다.
 
-```js
+```jsx
 import React, { useState } from 'react';
 
 function Example() {
@@ -151,31 +151,28 @@ function Example() {
 
 `count`라는 상태 변수를 선언하고 `0`으로 설정한다. React는 상태의 현재 값을 리렌더링 간에 기억하고 최신 값을 함수에게 알려준다. 현재 `count`를 업데이트하려면 `setCount`를 호출하면 된다.
 
----
-
-:information_source: **알림**
-
-왜 `createState`가 아닌 `useState`로 이름을 지었는지 궁금할 수 있다.
-
-상태는 컴포넌트가 처음 렌더링될 때만 만들어지기 때문에 'create'는 적절하지 않다.
-
-다음 렌더링 동안 `useState`는 현재 상태를 제공한다. 그렇지 않으면 상태라는 이름을 붙일 이유가 없을 것이다.
-
-Hook의 이름이 항상 `use`로 시작하는 이유도 있다. 자세한 이유는 [Hook 규칙]()에서 알아볼 것이다.
-
----
+> :information_source: **알림**
+>
+> 왜 `createState`가 아닌 `useState`로 이름을 지었는지 궁금할 수 있다.
+>
+> 상태는 컴포넌트가 처음 렌더링될 때만 만들어지기 때문에 'create'는 적절하지 않다.
+>
+> 다음 렌더링 동안 `useState`는 현재 상태를 제공한다. 그렇지 않으면 상태라는 이름을 붙일 이유가 없을 것이다.
+>
+> Hook의 이름이 항상 `use`로 시작하는 이유도 있다. 자세한 이유는 [Hook 규칙]()에서 알아볼 것이다.
+>
 
 ## 상태 읽기
 
 클래스에서는 현재 `count`를 표시하려면 `this.state.count`을 읽는다.
 
-```js
+```jsx
   <p>You clicked {this.state.count} times</p>
 ```
 
 함수에서는 직접 `count`를 사용할 수 있다.
 
-```js
+```jsx
   <p>You clicked {count} times</p>
 ```
 
@@ -183,7 +180,7 @@ Hook의 이름이 항상 `use`로 시작하는 이유도 있다. 자세한 이�
 
 클래스에서는 `count` 상태를 업데이트하려면 `this.setState()`가 필요했다.
 
-```js
+```jsx
   <button onClick={() => this.setState({ count: this.state.count + 1 })}>
     Click me
   </button>
@@ -191,7 +188,7 @@ Hook의 이름이 항상 `use`로 시작하는 이유도 있다. 자세한 이�
 
 함수에서는 이미 `setCount`와 `count`가 있기 때문에 `this`가 필요 없다.
 
-```js
+```jsx
   <button onClick={() => setCount(count + 1)}>
     Click me
   </button>
@@ -201,7 +198,7 @@ Hook의 이름이 항상 `use`로 시작하는 이유도 있다. 자세한 이�
 
 다음 코드를 한 줄씩 살펴보며 지금까지 배운 내용을 요약해 보겠다.
 
-```js
+```jsx
 import React, { useState } from 'react'; // (1)
 
 function Example() {
@@ -230,7 +227,7 @@ function Example() {
 
 `[something, setSomething]`와 같이 상태 변수를 선언하는 것은 유용하다. 여러 개의 상태 변수를 사용할 때 쉽게 다른 이름을 붙일 수 있다.
 
-```js
+```jsx
 function ExampleWithManyStates() {
   // 복수의 상태 변수를 선언한다.
   const [age, setAge] = useState(42);
@@ -240,7 +237,7 @@ function ExampleWithManyStates() {
 
 위의 컴포넌트에는 `age`, `fruit`, `todos`라는 지역 변수가 있고 개별적인 업데이트가 가능하다.
 
-```js
+```jsx
 function handleOrangeClick() {
   // this.setState({ fruit: 'orange' })와 비슷하다.
   setFruit('orange');
@@ -249,4 +246,4 @@ function handleOrangeClick() {
 
 **여러 개의 상태 변수를 사용하지 않아도 된다.** 상태 변수는 객체나 배열도 가질 수 있으므로 연관된 데이터를 묶는 것이 여전히 가능하다. 그러나 클래스의 `this.setState`와 달리 상태 변수를 업데이트하는 것은 병합이 아니라 항상 대체해 버린다.
 
-독립적인 상태 변수를 분리하는 것에 대한 추가적인 제안은 [자주 묻는 질문]()에서 확인할 수 있다.
+독립적인 상태 변수를 분리하는 것에 대한 추가적인 제안은 [자주 묻는 질문](https://ko.reactjs.org/docs/hooks-faq.html#should-i-use-one-or-many-state-variables)에서 확인할 수 있다.
