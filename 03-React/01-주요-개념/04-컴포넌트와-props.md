@@ -59,14 +59,12 @@ root.render(element);
 3.  호출된 `Welcome`  컴포넌트는 `<h1>Hello, Sara</h1>`  요소를 반환한다.
 4.  React DOM은  `<h1>Hello, Sara</h1>`와 일치하도록 DOM을 효율적으로 업데이트한다.
 
----
-:warning: **주의: 컴포넌트의 이름은 항상 대문자로 시작한다.**
-
-React는 소문자로 시작하는 컴포넌트를 DOM 태그로 인식한다. 예를 들어  `<div />`는 HTML div 태그를 나타내지만,  `<Welcome />`은 컴포넌트를 나타내며 스코프 범위 안에  `Welcome`이 있어야 한다.
-
-이 규칙에 대한 자세한 내용은  [이곳](https://ko.reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized)에서 확인할 수 있다.
-
----
+> :warning: **주의: 컴포넌트의 이름은 항상 대문자로 시작한다.**
+>
+> React는 소문자로 시작하는 컴포넌트를 DOM 태그로 인식한다. 예를 들어  `<div />`는 HTML div 태그를 나타내지만,  `<Welcome />`은 컴포넌트를 나타내며 스코프 범위 안에  `Welcome`이 있어야 한다.
+>
+> 이 규칙에 대한 자세한 내용은  [이곳](https://ko.reactjs.org/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized)에서 확인할 수 있다.
+>
 
 ## 컴포넌트 합성하기
 컴포넌트는 자신의 출력에서 다른 컴포넌트를 참조할 수 있다. 이는 모든 세부 단계에서 동일한 추상 컴포넌트를 사용할 수 있음을 의미한다. React 앱에서는 버튼, 폼, 다이얼로그, 화면 등의 모든 것들이 흔히 컴포넌트로 표현된다.

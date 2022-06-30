@@ -137,12 +137,10 @@ const element = {
 
 이 객체를 <strong>React 요소(React element)</strong>라고 부른다. React 요소는 화면에서 보고 싶은 것에 대한 설명이다. React는 이 객체를 읽어서 DOM을 구성하고 최신 상태로 유지하는 데 사용한다.
 
----
-:information_source: **팁**
-
-ES6 및 JSX 코드가 올바르게 표시되도록 편집기에 [Babel 언어 설정](https://babeljs.io/docs/en/next/editors)을 사용하는 것을 권장한다.
-
----
+> :information_source: **팁**
+>
+> ES6 및 JSX 코드가 올바르게 표시되도록 편집기에 [Babel 언어 설정](https://babeljs.io/docs/en/next/editors)을 사용하는 것을 권장한다.
+>
 
 ### JSX의 주석
 주석은 중괄호 안에 JavaScript 주석을 넣으면 된다.
