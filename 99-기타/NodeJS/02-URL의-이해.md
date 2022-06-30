@@ -1,6 +1,6 @@
 # URL의 이해
 
-http://opentutorials.org:3000/main?id=HTML&page=12
+`http://opentutorials.org:3000/main?id=HTML&page=12`
 
 http - 프로토콜(protocol)로 통신 규칙
 
