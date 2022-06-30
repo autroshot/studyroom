@@ -8,7 +8,7 @@
 
 Next.js는 애플리케이션의 개발과 생산 단계를 위한 기능을 제공한다.
 
-- 개발 단계에서 Next.js는 개발자와 애플리케이션 구축 경험을 최적화한다. 타입스크립트 및 [ESLint ](https://nextjs.org/docs/basic-features/typescript)[통합](https://nextjs.org/docs/basic-features/eslint) , [빠른 새로고침](https://nextjs.org/docs/basic-features/fast-refresh) 등과 같은 기능을 통해 개발자 경험을 향상시킨다.
+- 개발 단계에서 Next.js는 개발자와 애플리케이션 구축 경험을 최적화한다. 타입스크립트 및 [ESLint ](https://nextjs.org/docs/basic-features/typescript)[통합](https://nextjs.org/docs/basic-features/eslint), [빠른 새로고침](https://nextjs.org/docs/basic-features/fast-refresh) 등과 같은 기능을 통해 개발자 경험을 향상시킨다.
 - 생산 단계에서 Next.js는 최종 사용자와 애플리케이션 사용 경험을 최적화한다. 코드를 변환하여 성능과 접근성을 높이는 것을 목표로 한다.
 
 환경마다 고려 사항과 목표가 다르기 때문에 애플리케이션을 개발에서 생산으로 이동하려면 해야 할 일이 많다. 예를 들어 애플리케이션 코드는 컴파일, 번들링, 축소, 코드 분할이 필요하다.
@@ -19,7 +19,7 @@ Next.js는 애플리케이션의 개발과 생산 단계를 위한 기능을 제
 
 **컴파일(Compiling)은 한 언어로 된 코드를 다른 언어 또는 해당 언어의 다른 버전으로 출력하는 과정을 의미한다.**
 
-<이미지>
+<img width="680" alt="compiling" src="https://user-images.githubusercontent.com/95019875/176668809-a5e66756-fa97-4e2e-aea9-0d0dd7e1388b.png">
 
 Next.js에서 컴파일은 코드를 편집할 때 개발 단계에서 발생한다. 그리고 상품을 위해 애플리케이션을 준비하기 위한 빌드 단계에서도 발생한다.
 
@@ -29,7 +29,7 @@ Next.js에서 컴파일은 코드를 편집할 때 개발 단계에서 발생한
 
 **축소(Minifying)는 코드의 기능을 변경하지 않고 불필요한 코드 서식 및 주석을 제거하는 과정이다.** 목표는 파일 크기를 줄여 응용 프로그램의 성능을 향상시키는 것이다.
 
-<이미지>
+<img width="680" alt="minifying" src="https://user-images.githubusercontent.com/95019875/176668832-8fe6c9c5-6a96-4344-85d0-2103afb14a68.png">
 
 Next.js에서 자바스크립트와 CSS 파일은 상품을 위해 자동으로 축소된다.
 
@@ -39,7 +39,7 @@ Next.js에서 자바스크립트와 CSS 파일은 상품을 위해 자동으로 
 
 **번들링(Bundling)은 웹 종속성을 해결하고 파일(또는 모듈)을 브라우저에 최적화된 번들로 병합(패키징)하는 과정이다.** 이를 통해 사용자가 웹 페이지를 방문할 때 요청하는 파일의 수를 줄일 수 있다.
 
-<이미지>
+<img width="680" alt="bundling" src="https://user-images.githubusercontent.com/95019875/176668851-ae743115-36a2-4faa-9f1b-9402b5312fb0.png">
 
 ## 코드 분할
 
@@ -47,7 +47,7 @@ Next.js에서 자바스크립트와 CSS 파일은 상품을 위해 자동으로 
 
 **코드 분할(Code Splitting)은 애플리케이션 번들을 각 진입점에 필요한 더 작은 청크(chunk)로 분할하는 과정이다.** 목표는 해당 페이지를 실행하는 데 필요한 코드만 로드하여 애플리케이션의 초기 로드 시간을 개선하는 것이다.
 
-<이미지>
+<img width="680" alt="code-splitting" src="https://user-images.githubusercontent.com/95019875/176668867-a7f70760-a4c1-4992-bed7-047d5546a485.png">
 
 Next.js는 코드 분할을 기본적으로 지원한다. 디렉토리 내의 각 파일 `pages/`는 빌드 단계에서 자동으로 자체 자바스크립트 번들로 코드 분할된다.
 
@@ -76,7 +76,7 @@ Next.js는 코드 분할을 기본적으로 지원한다. 디렉토리 내의 �
 
 **서버**는 앱 코드를 저장하고, 클라이언트로부터 요청을 수신하고, 일부 계산을 수행하고, 적절한 응답을 다시 보내는 데이터 센터의 컴퓨터를 의미한다.
 
-<이미지 client-server>
+<img width="680" alt="client-server" src="https://user-images.githubusercontent.com/95019875/176668910-bcc9c83d-e212-466f-a96f-4276ed7c653a.png">
 
 ## 렌더링
 
@@ -94,7 +94,7 @@ SSR과 SSG은 결과가 클라이언트로 전송되기 전에 외부 데이터�
 
 표준 React 앱에서 브라우저는 서버로부터 UI를 만드는 자바스크립트의 지시와 빈 HTML 껍데기를 받는다. 초기 렌더링 작업이 사용자의 장치에서 발생하기 때문에 이것을 CSR이라고 한다.
 
-<이미지 client-side-rendering>
+<img width="680" alt="client-side-rendering" src="https://user-images.githubusercontent.com/95019875/176668932-1474f358-20f7-4a10-a6ef-b75002a47f98.png">
 
 > **참고**
 >
@@ -106,7 +106,7 @@ SSR과 SSG은 결과가 클라이언트로 전송되기 전에 외부 데이터�
 
 사용자가 만들어진 HTML을 볼 수 있는 사전 렌더링된 앱은 다음과 같다.
 
-<이미지 pre-rendering>
+<img width="680" alt="pre-rendering" src="https://user-images.githubusercontent.com/95019875/176668940-ba6d5aac-474e-491f-a003-d2614c0e515a.png">
 
 ### SSR
 
@@ -146,7 +146,7 @@ Next.js 앱의 경우에는 앱 코드를 **오리진 서버**, **CDN(Content De
 
 CDN은 전 세계 여러 위치에 정적 콘텐츠(예: HTML 및 이미지 파일)를 저장하고 클라이언트와 원본 서버 사이에 배치된다. 새 요청이 들어오면 사용자와 가장 가까운 CDN 위치에서 캐시된 결과로 응답할 수 있다.
 
-<이미지 cdn>
+<img width="680" alt="cdn" src="https://user-images.githubusercontent.com/95019875/176668968-8273d6b8-893a-4a9c-a18e-9f6836cd2f6d.png">
 
 이렇게 하면 각 요청에 대해 계산을 수행할 필요가 없기 때문에 오리진의 부하가 줄어든다. 또한 응답이 지리적으로 더 가까운 위치에서 제공되기 때문에 사용자가 더 빠르게 작업할 수 있다.
 
