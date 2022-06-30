@@ -27,7 +27,7 @@ React는 이 두 가지 규칙을 강제하는  [`eslint-plugin-react-hooks`](ht
 npm install eslint-plugin-react-hooks --save-dev
 ```
 
-```js
+```json
 // ESLint 설정
 {
   "plugins": [
@@ -50,7 +50,7 @@ npm install eslint-plugin-react-hooks --save-dev
 
 조건부로 부작용을 실행하고 싶다면 다음과 같이 조건문을 Hook 내부에 넣을 수 있다.
 
-```js
+```jsx
   useEffect(function persistForm() {
     // 👍 첫 번째 규칙을 어기지 않는다.
     if (name !== '') {

@@ -4,7 +4,7 @@
 
 [부작용 Hook 사용하기](./04-%EB%B6%80%EC%9E%91%EC%9A%A9%20Hook%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0.md#hook%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%98%88%EC%8B%9C-1)의 친구의 온라인 여부를 표시하는 채팅 애플리케이션에서 이 컴포넌트를 살펴봤었다.
 
-```js
+```jsx
 import React, { useState, useEffect } from 'react';
 
 function FriendStatus(props) {
@@ -32,7 +32,7 @@ function FriendStatus(props) {
 
 상단의 비슷한 로직을 복사해서 `FriendListItem` 컴포넌트에 붙여넣을 수 있지만, 이상적인 방법은 아니다.
 
-```js
+```jsx
 import React, { useState, useEffect } from 'react';
 
 function FriendListItem(props) {
@@ -71,7 +71,7 @@ Hook을 이용하면 트리에 컴포넌트를 추가하지 않고도 문제를 
 
 예를 들어 다음 `useFriendStatus` 함수는 커스텀 Hook이다.
 
-```js
+```jsx
 import { useState, useEffect } from 'react';
 
 function useFriendStatus(friendID) {
@@ -100,7 +100,7 @@ React 컴포넌트와 달리 커스텀 Hook에는 특별한 것이 필요하지 
 
 `useFriendStatus` Hook의 목적은 친구의 상태를 구독하는 것이다. 따라서 `friendID`를 인수로 받고 해당 친구의 온라인 여부를 반환한다.
 
-```js
+```jsx
 function useFriendStatus(friendID) {
   const [isOnline, setIsOnline] = useState(null);
 
@@ -118,7 +118,7 @@ function useFriendStatus(friendID) {
 
 이제 이 로직을 `useFriendStatus` Hook으로 추출했으므로 다음과 같이 바로 사용할 수 있다.
 
-```js
+```jsx
 function FriendStatus(props) {
   const isOnline = useFriendStatus(props.friend.id);
 
@@ -130,7 +130,7 @@ function FriendStatus(props) {
 }
 ```
 
-```js
+```jsx
 function FriendListItem(props) {
   const isOnline = useFriendStatus(props.friend.id);
 
@@ -164,7 +164,7 @@ Hook은 함수이므로 Hook 간에도 정보를 넘겨줄 수 있다.
 
 설명을 위해 가상 채팅 예시의 다른 컴포넌트를 사용할 것이다. 이것은 지금 선택된 친구의 온라인 여부를 표시하는 채팅 메시지 수신자 선택기이다.
 
-```js
+```jsx
 const friendList = [
   { id: 1, name: 'Phoebe' },
   { id: 2, name: 'Rachel' },
@@ -214,7 +214,7 @@ function ChatRecipientPicker() {
 
 예를 들어 임기응변으로 관리되는 수많은 지역 상태가 담긴 복잡한 컴포넌트가 있다고 가정해 보겠다. `useState`는 업데이트 로직을 모으는 데에 도움이 되지 않는다. 대신 [Redux](https://redux.js.org/) reducer로 작성하는 것이 좋을 것이다.
 
-```js
+```jsx
 function todosReducer(state, action) {
   switch (action.type) {
     case 'add':
@@ -235,7 +235,7 @@ function todosReducer(state, action) {
 
 리듀서로 컴포넌트의 지역 상태를 관리하는 `useReducer` Hook을 만들 수 있다면 어떨까? 단순화된 버전을 다음과 같다.
 
-```js
+```jsx
 function useReducer(reducer, initialState) {
   const [state, setState] = useState(initialState);
 
@@ -250,7 +250,7 @@ function useReducer(reducer, initialState) {
 
 이제 컴포넌트에서 리듀서를 사용하고, 리듀서가 컴포넌트의 상태 관리를 할 수 있게 되었다.
 
-```js{2}
+```jsx
 function Todos() {
   const [todos, dispatch] = useReducer(todosReducer, []);
 

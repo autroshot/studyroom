@@ -1,17 +1,17 @@
 # 브라우저: 문서, 이벤트, 인터페이스
 브라우저 내 페이지를 다루는 방법에 대해 학습한다. 요소 추가, 요소의 사이즈와 위치를 조정하는 방법을 비롯하여 동적으로 인터페이스를 생성하는 방법, 인터페이스를 기반으로 사용자와 상호작용 하는 방법 등에 대해 배울 것이다.
 ## [01] 문서
-### 1. [브라우저 환경과 다양한 명세서](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/01-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%ED%99%98%EA%B2%BD%EA%B3%BC%20%EB%8B%A4%EC%96%91%ED%95%9C%20%EB%AA%85%EC%84%B8%EC%84%9C.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%ED%99%98%EA%B2%BD%EA%B3%BC-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%AA%85%EC%84%B8%EC%84%9C)
+### 1. [브라우저 환경과 다양한 명세서](./01-문서/01-브라우저-환경과-다양한-명세서.md)
 - 문서 객체 모델(DOM)
 - 브라우저 객체 모델(BOM)
-### 2. [DOM 트리](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/02-DOM%20%ED%8A%B8%EB%A6%AC.md#dom-%ED%8A%B8%EB%A6%AC)
-### 3. [DOM 탐색하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/03-DOM%20%ED%83%90%EC%83%89%ED%95%98%EA%B8%B0.md#dom-%ED%83%90%EC%83%89%ED%95%98%EA%B8%B0)
+### 2. [DOM 트리](./01-문서/02-DOM-트리.md)
+### 3. [DOM 탐색하기](./01-문서/03-DOM-탐색하기.md)
 - 트리 상단의 documentElement와 body
 - childNodes, firstChild, lastChild로 자식 노드 탐색하기
 - 형제와 부모 노드
 - 요소 간 이동
 - 테이블 탐색하기
-### 4. [getElement\*, querySelector\*로 요소 검색하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/04-getElement*%2C%20querySelector*%EB%A1%9C%20%EC%9A%94%EC%86%8C%20%EA%B2%80%EC%83%89%ED%95%98%EA%B8%B0.md#getelement-queryselector%EB%A1%9C-%EC%9A%94%EC%86%8C-%EA%B2%80%EC%83%89%ED%95%98%EA%B8%B0)
+### 4. [getElement\*, querySelector\*로 요소 검색하기](./01-문서/04-getElement와-querySelector로-요소-검색하기.md)
 - document.getElementById 혹은 id를 사용해 요소 검색하기
 - querySelectorAll
 - querySelector
@@ -19,7 +19,7 @@
 - closest
 - getElementsBy*
 - 살아있는 컬렉션
-### 5. [주요 노드 프로퍼티](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/05-%EC%A3%BC%EC%9A%94%20%EB%85%B8%EB%93%9C%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0.md#%EC%A3%BC%EC%9A%94-%EB%85%B8%EB%93%9C-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
+### 5. [주요 노드 프로퍼티](./01-문서/05-주요-노드-프로퍼티.md)
 - DOM 노드 클래스
 - ‘nodeType’ 프로퍼티
 - nodeName과 tagName으로 태그 이름 확인하기
@@ -29,13 +29,13 @@
 - textContent로 순수한 텍스트만
 - hidden 프로퍼티
 - 기타 프로퍼티
-### 6. [속성과 프로퍼티](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/06-%EC%86%8D%EC%84%B1%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0.md#%EC%86%8D%EC%84%B1%EA%B3%BC-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0)
+### 6. [속성과 프로퍼티](./01-문서/06-속성과-프로퍼티.md)
 - DOM 프로퍼티
 - HTML 속성
 - 프로퍼티-속성 동기화
 - DOM 프로퍼티 값의 타입
 - 비표준 속성, dataset
-### 7. [문서 수정하기](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/07-%EB%AC%B8%EC%84%9C%20%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0.md#%EB%AC%B8%EC%84%9C-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0)
+### 7. [문서 수정하기](./01-문서/07-문서-수정하기.md)
 - 요소 생성하기
 - 삽입 메서드
 - insertAdjacentHTML/Text/Element
@@ -44,13 +44,13 @@
 - DocumentFragment
 - 구식 삽입·삭제 메서드
 - 'document.write’에 대한 첨언
-### 8. [스타일과 클래스](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/08-%EC%8A%A4%ED%83%80%EC%9D%BC%EA%B3%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4.md#%EC%8A%A4%ED%83%80%EC%9D%BC%EA%B3%BC-%ED%81%B4%EB%9E%98%EC%8A%A4)
+### 8. [스타일과 클래스](./01-문서/08-스타일과-클래스.md)
 - className과 classList
 - 요소의 스타일
 - style 프로퍼티 재지정하기
 - 단위에 주의하기
 - getComputedStyle로 계산된 스타일 얻기
-### 9. [요소 사이즈와 스크롤](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/09-%EC%9A%94%EC%86%8C%20%EC%82%AC%EC%9D%B4%EC%A6%88%EC%99%80%20%EC%8A%A4%ED%81%AC%EB%A1%A4.md#%EC%9A%94%EC%86%8C-%EC%82%AC%EC%9D%B4%EC%A6%88%EC%99%80-%EC%8A%A4%ED%81%AC%EB%A1%A4)
+### 9. [요소 사이즈와 스크롤](./01-문서/09-요소-사이즈와-스크롤.md)
 - 기하 프로퍼티
 - offsetParent와 offsetLeft, offsetTop
 - offsetWidth와 offsetHeight
@@ -59,35 +59,35 @@
 - scrollWidth와 scrollHeight
 - scrollLeft와 scrollTop
 - CSS에서 너비와 높이를 얻지 말아야 한다
-### 10. [브라우저 창 사이즈와 스크롤](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/10-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%B0%BD%20%EC%82%AC%EC%9D%B4%EC%A6%88%EC%99%80%20%EC%8A%A4%ED%81%AC%EB%A1%A4.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%B0%BD-%EC%82%AC%EC%9D%B4%EC%A6%88%EC%99%80-%EC%8A%A4%ED%81%AC%EB%A1%A4)
+### 10. [브라우저 창 사이즈와 스크롤](./01-문서/10-브라우저-창-사이즈와-스크롤.md)
 - 브라우저 창의 너비와 높이
 - 문서의 너비와 높이
 - 스크롤 정보 얻기
 - scrollTo, scrollBy로 스크롤 상태 변경하기
 - scrollIntoView
 - 스크롤 막기
-### 11. [좌표](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/01-%EB%AC%B8%EC%84%9C/11-%EC%A2%8C%ED%91%9C.md#%EC%A2%8C%ED%91%9C)
+### 11. [좌표](./01-문서/11-좌표.md)
 - getBoundingClientRect로 요소 좌표 얻기
 - elementFromPoint(x, y)
 - 요소를 창 내 특정 좌표에 고정하기
 - 문서 기준 좌표
 
 ## [02] 이벤트 기초
-### 1. [브라우저 이벤트 소개](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/02-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EC%B4%88/01-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%86%8C%EA%B0%9C.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%86%8C%EA%B0%9C)
+### 1. [브라우저 이벤트 소개](./02-이벤트-기초/01-브라우저-이벤트-소개.md)
 - 이벤트 핸들러
 - this로 요소에 접근하기
 - 자주 하는 실수
 - addEventListener
 - 이벤트 객체
 - 객체 형태의 핸들러와 handleEvent
-### 2. [버블링과 캡처링](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/02-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EC%B4%88/02-%EB%B2%84%EB%B8%94%EB%A7%81%EA%B3%BC%20%EC%BA%A1%EC%B2%98%EB%A7%81.md#%EB%B2%84%EB%B8%94%EB%A7%81%EA%B3%BC-%EC%BA%A1%EC%B2%98%EB%A7%81)
+### 2. [버블링과 캡처링](./02-이벤트-기초/02-버블링과-캡처링.md)
 - event.target
-### 3. [이벤트 위임](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/02-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EC%B4%88/03-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%9C%84%EC%9E%84)
+### 3. [이벤트 위임](./02-이벤트-기초/03-이벤트-위임.md)
 - '행동' 패턴
-### 4. [브라우저 기본 동작](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/02-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EC%B4%88/04-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EA%B8%B0%EB%B3%B8%20%EB%8F%99%EC%9E%91.md#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EA%B8%B0%EB%B3%B8-%EB%8F%99%EC%9E%91)
+### 4. [브라우저 기본 동작](./02-이벤트-기초/04-브라우저-기본-동작.md)
 - addEventListener의 ‘passive’ 옵션
 - event.defaultPrevented
-### 5. [커스텀 이벤트 디스패치](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/02-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B8%B0%EC%B4%88/05-%EC%BB%A4%EC%8A%A4%ED%85%80%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B9%98.md#%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B9%98)
+### 5. [커스텀 이벤트 디스패치](./02-이벤트-기초/05-커스텀-이벤트-디스패치.md)
 - Event 생성자
 - dispatchEvent
 - MouseEvent, KeyboardEvent를 비롯한 다양한 UI 이벤트
@@ -99,20 +99,20 @@
 - 개요: 마우스, 드래그 앤 드롭, 포인터(모던 마우스), 키보드, 스크롤링 관련 이벤트에 대해 배운다.
 
 ## [04] 폼과 폼 조작
-### 1. [폼 프로퍼티와 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/04-%ED%8F%BC%EA%B3%BC%20%ED%8F%BC%20%EC%A1%B0%EC%9E%91/01-%ED%8F%BC%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80%20%EB%A9%94%EC%84%9C%EB%93%9C.md#%ED%8F%BC-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C)
+### 1. [폼 프로퍼티와 메서드](./04-폼과-폼-조작/01-폼-프로퍼티와-메서드.md)
 - 폼과 요소 탐색하기
 - element.form으로 역참조 하기
 - 폼 요소
-### 2. [focus와 blur](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/04-%ED%8F%BC%EA%B3%BC%20%ED%8F%BC%20%EC%A1%B0%EC%9E%91/02-focus%EC%99%80%20blur.md#focus%EC%99%80-blur)
+### 2. [focus와 blur](./04-폼과-폼-조작/02-focus와-blur.md)
 - tabindex를 사용해서 모든 요소 포커스 하기
 - focusin과 focusout을 사용해 이벤트 위임하기
-### 3. [이벤트: change, input, cut, copy, paste](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/04-%ED%8F%BC%EA%B3%BC%20%ED%8F%BC%20%EC%A1%B0%EC%9E%91/03-%EC%9D%B4%EB%B2%A4%ED%8A%B8:%20change%2C%20input%2C%20cut%2C%20copy%2C%20paste.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-change-input-cut-copy-paste)
-### 4. [submit 이벤트와 메서드](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/04-%ED%8F%BC%EA%B3%BC%20%ED%8F%BC%20%EC%A1%B0%EC%9E%91/04-submit%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%99%80%20%EB%A9%94%EC%84%9C%EB%93%9C.md#submit-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C)
+### 3. [이벤트: change, input, cut, copy, paste](./04-폼과-폼-조작/03-이벤트-change-input-cut-copy-paste.md)
+### 4. [submit 이벤트와 메서드](./04-폼과-폼-조작/04-submit-이벤트와-메서드.md)
 
 ## [05] 문서와 리소스 로딩
-### 1. [페이지 관련 이벤트: DOMContentLoaded, load, beforeunload, unload](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/05-%EB%AC%B8%EC%84%9C%EC%99%80%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EB%A1%9C%EB%94%A9/01-DOMContentLoaded%2C%20load%2C%20beforeunload%2C%20unload%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md#%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B4%80%EB%A0%A8-%EC%9D%B4%EB%B2%A4%ED%8A%B8-domcontentloaded-load-beforeunload-unload)
+### 1. [페이지 관련 이벤트: DOMContentLoaded, load, beforeunload, unload](./05-문서와-리소스-로딩/01-DOMContentLoaded-load-beforeunload-unload-이벤트.md)
 - readyState
-### 2. [defer, async 스크립트](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/05-%EB%AC%B8%EC%84%9C%EC%99%80%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EB%A1%9C%EB%94%A9/02-defer%2C%20async%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md#defer-async-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8)
+### 2. [defer, async 스크립트](./05-문서와-리소스-로딩/02-defer-async-스크립트.md)
 - 동적 스크립트
 ### 3. [Resource loading: onload and onerror](https://ko.javascript.info/onload-onerror)
 - 미번역
@@ -126,4 +126,4 @@
 - 미번역
 - 개요: 마우스 드래그나 키보드에 의해 문서에서 선택된 텍스트를 다룰 때 사용한다.
 
-### 3. [이벤트 루프: 마이크로태스크와 매크로태스크](https://github.com/autroshot/studyroom/blob/main/01-javascript/02-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80:%20%EB%AC%B8%EC%84%9C%2C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/06-%EA%B8%B0%ED%83%80/03-%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84:%20%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC%EC%99%80%20%EB%A7%A4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC.md#%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC%EC%99%80-%EB%A7%A4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC)
+### 3. [이벤트 루프: 마이크로태스크와 매크로태스크](./06-기타/03-이벤트-루프-마이크로태스크-매크로태스크.md)
