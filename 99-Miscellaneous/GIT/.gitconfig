@@ -1,0 +1,33 @@
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+[user]
+    name = autroshot
+    email = autroshot@gamil.com
+[credential "helperselector"]
+    selected = <no helper>
+[mergetool]
+	prompt = false
+	keepBackup = false
+    keepTemporaries = false
+[merge]
+	tool = winmerge
+[mergetool "winmerge"]
+    name = WinMerge
+    trustExitCode = true
+	cmd = \"C:\\Program Files\\WinMerge\\WinMergeU.exe\" -e -u -dl \"Base\" -dr \"Mine\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[diff]
+    tool = winmerge
+[difftool "winmerge"]
+    name = WinMerge
+    trustExitCode = true
+    cmd = \"C:\\Program Files\\WinMerge\\WinMergeU.exe\" -u -e \"$LOCAL\" \"$REMOTE\"
+[core]
+	editor = notepad.exe
+	autocrlf = true
+    quotepath = false
+[alias]
+    s = status
+    l = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
