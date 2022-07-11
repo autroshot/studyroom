@@ -9,6 +9,12 @@ switch (x) {
   case 'value2':  // if (x === 'value2')
     ...
     [break]
+  
+  // 여러 개의 case문 묶기
+  case 'value3':
+  case 'value4':
+    ...
+    [break]
     
   default:
     ...

@@ -91,7 +91,6 @@ nav ul li {
 |table-caption|`<caption>`와 같은 효과|
 |list-item|`<li>`와 같은 효과|
 
-<br></br>
 # 2. 테두리 관련 속성들
 ## border-style 속성 - 테두리 스타일 지정하기
 |속성 값|설명|
@@ -205,7 +204,6 @@ box-shadow: none | <그림자 값> [, <그림자 값>];
 box-shadow: 20px 20px 50px 15px grey;
 ```
 
-<br></br>
 # 3. 여백을 조절하는 속성들
 ## margin 속성 - 요소 주변 여백 설정하기
 ```css
