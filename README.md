@@ -1,5 +1,5 @@
-# studyroom
-프로그래밍 공부 내용을 정리한 공간입니다. 내용의 출처는 다음과 같습니다.
+# StudyRoom
+프로그래밍 공부 내용을 정리한 공간입니다.
 
 ## 출처
 - JavaScript - [모던 JavaScript 튜토리얼](https://ko.javascript.info/)
