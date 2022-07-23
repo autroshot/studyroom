@@ -13,7 +13,6 @@
   - [ ] bisect
   - [ ] patch
   - [ ] reflog
-- Emmet
 - 코딩 스타일 - Airbnb
 - 정규표현식 - 책
 - 생활 코딩
