@@ -15,3 +15,5 @@
   - GIT - [생활코딩](https://opentutorials.org/course/3837)
   - Node.js - [생활코딩](https://opentutorials.org/course/3332)
   - 리팩터링 - 리팩터링 2판: 코드 구조를 체계적으로 개선하여 효율적인 리팩터링 구현하기, 마틴 파울러, 한빛미디어
+  - 정규 표현식 - 손에 잡히는 10분 정규 표현식, 벤 포터, 인사이트
+
