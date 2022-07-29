@@ -10,7 +10,7 @@ export async function getServerSideProps(context) {
 }
 ```
 
-> 렌더링 방식에 관계없이 모든 `props`는 페이지 컴포넌트로 전달되고 초기 HTML의 클라이언트 측에서 볼 수 있다. 이것은 페이지가 올바르게 수화되도록 하기 위한 것이다. 클라이언트에 있으면 안 되는 민감한 정보는 `props`로 전달하면 안 된다.
+> 렌더링 방식에 관계없이 모든 `props`는 페이지 컴포넌트로 전달되고 초기 HTML의 클라이언트 측에서 볼 수 있다. 이것은 페이지의 올바르게 수화를 위한 것이다. 클라이언트에 있으면 안 되는 민감한 정보는 `props`로 전달하면 안 된다.
 
 ## getServerSideProps는 언제 실행될까
 
@@ -25,11 +25,11 @@ export async function getServerSideProps(context) {
 
 `getServerSideProps`는 페이지에서만 내보낼 수 있다. 페이지가 아닌 파일에서는 내보낼 수 없다.
 
-`getServerSideProps`를 독립된 함수로 내보내야 한다는 점을 유의해야 한다 . 페이지 컴포넌트의 프로퍼티로 `getServerSideProps`을 추가하면 작동하지 않는다.
+`getServerSideProps`를 독립된 함수로 내보내야 한다는 점을 유의해야 한다. `getServerSideProps`를 페이지 컴포넌트의 프로퍼티로 추가하면 작동하지 않는다.
 
-[`getServerSideProps`API 레퍼런스](https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props)는 `getServerSideProps`에서 사용할 수 있는 모든 매개변수와 props를 다룬다.
+[`getServerSideProps` API 레퍼런스](https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props)는 `getServerSideProps`에서 사용할 수 있는 모든 매개변수와 props를 다룬다.
 
-## getServerSideProps는 언제 사용해야 할까?
+## getServerSideProps는 언제 사용해야 할까
 
 요청 타임에서 데이터를 가져와야 하는 페이지를 렌더링해야 하는 경우에만 `getServerSideProps`를 사용한다. 이는 요청의 데이터나 프로퍼티의 근본적 특성 때문일 수 있다. 그 예로는 `authorization` 헤더 또는 지리적 위치가 있다. `getServerSideProps`를 사용하는 페이지는 요청 타임에서 서버 측에서 렌더링되며 [캐시 제어 헤더가 설정된](https://nextjs.org/docs/going-to-production#caching) 경우에만 캐시된다.
 
