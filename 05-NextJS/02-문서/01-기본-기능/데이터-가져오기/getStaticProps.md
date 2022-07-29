@@ -16,10 +16,10 @@ export async function getStaticProps(context) {
 
 다음의 경우에 `getStaticProps`을 사용해야 한다.
 
-- 페이지를 렌더링하는 데 필요한 데이터가 사용자의 요청에 앞서 빌드 타임에서 얻을 수 있다.
-- 데이터를 헤드리스 CMS에서 가져온다.
-- 페이지는 SEO를 위해 사전 렌더링되어야 하며 매우 빨라야 한다. `getStaticProps`는 `HTML`과 `JSON`파일을 생성하며, 둘 다 성능을 위해 CDN에 캐시될 수 있다.
-- 데이터가 공개적으로 캐시될 수 있다(사용자 테이터가 아님). 이 조건은 미들웨어를 사용하여 경로를 다시 작성하는 특정 상황에서 우회가 가능하다.
+- 페이지를 렌더링하는 데 필요한 데이터가 사용자의 요청에 앞서 빌드 타임에서 얻을 수 있음
+- 데이터를 헤드리스 CMS에서 가져옴
+- 페이지는 SEO를 위해 사전 렌더링되어야 하며 매우 빨라야 함. `getStaticProps`는 `HTML`과 `JSON`파일을 생성하며, 둘 다 성능을 위해 CDN에 캐시될 수 있음
+- 데이터가 공개적으로 캐시될 수 있음(사용자 테이터가 아님). 이 조건은 미들웨어를 사용하여 경로를 다시 작성하는 특정 상황에서 우회가 가능함
 
 ## getStaticProps는 언제 실행될까
 
@@ -130,7 +130,7 @@ JSON 파일은 [`next/link`](https://nextjs.org/docs/api-reference/next/link)이
 
 ## 개발 중에는 모든 요청에 대해 실행된다
 
-개발(`next dev`)에서는 `getStaticProps`가 모든 요청마다 호출된다.
+개발 중(`next dev`)에는 `getStaticProps`가 모든 요청마다 호출된다.
 
 ## 미리보기 모드
 
