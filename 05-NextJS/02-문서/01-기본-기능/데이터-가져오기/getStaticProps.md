@@ -75,15 +75,15 @@ export default Blog
 
 `getStaticProps`는 서버 측에서만 실행되므로 클라이언트 측에서는 실행되지 않는다. 브라우저용 JS 번들에도 포함되지 않으므로 브라우저로 보내지 않고 직접 데이터베이스 쿼리를 작성할 수 있다.
 
-즉, `getStaticProps`에서 외부 소스에서 데이터를 가져오는 API 라우트를 사용하는 대신 `getStaticProps`에 직접 서버 측 코드를 작성할 수 있다.
+즉, `getStaticProps`에서 외부 소스에서 데이터를 가져오는 API 경로를 사용하는 대신 `getStaticProps`에 직접 서버 측 코드를 작성할 수 있다.
 
-다음 예시에서 API 라우트는 CMS에서 일부 데이터를 가져오는 데 사용된다. 그러면 해당 API 라우트가 `getStaticProps`에서 직접 호출된다. 이 방식은 추가적인 호출이 발생하여 성능이 저하된다. 대신 CMS에서 데이터를 가져오는 논리를 `lib/` 디렉토리에서 `getStaticProps`에 공유할 수 있다.
+다음 예시에서 API 경로는 CMS에서 일부 데이터를 가져오는 데 사용된다. 그러면 해당 API 경로가 `getStaticProps`에서 직접 호출된다. 이 방식은 추가적인 호출이 발생하여 성능이 저하된다. 대신 CMS에서 데이터를 가져오는 논리를 `lib/` 디렉토리에서 `getStaticProps`에 공유할 수 있다.
 
 ```jsx
 // lib/load-posts.js
 
 // 다음 함수는 `lib/` 디렉토리에서 
-// getStaticProps와 API 라우트에 공유된다.
+// getStaticProps와 API 경로에 공유된다.
 export async function loadPosts() {
   // posts를 얻기 위해 외부 API 엔드포인트를 호출한다.
   const res = await fetch('https://.../posts/')
@@ -97,7 +97,7 @@ import { loadPosts } from '../lib/load-posts'
 
 // 이 함수는 서버 측에서만 실행된다.
 export async function getStaticProps() {
-  // `/api` 라우트를 가져오는 대신 getStaticProps에서 직접
+  // `/api` 경로를 가져오는 대신 getStaticProps에서 직접
   // 동일한 함수를 호출할 수 있다.
   const posts = await loadPosts()
 
@@ -106,7 +106,7 @@ export async function getStaticProps() {
 }
 ```
 
-또는 데이터를 가져오기를 위해 API 라우트를 사용하는 대신, [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) API를 `getStaticProps`에서 직접 사용하는 것도 가능하다.
+또는 데이터를 가져오기를 위해 API 경로를 사용하는 대신, [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) API를 `getStaticProps`에서 직접 사용하는 것도 가능하다.
 
 Next.js가 클라이언트 측 번들에서 제거하는 것을 확인하려면 [next-code-elimination 도구](https://next-code-elimination.vercel.app/)를 사용할 수 있다.
 
