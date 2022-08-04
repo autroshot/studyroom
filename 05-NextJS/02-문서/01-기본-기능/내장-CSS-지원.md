@@ -176,7 +176,7 @@ $primary-color: #64ff00;
 }
 ```
 
-```js
+```tsx
 // pages/_app.js
 import variables from '../styles/variables.module.scss'
 
