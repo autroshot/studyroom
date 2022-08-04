@@ -35,13 +35,13 @@ export async function getServerSideProps(context) {
 
 요청에서 데이터를 렌더링할 필요가 없는 경우에는 [클라이언트 측](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props#fetching-data-on-the-client-side)이나 [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)에서 데이터를 가져오는 것을 고려할 필요가 있다.
 
-### getServerSideProps 또는 API 경로
+### getServerSideProps 또는 API 라우트
 
-서버에서 데이터를 가져올 때 [API 경로](https://nextjs.org/docs/api-routes/introduction)를 사용하고 싶다면 `getServerSideProps`에서 해당 API 경로를 호출하면 된다. 하지만 이는 `getServerSideProps`와 서버에서 실행되는 API 경로를 둘 다 요청하는 불필요하고 비효율적인 접근 방식이다.
+서버에서 데이터를 가져올 때 [API 라우트](https://nextjs.org/docs/api-routes/introduction)를 사용하고 싶다면 `getServerSideProps`에서 해당 API 라우트를 호출하면 된다. 하지만 이는 `getServerSideProps`와 서버에서 실행되는 API 라우트를 둘 다 요청하는 불필요하고 비효율적인 접근 방식이다.
 
-그 이유는 다음과 같다. API 경로는 CMS에서 일부 데이터를 가져오는 데 사용된다. 그러면 해당 API 경로가 `getServerSideProps`에서 직접 호출된다. 이 방식은 추가 호출이 발생하여 성능이 저하된다.
+그 이유는 다음과 같다. API 라우트는 CMS에서 일부 데이터를 가져오는 데 사용된다. 그러면 해당 API 라우트가 `getServerSideProps`에서 직접 호출된다. 이 방식은 추가 호출이 발생하여 성능이 저하된다.
 
-대신 API 경로 내부에서 사용되는 로직을 `getServerSideProps`로 직접 옮기는 것이 좋다. 이는 `getServerSideProps` 내부에서 직접 CMS, 데이터베이스, 기타 API를 호출하는 것을 의미할 수 있다.
+대신 API 라우트 내부에서 사용되는 로직을 `getServerSideProps`로 직접 옮기는 것이 좋다. 이는 `getServerSideProps` 내부에서 직접 CMS, 데이터베이스, 기타 API를 호출하는 것을 의미할 수 있다.
 
 ## 클라이언트 측에서 데이터 가져오기
 

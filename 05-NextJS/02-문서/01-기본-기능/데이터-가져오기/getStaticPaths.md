@@ -1,8 +1,8 @@
 # getStaticPaths
 
-페이지에 [동적 경로](https://nextjs.org/docs/routing/dynamic-routes)가 있고 `getStaticProps`를 사용하는 경우 정적으로 생성할 경로 목록을 정의해야 한다.
+페이지에 [동적 라우트](https://nextjs.org/docs/routing/dynamic-routes)가 있고 `getStaticProps`를 사용하는 경우 정적으로 생성할 경로 목록을 정의해야 한다.
 
-동적 경로를 사용하는 페이지에서 `getStaticPaths`(정적 사이트 생성)라는 함수를 내보낼 때, Next.js는 `getStaticPaths`에서 지정한 모든 경로를 정적으로 미리 렌더링한다.
+동적 라우트를 사용하는 페이지에서 `getStaticPaths`(정적 사이트 생성)라는 함수를 내보낼 때, Next.js는 `getStaticPaths`에서 지정한 모든 경로를 정적으로 미리 렌더링한다.
 
 ```jsx
 // pages/posts/[id].js
@@ -32,7 +32,7 @@ export default function Post({ post }) {
 
 ## getStaticPaths는 언제 사용해야 할까
 
-`getStaticPaths`는 동적 경로와 다음을 사용하는 페이지를 정적으로 사전 렌더링하는 경우에 사용해야 한다.
+`getStaticPaths`는 동적 라우트와 다음을 사용하는 페이지를 정적으로 사전 렌더링하는 경우에 사용해야 한다.
 
 - 데이터를 헤드리스 CMS에서 가져옴
 - 데이터를 데이터베이스에서 가져옴
@@ -54,7 +54,7 @@ export default function Post({ post }) {
 
 - `getStaticPaths`는 반드시 `getStaticProps`와 함께 사용해야 함
 - `getStaticPaths`는 [`getServerSideProps`](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props)와 함께 사용할 수 없음
-- `getStaticProps`도 사용하는 [동적 경로](https://nextjs.org/docs/routing/dynamic-routes)에서 `getStaticPaths`를 내보낼 수 있음
+- `getStaticProps`도 사용하는 [동적 라우트](https://nextjs.org/docs/routing/dynamic-routes)에서 `getStaticPaths`를 내보낼 수 있음
 - 페이지가 아닌 파일(예: `components` 폴더)에서 `getStaticPaths`를 내보낼 수 없음
 - `getStaticPaths`를 페이지 컴포넌트의 프로퍼티가 아닌 독립된 함수로 내보내야 함
 
