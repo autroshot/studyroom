@@ -22,4 +22,8 @@
 - Next.js
   - [ ] 환경 변수
   - [ ] 인증
-  - [ ] 폼 만들기
+  - [x] 폼 만들기
+  - [ ] Absolute Imports and Module path aliases
+
+- 플래닛스케일
+- 프리즈마
