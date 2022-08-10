@@ -33,7 +33,7 @@ export default function MyApp({ Component, pageProps }) {
 
 개발 단계에서 스타일시트를 이런 식으로 표현하면 스타일을 편집할 때 즉시 다시 로드할 수 있다. 즉, 앱의 상태를 최신으로 유지할 수 있다.
 
-생산에서 모든 CSS 파일은 자동으로 하나의 축소된 `.css` 파일로 연결된다.
+프로덕션에서 모든 CSS 파일은 자동으로 하나의 축소된 `.css` 파일로 연결된다.
 
 ### node_modules에서 스타일 가져오기
 
@@ -125,7 +125,7 @@ export function Button() {
 
 CSS 모듈은 선택적 기능으로 `.module.css` 확장자가 있는 파일에만 적용된다. 일반적인 `<link>` 스타일시트와 전역 CSS 파일은 계속 지원된다.
 
-생산에서 모든 CSS 모듈 파일은 자동으로 축소 및 코드 분할된 `.css` 파일로 연결된다. 이러한 `.css` 파일은 앱의 핫 실행 경로를 나타내며 앱이 그려질 수 있는 최소한의 CSS가 로드되게 한다.
+프로덕션에서 모든 CSS 모듈 파일은 자동으로 축소 및 코드 분할된 `.css` 파일로 연결된다. 이러한 `.css` 파일은 앱의 핫 실행 경로를 나타내며 앱이 그려질 수 있는 최소한의 CSS가 로드되게 한다.
 
 ## Sass 지원
 
@@ -193,5 +193,5 @@ export default function MyApp({ Component, pageProps }) {
 
 ### 자바스크립트를 비활성화해도 CSS가 작동할까
 
-그렇다. 자바스크립트를 비활성화해도 CSS가 생산 빌드( `next start`)에서 여전히 로드된다. 하지만 개발 중에 [빠른 새로고침](https://nextjs.org/blog/next-9-4#fast-refresh) 기능을 사용하려면 자바스크립트 활성화가 필요하다.
+그렇다. 자바스크립트를 비활성화해도 CSS가 프로덕션 빌드( `next start`)에서 여전히 로드된다. 하지만 개발 중에 [빠른 새로고침](https://nextjs.org/blog/next-9-4#fast-refresh) 기능을 사용하려면 자바스크립트 활성화가 필요하다.
 

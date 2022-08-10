@@ -42,7 +42,7 @@ export default function Post({ post }) {
 
 ## getStaticPaths는 언제 실행될까
 
-`getStaticPaths`는 생산에서 빌드하는 동안에만 실행되며 런타임에는 호출되지 않는다. 이 [도구](https://next-code-elimination.vercel.app/)를 사용하여 `getStaticPaths` 내부에 작성된 코드가 클라이언트 측 번들에서 제거되었는지 확인할 수 있다 .
+`getStaticPaths`는 프로덕션에서 빌드하는 동안에만 실행되며 런타임에는 호출되지 않는다. 이 [도구](https://next-code-elimination.vercel.app/)를 사용하여 `getStaticPaths` 내부에 작성된 코드가 클라이언트 측 번들에서 제거되었는지 확인할 수 있다 .
 
 ### getStaticProps는 getStaticPaths와 관련하여 어떻게 실행될까
 
@@ -66,7 +66,7 @@ export default function Post({ post }) {
 
 `getStaticProps`를 사용하면 [`fallback`](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-blocking)을 사용하는 주문형 대신 빌드 중에 어떤 페이지를 생성할지 제어할 수 있다. 빌드 중에 많은 페이지를 생성하면 빌드가 느려진다.
 
-빈 배열로 된 `paths`를 반환하여 주문형으로 모든 페이지 생성을 연기할 수 있다. 이는 Next.js 앱을 여러 환경에 배포할 때 특히 유용할 수 있다. 예를 들어 미리 보기(생산 빌드는 제외)를 위해 주문형으로 모든 페이지를 생성하여 빌드 속도를 높일 수 있다. 이것은 수백에서 수천 개의 정적 페이지가 있는 사이트에 유용하다.
+빈 배열로 된 `paths`를 반환하여 주문형으로 모든 페이지 생성을 연기할 수 있다. 이는 Next.js 앱을 여러 환경에 배포할 때 특히 유용할 수 있다. 예를 들어 미리 보기(프로덕션 빌드는 제외)를 위해 주문형으로 모든 페이지를 생성하여 빌드 속도를 높일 수 있다. 이것은 수백에서 수천 개의 정적 페이지가 있는 사이트에 유용하다.
 
 ```jsx
 // pages/posts/[id].js
@@ -87,7 +87,7 @@ export async function getStaticPaths() {
   const posts = await res.json()
 
   // posts에 기반해 사전 렌더링하고 싶은 paths을 얻는다.
-  // 생산 환경에서는 모든 페이지를 사전 렌더링한다.
+  // 프로덕션 환경에서는 모든 페이지를 사전 렌더링한다.
   // 빌드는 느려지고 첫 페이지 로딩이 빨라진다.
   const paths = posts.map((post) => ({
     params: { id: post.id },
