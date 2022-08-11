@@ -2,7 +2,7 @@
 
 REST API를 구축할 때 Prisma Client를 경로 컨트롤러 내에서 사용하여 데이터베이스 쿼리를 보낼 수 있다.
 
-<이미지>
+![REST API](https://user-images.githubusercontent.com/95019875/184155544-ef4cedf6-c6c8-4dbe-b97e-070c99505c97.png)
 
 ## 지원되는 라이브러리
 
