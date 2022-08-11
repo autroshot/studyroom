@@ -196,3 +196,76 @@ Prisma는 다음과 같은 추가 이점과 함께 Data Mapper 패턴을 구현�
 - 앱 객체와 데이터베이스 스키마 간의 동기화 문제를 제거
 - 데이터베이스 마이그레이션은 Prisma 스키마에서 파생되었기 때문에 일급 시민임
 
+### 프리즈마 스키마
+
+Prisma의 Data Mapper 패턴 구현의 중심에는 Prisma 스키마가 있다. 이는 다음 책임에 대한 단일 정보 소스이다.
+
+- Prisma가 데이터베이스를 연결하는 방법을 설정
+- Prisma Client 생성 – 앱 코드에서 사용하기 위한 타입 안전 ORM
+- Prisma Migrate로 데이터베이스 스키마 생성 및 개선
+- 앱 객체와 데이터베이스 열 간의 매핑을 정의
+
+Prisma의 모델은 액티브 레코드 ORM과 의미가 조금 다르다. Prisma에서 모델은 Prisma Client의 속성에 대한 열 간의 매핑, 관계, 테이블을 설명하는 추상 엔티티로 Prisma 스키마에 정의된다.
+
+예를 들어 블로그에 대한 Prisma 스키마는 다음과 같다.
+
+```tsx
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String? @map("post_content")
+  published Boolean @default(false)
+  author    User?   @relation(fields: [authorId], references: [id])
+  authorId  Int?
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  posts Post[]
+}
+```
+
+위의 예시를 분석하면 다음과 같다.
+
+- `datasource` 블록은 데이터베이스에 대한 연결을 정의한다.
+- `generator` 블록은 Prisma에게 타입스크립트 및 Node.js용 클라이언트를 생성하도록 지시한다 .
+- `Post`와 `User` 모델은 데이터베이스 테이블에 매핑된다.
+- 두 모델은 각 `User`가 많은 관련 `Post`를 가질 수 있는 1-n 관계를 갖는다.
+- 모델의 각 필드에는 타입이 있다. 예를 들어 `id`는 `Int` 타입을 갖는다.
+- 필드에는 다음을 정의하는 필드 속성이 포함될 수 있다.
+  - `@id` 속성이 있는 주 키
+  - `@unique` 속성이 있는 고유 키
+  - `@default` 속성이 있는 기본값
+  - `@map` 속성이 있는 테이블 열과 Prisma Client 필드 간의 매핑. 예를 들어 `content` 필드(Prisma Client에서 액세스 가능)가 데이터베이스의 `post_content` 열에 매핑된다.
+
+`User`-`Post` 관계를 시각화한 다이어그램은 다음과 같다.
+
+<이미지>
+
+Prisma 수준에서 `User`-`Post` 관계는 다음으로 구성된다.
+
+- `@relation` 속성에서 참조하는 스칼라 `authorId` 필드이다. 이 필드는 데이터베이스 테이블에 존재한다. `Post`와 `User`를 연결하는 외래 키이다.
+- 두 개의 관계 필드 - `author`와 `posts`는 데이터베이스 테이블에 **존재하지 않는다**. 관계 필드는 Prisma 수준에서 모델 간의 연결을 정의하고 Prisma 스키마와 생성된 Prisma Client에만 존재하며 관계에 액세스하는 데 사용된다.
+
+Prisma 스키마의 선언적 특성은 간결하며 Prisma Client에서 데이터베이스 스키마와 해당 표현을 정의할 수 있다.
+
+### 프리즈마 워크플로우
+
+Prisma의 워크플로는 기존 ORM과 약간 다르다. 새로운 애플리케이션을 처음부터 구축하거나 점진적으로 채택할 때 Prisma를 사용할 수 있다.
+
+- 신규 애플리케이션(그린필드) - 아직 데이터베이스 스키마가 없는 프로젝트는 Prisma Migrate를 사용하여 데이터베이스 스키마를 생성할 수 있다.
+- 기존 애플리케이션(브라운필드) - 이미 데이터베이스 스키마가 있는 프로젝트를 Prisma에서 [분석](https://www.prisma.io/docs/concepts/components/introspection)하여 Prisma 스키마와 Prisma Client를 생성할 수 있다. 이 유스 케이스는 기존 마이그레이션 도구와 함께 작동하며 점진적 채택에 유용하다. 마이그레이션 도구로 Prisma Migrate로 전환하는 것이 가능하다. 그러나 이것은 선택 사항이다.
+
+두 워크플로 모두에서 Prisma 스키마가 기본 설정 파일이다.
+
