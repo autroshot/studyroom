@@ -1,6 +1,6 @@
 # 동적 API 경로
 
-API 라우트는 [동적 경로](https://nextjs.org/docs/routing/dynamic-routes)를 지원하며 `pages`와 동일한 파일 명명 규칙을 따른다.
+API 경로는 [동적 경로](https://nextjs.org/docs/routing/dynamic-routes)를 지원하며 `pages`와 동일한 파일 명명 규칙을 따른다.
 
 예를 들어 API 경로 `pages/api/post/[pid].js`가 다음과 같다고 가정해 보겠다.
 
