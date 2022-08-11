@@ -251,7 +251,7 @@ model User {
 
 `User`-`Post` 관계를 시각화한 다이어그램은 다음과 같다.
 
-<이미지>
+![관계-다이어그램](https://user-images.githubusercontent.com/95019875/184213734-1c6c4a9b-8953-4bfb-bd79-40a50c76da98.png)
 
 Prisma 수준에서 `User`-`Post` 관계는 다음으로 구성된다.
 
