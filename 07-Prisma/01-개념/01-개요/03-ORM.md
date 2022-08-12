@@ -269,3 +269,89 @@ Prisma의 워크플로는 기존 ORM과 약간 다르다. 새로운 애플리케
 
 두 워크플로 모두에서 Prisma 스키마가 기본 설정 파일이다.
 
+#### 기존 데이터베이스가 있는 프로젝트에서 점진적 채택을 하는 워크플로
+
+브라운필드 프로젝트에는 일반적으로 이미 데이터베이스 추상화와 스키마가 있습니다. Prisma는 기존 데이터베이스를 검사하여 기존 데이터베이스 스키마를 반영하는 Prisma 스키마를 얻고 Prisma Client를 생성함으로써 해당 프로젝트와 통합할 수 있다. 이 워크플로는 이미 사용 중인 모든 마이그레이션 도구 및 ORM과 호환된다. 점진적인 평가 및 채택을 선호하는 경우에는 이 방식을 [병렬 채택 전략](https://en.wikipedia.org/wiki/Parallel_adoption)의 일부로 사용할 수 있다 .
+
+이 워크플로와 호환되는 설정의 전체 목록은 다음과 같다.
+
+- 데이터베이스 스키마를 생성하고 변경하기 위해 `CREATE TABLE`과 `ALTER TABLE`로 이루어진 순수 SQL 파일을 사용하는 프로젝트
+- [db-migrate](https://github.com/db-migrate/node-db-migrate) 또는 [Umzug](https://github.com/sequelize/umzug)와 같은 타사 마이그레이션 라이브러리를 사용하는 프로젝트
+- 이미 ORM을 사용 중인 프로젝트. 이 경우에는 ORM을 통한 데이터베이스 접근은 변경되지 않고 생성된 Prisma Client가 점진적으로 채택될 수 있음
+
+실제로 기존 DB를 점검하고 Prisma Client를 생성하는 데 필요한 단계는 다음과 같다.
+
+1. `datasource`(이 경우에는 기존 DB)와 `generator`를 정의하는 `schema.prisma`을 생성한다.
+
+```tsx
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://janedoe:janedoe@localhost:5432/hello-prisma"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+```
+
+2. `prisma db pull`을 실행하여 데이터베이스 스키마에서 파생된 모델로 Prisma 스키마를 채운다.
+3. (선택 사항) Prisma Client와 데이터베이스 간의 [필드와 모델 매핑](https://www.prisma.io/docs/concepts/components/prisma-schema/data-model#mapping-model-names-to-tables-or-collections)을 커스터마이징한다.
+4. `prisma generate`를 실행한다.
+
+Prisma는 `node_modules` 폴더 안에 Prisma Client를 생성하여 앱에서 가져오는 것이 가능해진다. 보다 광범위한 사용 설명서는 [Prisma Client API](https://www.prisma.io/docs/concepts/components/prisma-client) 문서를 참조한다.
+
+요약하자면 Prisma Client는 병렬 채택 전략의 일부로 기존 데이터베이스와 도구를 사용하여 프로젝트에 통합할 수 있다.
+
+#### 새 프로젝트의 워크플로
+
+Prisma는 지원하는 워크플로 측면에서 ORM과 다르다. 새 데이터베이스 스키마를 만들고 변경하는 데 필요한 단계를 자세히 살펴보면 Prisma Migrate를 이해하는 데 도움이 된다.
+
+Prisma Migrate는 선언적 데이터 모델링 및 마이그레이션을 위한 CLI다. ORM의 일부로 제공되는 대부분의 마이그레이션 도구와 달리 한 상태에서 다른 상태로 이동하는 작업을 할 필요가 없다. 대신 현재 스키마만 설명하면 된다. Prisma Migrate는 작업을 추론하고 SQL을 생성하며 마이그레이션을 수행한다.
+
+다음 예제는 위의 블로그 예제와 유사한 새 데이터베이스 스키마가 있는 새 프로젝트에서 Prisma를 사용하는 방법을 보여준다.
+
+1. Prisma 스키마를 생성한다.
+
+```tsx
+// schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://janedoe:janedoe@localhost:5432/hello-prisma"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String? @map("post_content")
+  published Boolean @default(false)
+  author    User?   @relation(fields: [authorId], references: [id])
+  authorId  Int?
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  posts Post[]
+}
+```
+
+2. `prisma migrate`을 실행하여 마이그레이션을 위한 SQL을 생성해, 이를 데이터베이스에 적용하고 Prisma Client를 생성한다.
+
+데이터베이스 스키마에 추가 변경 사항이 생기면 다음을 수행한다.
+
+1. Prisma 스키마에 변경 사항을 적용한다. `User` 모델에 `registrationDate` 필드를 추가하는 것이 그 예이다.
+2. `prisma migrate`을 다시 실행한다.
+
+마지막 단계는 Prisma 스키마에 필드를 추가하고 Prisma Migrate를 사용하여 데이터베이스 스키마를 원하는 상태로 변환하여 선언적 마이그레이션이 작동하는 방식을 보여준다. 마이그레이션이 실행된 후 Prisma Client는 업데이트된 스키마를 반영하도록 자동으로 재생성된다.
+
+##### Prisma Migrate를 사용하지 않는 새 프로젝트를 위한 대안
+
+Prisma Migrate 대신 타사 마이그레이션 도구로 새 프로젝트에서 Prisma Client를 사용할 수 있다.
+
+예를 들어 새 프로젝트는 Node.js 마이그레이션 프레임워크 [db-migrate](https://github.com/db-migrate/node-db-migrate)를 사용하여 데이터베이스 스키마 및 마이그레이션을 생성하고 Prisma Client를 쿼리에 사용할 수 있다. 자세한 내용은 [기존 데이터베이스가 이미 존재하는 워크플로](#기존-데이터베이스가-있는-프로젝트에서-점진적-채택을-하는-워크플로)에서 다뤘다.
+
