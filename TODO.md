@@ -26,6 +26,6 @@
 - 프리즈마 
   - [x] Referential integrity
   - [x] Relation queries
-  - [ ] Filtering and sorting
-  - [ ] Pagination
+  - [x] Filtering and sorting
+  - [x] Pagination
   - [ ] Aggregation, grouping, and summarizing
