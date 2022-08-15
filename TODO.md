@@ -24,8 +24,8 @@
   - [x] 폼 작성하기
   - [x] Absolute Imports and Module path aliases
 - 프리즈마 
-  - [ ] Referential integrity
-  - [ ] Relation queries
+  - [x] Referential integrity
+  - [x] Relation queries
   - [ ] Filtering and sorting
   - [ ] Pagination
   - [ ] Aggregation, grouping, and summarizing
