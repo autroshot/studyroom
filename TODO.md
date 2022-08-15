@@ -28,4 +28,4 @@
   - [x] Relation queries
   - [x] Filtering and sorting
   - [x] Pagination
-  - [ ] Aggregation, grouping, and summarizing
+  - [x] Aggregation, grouping, and summarizing
