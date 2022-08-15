@@ -18,12 +18,14 @@
   - [x] 쿠키와 인증
   - [x] 세션과 인증
   - [ ] OAuth 2.0
-
 - Next.js
-  - [ ] 환경 변수
+  - [x] 환경 변수
   - [ ] 인증
-  - [x] 폼 만들기
-  - [ ] Absolute Imports and Module path aliases
-
-- 플래닛스케일
-- 프리즈마
+  - [x] 폼 작성하기
+  - [x] Absolute Imports and Module path aliases
+- 프리즈마 
+  - [ ] Referential integrity
+  - [ ] Relation queries
+  - [ ] Filtering and sorting
+  - [ ] Pagination
+  - [ ] Aggregation, grouping, and summarizing
