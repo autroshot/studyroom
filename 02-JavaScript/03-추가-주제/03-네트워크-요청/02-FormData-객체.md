@@ -152,7 +152,7 @@ formData.append('image', imageBlob, 'image.png');
 
 `FormData` 객체는 생성자의 인자에 기존의 HTML 폼을 넘겨서 만들거나 처음부터 만들 수 있다.
 
-다음의 메소드를 이용해 필드를 추가할 수 있다.
+다음의 메서드를 이용해 필드를 추가할 수 있다.
 - `formData.append(name, value)`
 - `formData.append(name, blob, fileName)`
 - `formData.set(name, value)`

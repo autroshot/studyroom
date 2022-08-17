@@ -110,7 +110,7 @@ Access-Control-Expose-Headers: Content-Length,API-Key
 
 ## 안전하지 않은 요청
 
-HTTP 메소드로 `GET`, `POST`뿐만 아니라 `PATCH`, `DELETE`를 비롯한 어떤 메소드도 사용할 수 있다.
+HTTP 메서드로 `GET`, `POST`뿐만 아니라 `PATCH`, `DELETE`를 비롯한 어떤 메서드도 사용할 수 있다.
 
 그런데 과거에는 웹페이지에서 `GET`, `POST` 이외의 HTTP 메서드를 사용해 요청을 보낼 것이라는 생각을 못했다. 아직까지도 이런 메서드를 다룰 수 없는 웹서버도 꽤 존재한다. 이런 서버들은 `GET`, `POST` 이외의 메서드를 사용한 요청이 오면 브라우저가 보낸 요청이 아니라고 판단하고 접근 권한을 확인한다.
 

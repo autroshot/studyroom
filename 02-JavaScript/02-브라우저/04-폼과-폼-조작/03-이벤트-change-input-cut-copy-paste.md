@@ -76,7 +76,7 @@
 
 텍스트뿐만 아니라 모든 것을 복사·붙여넣기 할 수 있다. 예를 들어 OS 파일 매니저에서 파일을 복사해 붙여넣을 수 있다.
 
-이것이 가능한 이유는 `clipboardData`가 드래그 앤 드랍과 복사·붙여넣기에 많이 사용되는 `DataTransfer` 인터페이스를 구현하기 때문이다. 범위를 조금 벗어나지만 이 메소드는 [DataTransfer 명세서](https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface)에서 찾을 수 있다.
+이것이 가능한 이유는 `clipboardData`가 드래그 앤 드랍과 복사·붙여넣기에 많이 사용되는 `DataTransfer` 인터페이스를 구현하기 때문이다. 범위를 조금 벗어나지만 이 메서드는 [DataTransfer 명세서](https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface)에서 찾을 수 있다.
 
 또한 클립보드에 접근할 수 있는 비동기 API `navigator.clipboard`가 있다. Firefox에서는 지원하지 않는다. 자세한 내용은 명세서 [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/)에서 확인 가능하다.
 

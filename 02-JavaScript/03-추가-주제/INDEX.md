@@ -11,7 +11,7 @@
 ### 2. [FormData 객체](./03-네트워크-요청/02-FormData-객체.md)
 ### 3. [Fetch: Download progress]()
 - 미번역
-- `fetch` 메소드는 다운로드 진행 상황을 추적할 수 있다.
+- `fetch` 메서드는 다운로드 진행 상황을 추적할 수 있다.
 ### 4. [Fetch: Abort]()
 - 미번역
 - `AbortController`를 이용해 비동기 작업을 중단할 수 있다.

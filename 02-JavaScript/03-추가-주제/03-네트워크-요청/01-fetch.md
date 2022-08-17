@@ -20,7 +20,7 @@
 let promise = fetch(url, [options])
 ```
 - `url` - 접근하려는 URL
-- `options` - 선택적 매개변수로 메소드나 헤더 등을 지정할 수 있음
+- `options` - 선택적 매개변수로 메서드나 헤더 등을 지정할 수 있음
 
 `options`을 비워두면 간단한 `GET` 요청이 된다.
 
@@ -54,7 +54,7 @@ if (response.ok) { // HTTP 상태 코드가 200~299일 경우
 
 `response`에는 프라미스를 기반으로 하는 다양한 메서드가 있다. 이 메서드를 사용하면 다양한 형태의 응답 본문을 처리할 수 있다.
 
-|메소드|설명|
+|메서드|설명|
 |---|---|
 |`response.text()`|응답을 읽고 텍스트를 반환한다.|
 |`response.json()`|응답을 JSON 형태로 파싱한다.|
@@ -171,7 +171,7 @@ let response = fetch(protectedUrl, {
 
 ## POST 요청
 
-`POST` 요청을 만들거나 다른 메소드로 요청을 만들려면 `fetch`의 옵션을 사용해야 한다.
+`POST` 요청을 만들거나 다른 메서드로 요청을 만들려면 `fetch`의 옵션을 사용해야 한다.
 - **`method`** - HTTP 메서드(예: `POST`)
 - **`body`** - 요청 본문으로 다음 항목 중 하나이다.
   - 문자열(예: JSON 문자열)
