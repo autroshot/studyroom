@@ -297,7 +297,7 @@ export default ({ email }) => (
 - `signIn('google', { callbackUrl: 'http://localhost:3000/bar' })`
 - `signIn('email', { email, callbackUrl: 'http://localhost:3000/foo' })`
 
-URL은 [리다이렉션 콜백 핸들러](https://next-auth.js.org/configuration/callbacks#redirect-callback)에서 유효한 것이어야 한다. 기본적으로 URL은 동일한 호스트 이름의 절대 URL이거나 슬래시로 시작하는 상대 URL이어야 한다. 일치하지 않으면 홈페이지로 리다이렉션된다. 다른 URL을 허용하도록 고유한 리다이렉션 콜백을 정의할 수 있다 .
+URL은 [리다이렉션 콜백 핸들러](https://next-auth.js.org/configuration/callbacks#redirect-callback)에서 유효한 것이어야 한다. 기본적으로 URL은 동일한 호스트 이름의 절대 URL이거나 `/`로 시작하는 상대 URL이어야 한다. 일치하지 않으면 홈페이지로 리다이렉션된다. 다른 URL을 허용하도록 고유한 리다이렉션 콜백을 정의할 수 있다.
 
 ### redirect: false 옵션 사용하기
 
@@ -369,5 +369,162 @@ URL은 [리다이렉션 콜백 핸들러](https://next-auth.js.org/configuration
 import { signOut } from "next-auth/react"
 
 export default () => <button onClick={() => signOut()}>Sign out</button>
+```
+
+### callbackUrl 지정하기
+
+`signIn()` 함수와 마찬가지로 `callbackUrl` 매개변수를 옵션으로 전달하여 지정할 수 있다.
+
+예시 - `signOut({ callbackUrl: 'http://localhost:3000/foo' })`
+
+URL은 [리다이렉션 콜백 핸들러](https://next-auth.js.org/configuration/callbacks#redirect-callback)에서 유효한 것이어야 한다. 기본적으로 URL은 동일한 호스트 이름의 절대 URL이거나 `/`로 시작하는 상대 URL이어야 한다. 일치하지 않으면 홈페이지로 리다이렉션된다. 다른 URL을 허용하도록 고유한 리다이렉션 콜백을 정의할 수 있다.
+
+### redirect: false 옵션 사용하기
+
+`signOut`에 `redirect: false`를 전달하면 페이지가 다시 로드되지 않는다. 세션이 삭제되고 `useSession` 훅에 알림이 전송되므로 사용자에 대한 모든 표시가 자동으로 로그아웃된 것으로 나타난다. 이는 사용자에게 아주 좋은 경험을 줄 수 있다.
+
+> **팁**
+>
+> 다른 페이지로 리다이렉션해야 하지만 페이지를 다시 로드하지 않으려면 `const data = waitsignOut({redirect: false, callbackUrl: "/foo"})`를 시도할 수 있다. 여기서 `data.url`은 Next.js의 `useRouter().push(data.url)`을 사용하여 깜빡임 없이 사용자를 리다이렉션할 수 있는 유효한 URL이다.
+
+## SessionProvider
+
+제공된 `<SessionProvider>`를 사용하면 `useSession()`의 인스턴스가 장막 뒤에서 [리액트 컨텍스트](https://reactjs.org/docs/context.html)를 사용하여 컴포넌트 간에 세션 객체를 공유할 수 있다. 또한 탭/창 간에 세션을 업데이트하고 동기화하도록 관리한다.
+
+```jsx
+// pages/_app.js
+
+import { SessionProvider } from "next-auth/react"
+
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
+  return (
+    <SessionProvider session={session}>
+      <Component {...pageProps} />
+    </SessionProvider>
+  )
+}
+```
+
+위의 예시와 같이 `<SessionProvider>`에 `session` `pageProps`를 전달하면 서버 측과 클라이언트 측 렌더링을 모두 지원하는 페이지에서 세션을 두 번 확인하는 것을 피할 수 있다.
+
+그러나 이것은 올바른 `pageProps`를 제공한 페이지에서만 작동한다. 이는 일반적으로 다음과 같이 `getInitialProps`나 `getServerSideProps`에서 개별 페이지 단위로 수행된다.
+
+```jsx
+// pages/index.js
+
+import { unstable_getServerSession } from "next-auth/next"
+import { authOptions } from './api/auth/[...nextauth]'
+
+...
+
+export async function getServerSideProps({ req, res }) {
+  return {
+    props: {
+      session: await unstable_getServerSession(req, res, authOptions)
+    }
+  }
+}
+```
+
+모든 페이지를 보호해야 하는 경우, `_app`에서 `getInitialProps`에서 이를 수행할 수 있다. 그렇지 않으면 페이지 단위로 이를 수행할 수 있다. 또는 [대체 클라이언트 세션 처리](#커스텀-클라이언트-세션-처리)에서 아래에 설명된 방법을 사용하여 각 인증 확인을 차단(SSR)하는 대신 페이지당 인증 확인을 수행할 수 있다.
+
+### 옵션
+
+세션 상태는 열려 있는 모든 탭/창에서 자동으로 동기화되며 `refetchOnWindowFocus`가 `true`일 때는 포커스를 얻거나 잃거나 상태가 변경될 때(예: 사용자가 로그인 또는 로그아웃)마다 모두 업데이트된다.
+
+세션 만료 시간이 30일(기본값) 이상인 경우 제공자의 기본 옵션을 변경할 필요가 없을 것이다. 필요한 경우 클라이언트 측 함수에서 `getSession()`을 호출하여 모든 탭/창에서 세션 객체의 업데이트를 트리거할 수 있다.
+
+그러나 세션 동작을 커스터마이징해야 하거나 짧은 세션 만료 시간을 사용하는 경우, 옵션을 제공자에게 건네줘서 `useSession()` 훅의 동작을 커스터마이징할 수 있다.
+
+```jsx
+// pages/_app.js
+
+import { SessionProvider } from "next-auth/react"
+
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
+  return (
+    <SessionProvider
+      session={session}
+      // 커스텀 경로를 사용하고 앱이 "/"가 아닌 "/cool-app" 경로에 있는 경우
+      basePath="cool-app"
+      // 5분마다 세션을 다시 가져온다.
+      refetchInterval={5 * 60}
+      // 윈도우가 포커스되면 세션을 다시 가져온다.
+      refetchOnWindowFocus={true}
+    >
+      <Component {...pageProps} />
+    </SessionProvider>
+  )
+}
+```
+
+> **참고**
+>
+> 이 옵션은 로그인하지 않은 클라이언트에는 영향을 미치지 않는다.
+>
+> 모든 탭/창은 로컬 세션 상태의 자체 복사본을 유지 관리한다. 세션은 localStorage나 sessionStorage와 같은 공유 저장소에 저장되지 않는다. 한 탭/창의 업데이트는 다른 탭/창에 대한 메시지를 트리거하여 자체 세션 상태를 업데이트한다.
+>
+> `refetchInterval`에 작은 값을 사용하면 인증된 클라이언트의 네트워크 트래픽과 부하가 증가하고 호스팅 비용과 성능에 영향을 미칠 수 있다.
+
+#### 기본 경로
+
+커스텀 기본 경로를 사용 중이고 앱 진입점이 도메인의 루트 "/"가 아니라 다른 곳(예: "/my-app/")인 경우, `basePath` prop을 사용하여 NextAuth.js가 이를 인식하게 만들고 모든 리다이렉션 및 세션 처리가 예상대로 작동되게 한다.
+
+#### 다시 가져오기 간격
+
+`refetchInterval` 옵션을 사용하면 서버에 연결하여 세션 만료를 막을 수 있다.
+
+`refetchInterval`을 `0`(기본값)으로 설정하면 세션 폴링이 없다.
+
+`0` 이외의 값으로 설정하면 클라이언트가 세션 상태를 업데이트하기 위해 서버에 접속해야 하는 빈도를 초 단위로 지정한다. 다시 가져오기가 트리거될 때 세션 상태가 만료되었다면 열려 있는 모든 탭/창이 이를 반영하도록 업데이트된다.
+
+`refetchInterval`의 값은 항상 세션의 `maxAge` [세션 옵션](https://next-auth.js.org/configuration/options#session)의 값보다 작아야 한다.
+
+#### 창이 포커스되면 다시 가져오기
+
+`refetchOnWindowFocus` 옵션을 사용하여 탭/창에서 포커스를 전환할 때 세션 상태를 자동으로 업데이트할지 여부를 지정할 수 있다.
+
+`refetchOnWindowFocus`를 `true`(기본값)로 설정하면 탭/창이 포커스를 얻거나 잃을 때 탭/창이 업데이트되고 컴포넌트의 상태를 초기화한다.
+
+그러나 `false`로 설정된 경우, 세션 다시 가져오기를 중지하고 컴포넌트는 그대로 유지된다.
+
+> **참고**
+>
+> Next.js 앱의 **_ app.js**에 대한 자세한 내용은 [**Next.js 문서**](https://nextjs.org/docs/advanced-features/custom-app)를 참고한다.
+
+### 커스텀 기본 경로
+
+Next.js 앱이 커스텀 기본 경로를 사용하는 경우, 아래 예시와 [이곳](https://next-auth.js.org/configuration/options#nextauth_url)에 설명된 대로 `NEXTAUTH_URL` 환경 변수를 API 엔드포인트에 대한 전체 경로로 설정한다.
+
+또한 아래 예시와 같이 `<SessionProvider>`에 `basePath` `pageProps`를 전달하여 NextAuth.js에서 커스텀 기본 경로가 완전히 설정되고 사용되게 한다.
+
+예시:
+
+이 예시에서 사용된 커스텀 기본 경로는 `/custom-route`이다.
+
+```
+NEXTAUTH_URL=https://example.com/custom-route/api/auth
+```
+
+```jsx
+// pages/_app.js
+
+import { SessionProvider } from "next-auth/react"
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
+  return (
+    <SessionProvider session={session} basePath="/custom-route/api/auth">
+      <Component {...pageProps} />
+    </SessionProvider>
+  )
+}
 ```
 
