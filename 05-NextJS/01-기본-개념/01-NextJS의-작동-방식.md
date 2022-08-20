@@ -88,17 +88,17 @@ Next.js에서는 **서버 측 렌더링(Server-Side Rendering, SSR)**, **정적 
 
 ### 사전 렌더링
 
-SSR과 SSG은 결과가 클라이언트로 전송되기 전에 외부 데이터를 가져오고 React 컴포넌트를 HTML로 변환하기 때문에 **사전 렌더링(Pre-Rendering)**이라고도 부른다.
+SSR과 SSG은 결과가 클라이언트로 전송되기 전에 외부 데이터를 가져오고 리액트 컴포넌트를 HTML로 변환하기 때문에 **사전 렌더링(Pre-Rendering)**이라고도 부른다.
 
 ### CSR vs 사전 렌더링
 
-표준 React 앱에서 브라우저는 서버로부터 UI를 만드는 자바스크립트의 지시와 빈 HTML 껍데기를 받는다. 초기 렌더링 작업이 사용자의 장치에서 발생하기 때문에 이것을 CSR이라고 한다.
+표준 리액트 앱에서 브라우저는 서버로부터 UI를 만드는 자바스크립트의 지시와 빈 HTML 껍데기를 받는다. 초기 렌더링 작업이 사용자의 장치에서 발생하기 때문에 이것을 CSR이라고 한다.
 
 <img width="680" alt="client-side-rendering" src="https://user-images.githubusercontent.com/95019875/176668932-1474f358-20f7-4a10-a6ef-b75002a47f98.png">
 
 > **참고**
 >
-> React의 `useEffect()`나 [useSWR](https://swr.vercel.app/)과 같은 데이터 fetching Hook으로 데이터를 가져오도록 선택하여 Next.js 앱의 특정 컴포넌트에 대해 CSR을 사용할 수 있다.
+> 리액트의 `useEffect()`나 [useSWR](https://swr.vercel.app/)과 같은 데이터 가져오기 훅으로 데이터를 가져오도록 선택하여 Next.js 앱의 특정 컴포넌트에 대해 CSR을 사용할 수 있다.
 
 이와 반대로 Next.js는 기본적으로 모든 페이지를 **미리 렌더링한다.** 사전 렌더링은 HTML이 사용자 장치에서 자바스크립트로 모두 수행되는 대신 서버에서 미리 생성된다는 것을 의미한다.
 
@@ -160,7 +160,7 @@ CDN과 유사하게 에지 서버는 전 세계 여러 위치에 배포된다. �
 
 즉 사용자에게 더 가까운 에지에서 캐싱과 코드 실행을 모두 수행할 수 있다.
 
-에지에서 코드를 실행하면 전통적으로 클라이언트 측 또는 서버 측에서 수행되었던 작업 중 일부를 에지로 이동할 수 있다([예제 참조](https://vercel.com/features/edge-functions)). 이렇게 하면 클라이언트로 전송되는 코드의 양이 줄어들고 사용자 요청의 일부가 원본 서버로 완전히 돌아갈 필요가 없으므로 앱의 성능이 향상되어 대기 시간이 줄어든다.
+에지에서 코드를 실행하면 전통적으로 클라이언트 측 또는 서버 측에서 수행되었던 작업 중 일부를 에지로 이동할 수 있다([예제 참고](https://vercel.com/features/edge-functions)). 이렇게 하면 클라이언트로 전송되는 코드의 양이 줄어들고 사용자 요청의 일부가 원본 서버로 완전히 돌아갈 필요가 없으므로 앱의 성능이 향상되어 대기 시간이 줄어든다.
 
 Next.js에서는 [미들웨어](https://nextjs.org/docs/middleware)를 사용하여 에지에서 코드를 실행할 수 있다. 곧 [리액트 서버 컴포넌트](https://nextjs.org/docs/advanced-features/react-18/overview#react-server-components-alpha)로도 가능해질 예정이다.
 

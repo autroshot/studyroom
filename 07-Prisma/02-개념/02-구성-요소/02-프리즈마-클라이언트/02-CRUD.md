@@ -274,7 +274,7 @@ const timePeriod = await prisma.timePeriod.findUnique({
 const users = await prisma.user.findMany()
 ```
 
-결과에 [페이지를 매길](https://www.prisma.io/docs/concepts/components/prisma-client/pagination) 수도 있다.
+결과에 [페이지를 매길](./06-페이지네이션.md) 수도 있다.
 
 ### 특정 기준과 일치하는 첫 번째 레코드 가져오기
 
