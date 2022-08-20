@@ -10,4 +10,4 @@ HTTP Response message는 다음과 같은 형식을 가진다.
 
 ![HTTP Response Message Format](https://user-images.githubusercontent.com/95019875/176104273-328a648a-7db1-470e-9c05-82b41879a9f5.png)
 
-HTTP 상태 코드에 대한 자세한 내용은 [이곳](./기타.md#HTTP 상태 코드)에서 확인할 수 있다.
+HTTP 상태 코드에 대한 자세한 내용은 [이곳](./HTTP-상태-코드.md)에서 확인할 수 있다.
