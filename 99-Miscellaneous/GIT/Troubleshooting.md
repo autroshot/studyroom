@@ -1,4 +1,4 @@
-# 문제 해결
+# 트러블슈팅
 
 - `warning: LF will be replaced by CRLF in bora.txt. The file will have its original line endings in your working directory`가 뜨면 `git config --global core.autocrlf true`을 적용한다.
 

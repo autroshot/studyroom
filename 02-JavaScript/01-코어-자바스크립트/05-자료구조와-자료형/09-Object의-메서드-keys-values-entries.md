@@ -55,7 +55,7 @@ for (let value of Object.values(user)) {
 ---
 
 ## 객체 변환하기
-객체에는  `map`,  `filter`  같은 배열 전용 메서드를 사용할 수 없다.
+객체에는 `map`, `filter` 같은 배열 전용 메서드를 사용할 수 없다.
 
 하지만  `Object.entries`와  `Object.fromEntries`를 순차적으로 적용하면 객체에도 배열 전용 메서드를 사용할 수 있다. 적용 방법은 다음과 같다.
 1.  `Object.entries(obj)`를 사용해서 객체의 키-값 쌍이 요소인 배열을 얻는다.
