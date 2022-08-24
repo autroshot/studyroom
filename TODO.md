@@ -29,3 +29,7 @@
   - [x] Filtering and sorting
   - [x] Pagination
   - [x] Aggregation, grouping, and summarizing
+  - [ ] Seeding your database
+  
+- 리액트
+  - [ ] HOC
