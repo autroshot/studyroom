@@ -26,10 +26,12 @@ export async function getStaticProps(context) {
 `getStaticProps`는 항상 서버에서 실행되고 클라이언트에서는 실행되지 않다. 이 [도구](https://next-code-elimination.vercel.app/)를 사용하여 `getStaticProps` 내부에 작성된 코드가 클라이언트 측 번들에서 제거되었는지 확인할 수 있다 .
 
 - `getStaticProps`는 `next build` 과정에서 항상 실행됨
+- `getStaticProps`는 [`fallback: true`](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-true)를 사용할 때 백그라운드에서 실행됨
+- `getStaticProps`는 [`fallback: blocking`](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-blocking)를 사용할 때 첫 랜더링 전에 호출됨
 - `getStaticProps`는 `revalidate`를 사용할 때 백그라운드에서 실행됨
-- `getStaticProps`는 [`revalidate()`](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#on-demand-revalidation)을 사용할 때 백그라운드에서 주문형으로 실행됨
+- `getStaticProps`는 [`revalidate()`](./점진적인-정적-재생성.md/#주문형-재검증)을 사용할 때 백그라운드에서 주문형으로 실행됨
 
-[점진적인 정적 재생성](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration)과 함께 사용하면, `getStaticProps`는 오래된 페이지의 유효성을 다시 검사하고 새 페이지가 브라우저에 제공되는 동안 백그라운드에서 실행된다.
+[점진적인 정적 재생성](./점진적인-정적-재생성.md)과 함께 사용하면, `getStaticProps`는 오래된 페이지의 유효성을 다시 검사하고 새 페이지가 브라우저에 제공되는 동안 백그라운드에서 실행된다.
 
 `getStaticProps`는 정적 HTML을 생성하므로 들어오는 요청(쿼리 매개변수나 HTTP 헤더)에 접근할 수 없다. 페이지 요청에 접근해야 하는 경우에는 `getStaticProps`에 추가로 [미들웨어](https://nextjs.org/docs/advanced-features/middleware)를 사용하는 것을 고려해야 한다.
 
