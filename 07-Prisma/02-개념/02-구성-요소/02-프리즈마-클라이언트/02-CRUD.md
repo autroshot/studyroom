@@ -188,7 +188,7 @@ SELECT "public"."User"."country", "public"."User"."city", "public"."User"."email
 
 ### 레코드를 생성하고 관련 레코드를 연결하거나 생성하기
 
-레코드와 하나 이상의 관련 레코드를 동시에 생성하는 방법은 [관계 쿼리 > 중첩 쓰기](https://www.prisma.io/docs/concepts/components/prisma-client/relation-queries#nested-writes)를 참고한다.
+레코드와 하나 이상의 관련 레코드를 동시에 생성하는 방법은 [관계 쿼리 > 중첩 쓰기](./04-관계-쿼리.md/#중첩-쓰기)를 참고한다.
 
 ## Read
 
