@@ -20,7 +20,7 @@
   - [ ] OAuth 2.0
 - Next.js
   - [x] 환경 변수
-  - [ ] 인증
+  - [x] 인증
   - [x] 폼 작성하기
   - [x] Absolute Imports and Module path aliases
 - 프리즈마 
@@ -29,7 +29,7 @@
   - [x] Filtering and sorting
   - [x] Pagination
   - [x] Aggregation, grouping, and summarizing
-  - [ ] Seeding your database
+  - [x] Seeding your database
   
 - 리액트
   - [ ] HOC
