@@ -2,7 +2,7 @@
 
 ## MPA
 
-MPA(Multi Page Application)는 여러 페이지로 구성된 웹 애플리케이션이다.
+MPA(Multi Page Application)는 여러 페이지로 구성된 웹 앱이다.
 
 요청이 있을 때마다 서버로부터 새로운 HTML을 받아 페이지 전체를 새로 렌더링한다.
 
@@ -10,11 +10,11 @@ MPA(Multi Page Application)는 여러 페이지로 구성된 웹 애플리케이
 
 ## SPA
 
-SPA(Single Page Application)는 하나의 페이지로 구성된 웹 애플리케이션이다.
+SPA(Single Page Application)는 하나의 페이지로 구성된 웹 앱이다.
 
 최초에 한 번 페이지 전체를 로드한 후에는 요청이 있을 때마다 일부만 AJAX를 통해 교체한다.
 
-React, Vue, 앵귤러 등으로 SPA를 구현할 수 있다.
+리액트, 뷰, 앵귤러 등으로 SPA를 구현할 수 있다.
 
 ## SSR
 
