@@ -334,3 +334,68 @@ try {
   messages = err.errors.map((err) => i18next.t(err.key));
 }
 ```
+
+## API
+
+### yup
+
+#### ref(path: string, options: { contextPrefix: string }): Ref
+
+다른 형제나 형제 하위 필드에 대한 참조를 만든다. 참조는 유효성 검사나 캐스트 시간에 이행되고 지정된 경우 지원된다. `ref`를 사용하는 필드보다 `ref` 값이 먼저 이행되도록 적절한 순서로 평가된다. 순환 종속성에 주의해야 한다.
+
+```typescript
+import { ref, object, string } from 'yup';
+
+let schema = object({
+  baz: ref('foo.bar'),
+  foo: object({
+    bar: string(),
+  }),
+  x: ref('$x'),
+});
+
+schema.cast({ foo: { bar: 'boom' } }, { context: { x: 5 } });
+// => { baz: 'boom',  x: 5, foo: { bar: 'boom' } }
+```
+
+### Schema
+
+#### Schema.test(name: string, message: string | function | any, test: function): Schema
+
+유효성 검사 체인에 테스트 함수를 추가한다. 테스트는 객체가 캐스트된 후에 실행된다. 많은 타입에 내장된 테스트가 있지만, 원한다면 커스텀 테스트를 쉽게 만들 수 있다. 비동기 커스텀 유효성 검사를 허용하기 위해 모든 테스트가 비동기로 실행되거나 동기로 실행된다. 따라서 테스트 실행 순서는 보장되지 않는다.
+
+모든 테스트는 `name`, 오류 `message`를 제공해야 한다. 그리고 현재 `value`가 유효하고 `false`이면 `true`를 반환하는 유효성 검사 함수나  `ValidationError`를 제공해야 한다. 테스트를 비동기화하려면 `true` 또는 `false` 또는 `ValidationError`를 이행하는 프라미스를 반환한다.
+
+`message` 인수의 경우 `${param}` 문법을 사용하여 지정된 경우 특정 값을 보간하는 문자열을 제공할 수 있다. 기본적으로 모든 테스트 메시지에는 중첩된 스키마에서 중요한 `path` 값이 전달된다.
+
+`test` 함수는 현재 `value`와 함께 호출된다. 고급 유효성 검사를 원한다면 대체 시그니처를 사용하여 더 많은 옵션을 제공할 수 있다.
+
+```typescript
+let jimmySchema = string().test(
+  'is-jimmy',
+  '${path} is not Jimmy',
+  (value, context) => value === 'jimmy',
+);
+
+// 프라미스를 반환하여 비동기로 만든다.
+let asyncJimmySchema = string()
+  .label('First name')
+  .test(
+    'is-jimmy',
+    ({ label }) => `${label} is not Jimmy`, // 메시지는 함수 형태도 가능하다.
+    async (value, testContext) =>
+      (await fetch('/is-jimmy/' + value)).responseText === 'true',
+  );
+
+await schema.isValid('jimmy'); // => true
+await schema.isValid('john'); // => false
+```
+
+테스트 함수는 유용한 메타데이터와 함수를 노출하는 두 번째 인수로 특수한 컨텍스트 값으로 호출된다. 화살표가 아닌 함수의 경우 테스트 컨텍스트가 함수 `this`로도 설정된다. 화살표 함수에서는 `this`로 접근할 수 없다는 점을 주의한다.
+
+- `testContext.path` - 현재 유효성 검사의 문자열 경로
+- `testContext.schema` - 테스트가 실행 중인 이행된 스키마 객체
+- `testContext.options` - `validate()` 또는 `isValid()`가 호출된 `options` 객체
+- `testContext.parent` - 중첩된 스키마의 경우 부모 객체의 값
+- `testContext.originalValue` - 테스트 중인 원래 값
+- `testContext.createError(Object: { path: String, message: String, params: Object })` - 유효성 검사 오류를 생성하고 반환한다. `path`, `params` 또는 오류 `message`를 동적으로 설정하는 데 유용하다. 생략하면 현재 경로나 기본 메시지가 사용된다.
