@@ -360,6 +360,70 @@ schema.cast({ foo: { bar: 'boom' } }, { context: { x: 5 } });
 
 ### Schema
 
+#### Schema.when(keys: string | string[], builder: object | (values: any[], schema) => Schema): Schema
+
+형제 또는 형제 자식 필드를 기반으로 스키마를 조정한다. `is`에 값 또는 일치자 함수를, `then`에 `true`일 때의 스키마를, `otherwise`에 `false`일 때의 스키마를 가진 객체 리터럴을 인수로 받는다.
+
+`is` 조건은 일치 연산자(`===`)를 사용한다. 동등 연산자(`==`)를 사용하려면 다음과 같은 함수를 건네준다.
+
+```typescript
+is: (value) => value == true
+```
+
+또한 프로퍼티 앞에 `$`를 붙여 입력 값 대신 `validate()` 또는 `cast`에서 전달된 `context`에 종속되는 프로퍼티를 지정할 수도 있다.
+
+다음 예시에서는 복수의 `when` 조건을 추가한다.
+
+```typescript
+let schema = object({
+  isBig: boolean(),
+  count: number()
+    .when('isBig', {
+      is: true, // '(val) => val == true'와 동일
+      then: (schema) => schema.min(5),
+      otherwise: (schema) => schema.min(0),
+    })
+    .when('$other', ([other], schema) =>
+      other === 4 ? schema.max(6) : schema,
+    ),
+});
+
+await schema.validate(value, { context: { other: 4 } });
+```
+
+둘 이상의 종속 키를 지정할 수도 있다. 이 경우 각 값은 인수로 확산된다.
+
+```typescript
+let schema = object({
+  isSpecial: boolean(),
+  isBig: boolean(),
+  count: number().when(['isBig', 'isSpecial'], {
+    is: true, // '(isBig, isSpecial) => isBig && isSpecial'와 동일
+    then: (schema) => schema.min(5),
+    otherwise: (schema) => schema.min(0),
+  }),
+});
+
+await schema.validate({
+  isBig: true,
+  isSpecial: true,
+  count: 10,
+});
+```
+
+또는 현재 스키마에 제공된 각 키에 대한 값 배열로 호출되는 스키마를 반환하는 함수를 제공할 수 있다.
+
+```typescript
+let schema = yup.object({
+  isBig: yup.boolean(),
+  count: yup.number().when('isBig', ([isBig], schema) => {
+    return isBig ? schema.min(5) : schema.min(0);
+  }),
+});
+
+await schema.validate({ isBig: false, count: 4 });
+```
+
 #### Schema.test(name: string, message: string | function | any, test: function): Schema
 
 유효성 검사 체인에 테스트 함수를 추가한다. 테스트는 객체가 캐스트된 후에 실행된다. 많은 타입에 내장된 테스트가 있지만, 원한다면 커스텀 테스트를 쉽게 만들 수 있다. 비동기 커스텀 유효성 검사를 허용하기 위해 모든 테스트가 비동기로 실행되거나 동기로 실행된다. 따라서 테스트 실행 순서는 보장되지 않는다.
