@@ -1,6 +1,6 @@
 # getServerSideProps
 
-페이지에서 `getServerSideProps`(SSR)이라는 함수를 내보내면, Next.js는 `getServerSideProps`에서 반환된 데이터를 사용하여 각 요청에서 이 페이지를 미리 렌더링합니다.
+페이지에서 `getServerSideProps`(SSR)이라는 함수를 내보내면, 넥스트는 `getServerSideProps`에서 반환된 데이터를 사용하여 각 요청에서 이 페이지를 미리 렌더링합니다.
 
 ```jsx
 export async function getServerSideProps(context) {
@@ -19,11 +19,11 @@ export async function getServerSideProps(context) {
 `getServerSideProps`는 서버 측에서만 실행되고 브라우저에서는 실행되지 않습니다. 페이지에서 `getServerSideProps`를 사용하면 다음의 작업이 수행됩니다.
 
 - 해당 페이지를 직접 요청하면 `getServerSideProps`가 요청 타임에서 실행됩니다. 해당 페이지는 반환된 props로 미리 렌더링됩니다.
-- [`next/link`](https://nextjs.org/docs/api-reference/next/link)나 [`next/router`](https://nextjs.org/docs/api-reference/next/router)를 통해 클라이언트 측 페이지 전환에서 해당 페이지를 요청하면, Next.js가 `getServerSideProps`을 실행하는 API 요청을 서버에 보냅니다.
+- [`next/link`](https://nextjs.org/docs/api-reference/next/link)나 [`next/router`](https://nextjs.org/docs/api-reference/next/router)를 통해 클라이언트 측 페이지 전환에서 해당 페이지를 요청하면, 넥스트가 `getServerSideProps`을 실행하는 API 요청을 서버에 보냅니다.
 
-`getServerSideProps`는 페이지를 렌더링하는 데 사용할 JSON을 반환합니다. 이 모든 작업은 Next.js에서 자동으로 처리되므로 `getServerSideProps` 정의 외에는 추가 작업을 수행할 필요가 없습니다.
+`getServerSideProps`는 페이지를 렌더링하는 데 사용할 JSON을 반환합니다. 이 모든 작업은 넥스트에서 자동으로 처리되므로 `getServerSideProps` 정의 외에는 추가 작업을 수행할 필요가 없습니다.
 
-[next-code-elimination 도구](https://next-code-elimination.vercel.app/)를 사용하여 Next.js가 클라이언트 측 번들에서 제거하는 것들을 확인할 수 있습니다.
+[next-code-elimination 도구](https://next-code-elimination.vercel.app/)를 사용하여 넥스트가 클라이언트 측 번들에서 제거하는 것들을 확인할 수 있습니다.
 
 `getServerSideProps`는 페이지에서만 내보낼 수 있습니다. 페이지가 아닌 파일에서는 내보낼 수 없습니다.
 
