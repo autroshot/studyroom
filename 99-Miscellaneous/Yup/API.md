@@ -1,8 +1,8 @@
 # API
 
-## yup
+## `yup`
 
-### ref(path: string, options: { contextPrefix: string }): Ref
+### `ref(path: string, options: { contextPrefix: string }): Ref`
 
 다른 형제나 형제 하위 필드에 대한 참조를 만듭니다. 참조는 유효성 검사나 캐스트 시간에 이행되고 지정된 경우 지원됩니다. `ref`를 사용하는 필드보다 `ref` 값이 먼저 이행되도록 적절한 순서로 평가됩니다. 순환 종속성에 주의해야 합니다.
 
@@ -21,9 +21,9 @@ schema.cast({ foo: { bar: 'boom' } }, { context: { x: 5 } });
 // => { baz: 'boom',  x: 5, foo: { bar: 'boom' } }
 ```
 
-## Schema
+## `Schema`
 
-### Schema.when(keys: string | string[], builder: object | (values: any[], schema) => Schema): Schema
+### `Schema.when(keys: string | string[], builder: object | (values: any[], schema) => Schema): Schema`
 
 형제 또는 형제 자식 필드를 기반으로 스키마를 조정합니다. `is`에 값 또는 일치자 함수를, `then`에 `true`일 때의 스키마를, `otherwise`에 `false`일 때의 스키마를 가진 객체 리터럴을 인수로 받습니다.
 
@@ -87,7 +87,7 @@ let schema = yup.object({
 await schema.validate({ isBig: false, count: 4 });
 ```
 
-### Schema.test(name: string, message: string | function | any, test: function): Schema
+### `Schema.test(name: string, message: string | function | any, test: function): Schema`
 
 유효성 검사 체인에 테스트 함수를 추가합니다. 테스트는 객체가 캐스트된 후에 실행됩니다. 많은 타입에 내장된 테스트가 있지만, 원한다면 커스텀 테스트를 쉽게 만들 수 있습니다. 비동기 커스텀 유효성 검사를 허용하기 위해 모든 테스트가 비동기로 실행되거나 동기로 실행됩니다. 따라서 테스트 실행 순서는 보장되지 않습니다.
 
