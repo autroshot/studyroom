@@ -1,6 +1,6 @@
 # getStaticProps
 
-`getStaticProps` 함수를 내보내면 함수에서 반환된 `props`를 사용하여 빌드 타임에서 페이지를 미리 렌더링한다.
+`getStaticProps` 함수를 내보내면 함수에서 반환된 `props`를 사용하여 빌드 타임에 페이지를 미리 렌더링한다.
 
 ```jsx
 export async function getStaticProps(context) {

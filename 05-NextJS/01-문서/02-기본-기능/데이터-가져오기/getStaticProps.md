@@ -1,6 +1,6 @@
 # getStaticProps
 
-페이지에서 `getStaticProps`(정적 사이트 생성)이라는 함수를 내보내면, 넥스트는 `getStaticProps`에서 반환된 props를 사용하여 빌드 타임에서 이 페이지를 미리 렌더링합니다.
+페이지에서 `getStaticProps`(정적 사이트 생성)이라는 함수를 내보내면, 넥스트는 `getStaticProps`에서 반환된 props를 사용하여 빌드 타임에 이 페이지를 미리 렌더링합니다.
 
 ```jsx
 export async function getStaticProps(context) {
@@ -18,7 +18,7 @@ export async function getStaticProps(context) {
 
 다음의 경우에 `getStaticProps`을 사용해야 합니다.
 
-- 페이지를 렌더링하는 데 필요한 데이터가 사용자의 요청에 앞서 빌드 타임에서 얻을 수 있음
+- 페이지를 렌더링하는 데 필요한 데이터가 사용자의 요청에 앞서 빌드 타임에 얻을 수 있음
 - 데이터를 헤드리스 CMS에서 가져옴
 - 페이지는 SEO를 위해 사전 렌더링되어야 하며 매우 빨라야 함. `getStaticProps`는 `HTML`과 `JSON`파일을 생성하며, 둘 다 성능을 위해 CDN에 캐시될 수 있음
 - 데이터가 공개적으로 캐시될 수 있음(사용자 테이터가 아님). 이 조건은 미들웨어를 사용하여 경로를 다시 작성하는 특정 상황에서 우회가 가능함
@@ -42,7 +42,7 @@ export async function getStaticProps(context) {
 다음 예시는 CMS에서 블로그 게시물 목록을 가져오는 방법을 보여줍니다.
 
 ```jsx
-// posts는 빌드 타임에서 getStaticProps()에 의해 채워질 것입니다.
+// posts는 빌드 타임에 getStaticProps()에 의해 채워질 것입니다.
 function Blog({ posts }) {
   return (
     <ul>
@@ -53,7 +53,7 @@ function Blog({ posts }) {
   )
 }
 
-// 이 함수는 서버 측에서 빌드 타임에서 호출됩니다.
+// 이 함수는 서버 측에서 빌드 타임에 호출됩니다.
 // 클라이언트 측에서 호출되지 않으므로 데이터베이스 쿼리를 여기서 직접 해도 됩니다.
 export async function getStaticProps() {
   // posts를 얻기 위해 외부 API 엔드포인트를 호출합니다.
@@ -62,7 +62,7 @@ export async function getStaticProps() {
   const posts = await res.json()
 
   // { props: { posts } }을 반환함으로써, Blog 컴포넌트는
-  // posts를 빌드 타임에서 prop로 받을 것입니다.
+  // posts를 빌드 타임에 프랍으로 받을 것입니다.
   return {
     props: {
       posts,
@@ -116,9 +116,9 @@ export async function getStaticProps() {
 
 ## HTML과 JSON을 정적으로 생성하기
 
-`getStaticProps`가 포함된 페이지가 빌드 타임에서 미리 렌더링되면, 넥스트가 페이지 HTML 파일 외에 `getStaticProps`의 실행 결과를 담은 JSON 파일을 생성합니다.
+`getStaticProps`가 포함된 페이지가 빌드 타임에 미리 렌더링되면, 넥스트가 페이지 HTML 파일 외에 `getStaticProps`의 실행 결과를 담은 JSON 파일을 생성합니다.
 
-JSON 파일은 [`next/link`](https://nextjs.org/docs/api-reference/next/link)이나 [`next/router`](https://nextjs.org/docs/api-reference/next/router)를 통한 클라이언트 측 라우팅에 사용됩니다. `getStaticProps`를 사용하여 미리 렌더링된 페이지로 이동하면 넥스트가 이 JSON 파일(빌드 타임에서 미리 계산됨)을 가져와 페이지 컴포넌트의 프랍으로 사용합니다. 즉, 클라이언트 측 페이지 전환은 내보내진 JSON만 사용하고 `getStaticProps` 자체를 호출하지는 않습니다.
+JSON 파일은 [`next/link`](https://nextjs.org/docs/api-reference/next/link)이나 [`next/router`](https://nextjs.org/docs/api-reference/next/router)를 통한 클라이언트 측 라우팅에 사용됩니다. `getStaticProps`를 사용하여 미리 렌더링된 페이지로 이동하면 넥스트가 이 JSON 파일(빌드 타임에 미리 계산됨)을 가져와 페이지 컴포넌트의 프랍으로 사용합니다. 즉, 클라이언트 측 페이지 전환은 내보내진 JSON만 사용하고 `getStaticProps` 자체를 호출하지는 않습니다.
 
 ## getStaticProps는 어디에서 사용할 수 있을까
 
