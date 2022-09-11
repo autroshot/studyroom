@@ -62,7 +62,7 @@ export default function Component() {
 
 Next.js가 `getServerSideProps`과 `getInitialProps`를 처리하는 방식 때문에, 모든 보호된 페이지 로드는 세션이 유효한지 확인한 다음 요청된 페이지(SSR)를 생성하기 위해 서버 측 요청을 해야 한다. 이렇게 하면 서버 부하가 증가하므로 클라이언트 요청에 능숙하다면 대안이 있다. `useSession`을 사용해 항상 유효한 세션이 있는지 확인할 수 있다. 초기 로드 상태 이후에 세션을 찾지 못한 경우, 응답할 적절한 행동를 정의할 수 있다.
 
-기본 동작은 사용자를 로그인 페이지로 리다이렉션하는 것이다. 여기서 로그인에 성공하면 시작한 페이지로 다시 보내진다. 다른 작업을 수행하고 싶다면 `onFail()` 콜백을 정의할 수도 있다.
+기본 동작은 사용자를 로그인 페이지로 리디렉션하는 것이다. 여기서 로그인에 성공하면 시작한 페이지로 다시 보내진다. 다른 작업을 수행하고 싶다면 `onFail()` 콜백을 정의할 수도 있다.
 
 예시:
 
@@ -145,7 +145,7 @@ function Auth({ children }) {
 AdminDashboard.auth = {
   role: "admin",
   loading: <AdminLoadingSkeleton />,
-  unauthorized: "/login-with-different-user", // 이 url로 리다이렉트된다.
+  unauthorized: "/login-with-different-user", // 이 url로 리디렉션된다.
 }
 ```
 
@@ -251,7 +251,7 @@ export default async (req, res) => {
 
 `signIn()` 메서드는 다음과 같이 클라이언트에서 다양한 방식으로 호출할 수 있다.
 
-### 클릭 시 로그인 페이지로 리다이렉션하기
+### 클릭 시 로그인 페이지로 리디렉션하기
 
 ```jsx
 import { signIn } from "next-auth/react"
@@ -261,7 +261,7 @@ export default () => <button onClick={() => signIn()}>Sign in</button>
 
 ### 클릭 시 OAuth 로그인 흐름 시작하기
 
-기본적으로 인수 없이 `signIn()` 메서드를 호출하면 NextAuth.js 로그인 페이지로 리다이렉션된다. 이를 건너뛰고 즉시 공급자 페이지로 리다이렉션하려면 공급자의 `id`로 `signIn()`을 호출한다.
+기본적으로 인수 없이 `signIn()` 메서드를 호출하면 NextAuth.js 로그인 페이지로 리디렉션된다. 이를 건너뛰고 즉시 공급자 페이지로 리디렉션하려면 공급자의 `id`로 `signIn()`을 호출한다.
 
 다음 예시는 구글 로그인이다.
 
@@ -287,7 +287,7 @@ export default ({ email }) => (
 
 ### callbackUrl 지정하기
 
-`callbackUrl`은 로그인 후 사용자가 리다이렉션될 URL을 지정한다. 기본값은 사용자의 현재 URL이다.
+`callbackUrl`은 로그인 후 사용자가 리디렉션될 URL을 지정한다. 기본값은 사용자의 현재 URL이다.
 
 `signIn()`의 두 번째 인수로 지정하여 다른 `callbackUrl`을 지정할 수 있다. 이것은 모든 제공자에 적용된다.
 
@@ -297,15 +297,15 @@ export default ({ email }) => (
 - `signIn('google', { callbackUrl: 'http://localhost:3000/bar' })`
 - `signIn('email', { email, callbackUrl: 'http://localhost:3000/foo' })`
 
-URL은 [리다이렉션 콜백 핸들러](https://next-auth.js.org/configuration/callbacks#redirect-callback)에서 유효한 것이어야 한다. 기본적으로 URL은 동일한 호스트 이름의 절대 URL이거나 `/`로 시작하는 상대 URL이어야 한다. 일치하지 않으면 홈페이지로 리다이렉션된다. 다른 URL을 허용하도록 고유한 리다이렉션 콜백을 정의할 수 있다.
+URL은 [리디렉션 콜백 핸들러](https://next-auth.js.org/configuration/callbacks#redirect-callback)에서 유효한 것이어야 한다. 기본적으로 URL은 동일한 호스트 이름의 절대 URL이거나 `/`로 시작하는 상대 URL이어야 한다. 일치하지 않으면 홈페이지로 리디렉션된다. 다른 URL을 허용하도록 고유한 리디렉션 콜백을 정의할 수 있다.
 
 ### redirect: false 옵션 사용하기
 
 > **참고**
 >
-> 리다이렉션 옵션은 `credentials`과 `email` 제공자에서만 사용 가능하다.
+> 리디렉션 옵션은 `credentials`과 `email` 제공자에서만 사용 가능하다.
 
-경우에 따라 동일한 페이지에서 로그인 응답을 처리하고 기본 리다이렉션을 비활성화할 수 있다. 예를 들어 오류가 발생하는 경우(예: 사용자가 제공한 잘못된 자격 증명) 동일한 페이지에서 오류를 처리할 수 있다. 이를 위해 두 번째 매개변수 객체 `redirect: false`를 전달할 수 있다.
+경우에 따라 동일한 페이지에서 로그인 응답을 처리하고 기본 리디렉션을 비활성화할 수 있다. 예를 들어 오류가 발생하는 경우(예: 사용자가 제공한 잘못된 자격 증명) 동일한 페이지에서 오류를 처리할 수 있다. 이를 위해 두 번째 매개변수 객체 `redirect: false`를 전달할 수 있다.
 
 예시:
 
@@ -331,7 +331,7 @@ URL은 [리다이렉션 콜백 핸들러](https://next-auth.js.org/configuration
   ok: boolean
   /**
    * 오류가 있었다면 `null` 이다.
-   * 그렇지 않으면 사용자가 리다이렉션될 url이다.
+   * 그렇지 않으면 사용자가 리디렉션될 url이다.
    */
   url: string | null
 }
@@ -377,7 +377,7 @@ export default () => <button onClick={() => signOut()}>Sign out</button>
 
 예시 - `signOut({ callbackUrl: 'http://localhost:3000/foo' })`
 
-URL은 [리다이렉션 콜백 핸들러](https://next-auth.js.org/configuration/callbacks#redirect-callback)에서 유효한 것이어야 한다. 기본적으로 URL은 동일한 호스트 이름의 절대 URL이거나 `/`로 시작하는 상대 URL이어야 한다. 일치하지 않으면 홈페이지로 리다이렉션된다. 다른 URL을 허용하도록 고유한 리다이렉션 콜백을 정의할 수 있다.
+URL은 [리디렉션 콜백 핸들러](https://next-auth.js.org/configuration/callbacks#redirect-callback)에서 유효한 것이어야 한다. 기본적으로 URL은 동일한 호스트 이름의 절대 URL이거나 `/`로 시작하는 상대 URL이어야 한다. 일치하지 않으면 홈페이지로 리디렉션된다. 다른 URL을 허용하도록 고유한 리디렉션 콜백을 정의할 수 있다.
 
 ### redirect: false 옵션 사용하기
 
@@ -385,7 +385,7 @@ URL은 [리다이렉션 콜백 핸들러](https://next-auth.js.org/configuration
 
 > **팁**
 >
-> 다른 페이지로 리다이렉션해야 하지만 페이지를 다시 로드하지 않으려면 `const data = waitsignOut({redirect: false, callbackUrl: "/foo"})`를 시도할 수 있다. 여기서 `data.url`은 Next.js의 `useRouter().push(data.url)`을 사용하여 깜빡임 없이 사용자를 리다이렉션할 수 있는 유효한 URL이다.
+> 다른 페이지로 리디렉션해야 하지만 페이지를 다시 로드하지 않으려면 `const data = waitsignOut({redirect: false, callbackUrl: "/foo"})`를 시도할 수 있다. 여기서 `data.url`은 Next.js의 `useRouter().push(data.url)`을 사용하여 깜빡임 없이 사용자를 리디렉션할 수 있는 유효한 URL이다.
 
 ## SessionProvider
 
@@ -437,7 +437,7 @@ export async function getServerSideProps({ req, res }) {
 
 세션 만료 시간이 30일(기본값) 이상인 경우 제공자의 기본 옵션을 변경할 필요가 없을 것이다. 필요한 경우 클라이언트 측 함수에서 `getSession()`을 호출하여 모든 탭/창에서 세션 객체의 업데이트를 트리거할 수 있다.
 
-그러나 세션 동작을 커스터마이징해야 하거나 짧은 세션 만료 시간을 사용하는 경우, 옵션을 제공자에게 건네줘서 `useSession()` 훅의 동작을 커스터마이징할 수 있다.
+그러나 세션 동작을 커스터마이즈해야 하거나 짧은 세션 만료 시간을 사용하는 경우, 옵션을 제공자에게 건네줘서 `useSession()` 훅의 동작을 커스터마이즈할 수 있다.
 
 ```jsx
 // pages/_app.js
@@ -474,7 +474,7 @@ export default function App({
 
 #### 기본 경로
 
-커스텀 기본 경로를 사용 중이고 앱 진입점이 도메인의 루트 "/"가 아니라 다른 곳(예: "/my-app/")인 경우, `basePath` prop을 사용하여 NextAuth.js가 이를 인식하게 만들고 모든 리다이렉션 및 세션 처리가 예상대로 작동되게 한다.
+커스텀 기본 경로를 사용 중이고 앱 진입점이 도메인의 루트 "/"가 아니라 다른 곳(예: "/my-app/")인 경우, `basePath` prop을 사용하여 NextAuth.js가 이를 인식하게 만들고 모든 리디렉션 및 세션 처리가 예상대로 작동되게 한다.
 
 #### 다시 가져오기 간격
 

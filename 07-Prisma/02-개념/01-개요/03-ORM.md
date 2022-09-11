@@ -295,7 +295,7 @@ generator client {
 ```
 
 2. `prisma db pull`을 실행하여 데이터베이스 스키마에서 파생된 모델로 프리즈마 스키마를 채웁니다.
-3. (선택 사항) 프리즈마 클라이언트와 데이터베이스 간의 [필드 및 모델 매핑](https://www.prisma.io/docs/concepts/components/prisma-schema/data-model#mapping-model-names-to-tables-or-collections)을 커스터마이징합니다.
+3. (선택 사항) 프리즈마 클라이언트와 데이터베이스 간의 [필드 및 모델 매핑](https://www.prisma.io/docs/concepts/components/prisma-schema/data-model#mapping-model-names-to-tables-or-collections)을 커스터마이즈합니다.
 4. `prisma generate`를 실행합니다.
 
 프리즈마는 `node_modules` 폴더 안에 프리즈마 클라이언트를 생성하여 앱에서 가져오는 것이 가능해집니다. 자세한 사용 설명서는 [프리즈마 클라이언트 API](https://www.prisma.io/docs/concepts/components/prisma-client) 문서를 참고합니다.
@@ -353,7 +353,7 @@ generator client {
 
 프리즈마 마이그레이트 대신 타사 마이그레이션 도구로 새 프로젝트에서 프리즈마 클라이언트를 사용할 수 있습니다.
 
-예를 들어 새 프로젝트는 노드 마이그레이션 프레임워크 [db-migrate](https://github.com/db-migrate/node-db-migrate)를 사용하여 데이터베이스 스키마 및 마이그레이션을 생성하고 프리즈마 클라이언트를 쿼리에 사용할 수 있습니다. 자세한 내용은 [기존 데이터베이스가 이미 존재하는 워크플로](#기존-데이터베이스가-있는-프로젝트에서-점진적-채택을-하는-워크플로)을 확인하세요.
+예를 들어 새 프로젝트는 노드 마이그레이션 프레임워크 [db-migrate](https://github.com/db-migrate/node-db-migrate)를 사용하여 데이터베이스 스키마 및 마이그레이션을 생성하고 프리즈마 클라이언트를 쿼리에 사용할 수 있습니다. 자세한 내용은 [기존 데이터베이스가 이미 존재하는 워크플로](#기존-데이터베이스가-있는-프로젝트에서-점진적-채택을-하는-워크플로)를 확인합니다.
 
 ## 프리즈마 클라이언트로 데이터 접근하기
 
