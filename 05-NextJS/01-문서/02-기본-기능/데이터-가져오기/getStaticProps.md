@@ -81,12 +81,12 @@ export default Blog
 
 즉, `getStaticProps`에서 외부 소스에서 데이터를 가져오는 API 경로를 사용하는 대신 `getStaticProps`에 직접 서버 측 코드를 작성할 수 있습니다.
 
-다음 예시에서 API 경로는 CMS에서 일부 데이터를 가져오는 데 사용됩니다. 그러면 해당 API 경로가 `getStaticProps`에서 직접 호출됩니다. 이 방식은 추가적인 호출이 발생하여 성능이 저하됩니다. 대신 CMS에서 데이터를 가져오는 논리를 `lib/` 디렉토리에서 `getStaticProps`에 공유할 수 있습니다.
+다음 예시에서 API 경로는 CMS에서 일부 데이터를 가져오는 데 사용됩니다. 그러면 해당 API 경로가 `getStaticProps`에서 직접 호출됩니다. 이 방식은 추가적인 호출이 발생하여 성능이 저하됩니다. 대신 CMS에서 데이터를 가져오는 논리를 `lib/` 디렉터리에서 `getStaticProps`에 공유할 수 있습니다.
 
 ```jsx
 // lib/load-posts.js
 
-// 다음 함수는 `lib/` 디렉토리에서 
+// 다음 함수는 `lib/` 디렉터리에서 
 // getStaticProps와 API 경로에 공유됩니다.
 export async function loadPosts() {
   // posts를 얻기 위해 외부 API 엔드포인트를 호출합니다.
