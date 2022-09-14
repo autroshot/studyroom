@@ -1,6 +1,6 @@
 # 클라이언트 API
 
-NextAuth.js 클라이언트 라이브러리를 사용하면 리액트 앱의 세션과 쉽게 상호 작용할 수 있다.
+넥스트인증 클라이언트 라이브러리를 사용하면 리액트 앱의 세션과 쉽게 상호 작용할 수 있다.
 
 예시 세션 객체
 
@@ -30,7 +30,7 @@ NextAuth.js 클라이언트 라이브러리를 사용하면 리액트 앱의 세
 - 클라이언트 측 - 예
 - 서버 측 - 아니오
 
-NextAuth.js 클라이언트의 `useSession()` 리액트 훅은 누군가 로그인했는지 확인하는 가장 쉬운 방법이다.
+넥스트인증 클라이언트의 `useSession()` 리액트 훅은 누군가 로그인했는지 확인하는 가장 쉬운 방법이다.
 
 [`SessionProvider`](https://next-auth.js.org/getting-started/client#sessionprovider)가 `pages/_app.js`에 추가되었는지 확인해야 한다.
 
@@ -153,7 +153,7 @@ AdminDashboard.auth = {
 
 자세한 내용은 다음 [깃허브 이슈](https://github.com/nextauthjs/next-auth/issues/1210)에서 확인할 수 있다.
 
-### NextAuth.js + 리액트 쿼리
+### 넥스트인증 + 리액트 쿼리
 
 [React Query](https://tanstack.com/query/v4/docs/adapters/react-query) 또는 [SWR](https://swr.vercel.app/)과 같은 데이터 가져오기 라이브러리를 사용하여 자신만의 세션 관리 솔루션을 만들 수 있다 . [`@next-auth/react-query`의 원본 구현](https://github.com/nextauthjs/react-query)을 사용하고 [`next-auth/react` 소스 코드](https://github.com/nextauthjs/next-auth/blob/main/packages/next-auth/src/react/index.tsx)를 시작점으로 삼을 수 있다.
 
@@ -162,7 +162,7 @@ AdminDashboard.auth = {
 - 클라이언트 측 - 예
 - 서버 측 - 아니오 ([`unstable_getServerSession()`](https://next-auth.js.org/configuration/nextjs#unstable_getserversession) 참고)
 
-NextAuth.js는 현재 활성 세션을 반환하기 위해 클라이언트 측에서만 호출해야 하는 `getSession()` 헬퍼를 제공한다.
+넥스트인증은 현재 활성 세션을 반환하기 위해 클라이언트 측에서만 호출해야 하는 `getSession()` 헬퍼를 제공한다.
 
 서버 측에서는 **이것을 여전히 사용할 수 있지만** 앞으로는 `unstable_getServerSession`을 사용하는 것이 좋다. 이는 서버 측에서의 불필요한 추가 `fetch` 호출을 피하기 위함이다. 자세한 내용은 [이 이슈](https://github.com/nextauthjs/next-auth/issues/1535)를 확인한다.
 
@@ -261,7 +261,7 @@ export default () => <button onClick={() => signIn()}>Sign in</button>
 
 ### 클릭 시 OAuth 로그인 흐름 시작하기
 
-기본적으로 인수 없이 `signIn()` 메서드를 호출하면 NextAuth.js 로그인 페이지로 리디렉션된다. 이를 건너뛰고 즉시 공급자 페이지로 리디렉션하려면 공급자의 `id`로 `signIn()`을 호출한다.
+기본적으로 인수 없이 `signIn()` 메서드를 호출하면 넥스트인증 로그인 페이지로 리디렉션된다. 이를 건너뛰고 즉시 공급자 페이지로 리디렉션하려면 공급자의 `id`로 `signIn()`을 호출한다.
 
 다음 예시는 구글 로그인이다.
 
@@ -474,7 +474,7 @@ export default function App({
 
 #### 기본 경로
 
-커스텀 기본 경로를 사용 중이고 앱 진입점이 도메인의 루트 "/"가 아니라 다른 곳(예: "/my-app/")인 경우, `basePath` prop을 사용하여 NextAuth.js가 이를 인식하게 만들고 모든 리디렉션 및 세션 처리가 예상대로 작동되게 한다.
+커스텀 기본 경로를 사용 중이고 앱 진입점이 도메인의 루트 "/"가 아니라 다른 곳(예: "/my-app/")인 경우, `basePath` prop을 사용하여 넥스트인증이 이를 인식하게 만들고 모든 리디렉션 및 세션 처리가 예상대로 작동되게 한다.
 
 #### 다시 가져오기 간격
 
@@ -502,7 +502,7 @@ export default function App({
 
 Next.js 앱이 커스텀 기본 경로를 사용하는 경우, 아래 예시와 [이곳](https://next-auth.js.org/configuration/options#nextauth_url)에 설명된 대로 `NEXTAUTH_URL` 환경 변수를 API 엔드포인트에 대한 전체 경로로 설정한다.
 
-또한 아래 예시와 같이 `<SessionProvider>`에 `basePath` `pageProps`를 전달하여 NextAuth.js에서 커스텀 기본 경로가 완전히 설정되고 사용되게 한다.
+또한 아래 예시와 같이 `<SessionProvider>`에 `basePath` `pageProps`를 전달하여 넥스트인증에서 커스텀 기본 경로가 완전히 설정되고 사용되게 한다.
 
 예시:
 
