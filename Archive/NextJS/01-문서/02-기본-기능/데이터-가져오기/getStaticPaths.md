@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 // getStaticPaths는 getStaticProps을 필요로 합니다.
 export async function getStaticProps(context) {
   return {
-    // 페이지 컴포넌트에 프랍으로 전달됩니다.
+    // 페이지 컴포넌트에 프롭으로 전달됩니다.
     props: { post: {} },
   }
 }
@@ -28,7 +28,7 @@ export default function Post({ post }) {
 }
 ```
 
-[`getStaticPaths` API 레퍼런스](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths)는 `getStaticPaths`에서 사용할 수 있는 모든 매개변수와 프랍을 다룹니다.
+[`getStaticPaths` API 레퍼런스](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths)는 `getStaticPaths`에서 사용할 수 있는 모든 매개변수와 프롭을 다룹니다.
 
 ## getStaticPaths는 언제 사용해야 할까
 

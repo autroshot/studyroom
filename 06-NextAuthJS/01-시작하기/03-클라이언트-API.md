@@ -407,7 +407,7 @@ export default function App({
 }
 ```
 
-위의 예시와 같이 `<SessionProvider>`에 `session` 페이지 프랍을 전달하면 서버 측과 클라이언트 측 렌더링을 모두 지원하는 페이지에서 세션을 두 번 확인하는 것을 피할 수 있습니다.
+위의 예시와 같이 `<SessionProvider>`에 `session` 페이지 프롭을 전달하면 서버 측과 클라이언트 측 렌더링을 모두 지원하는 페이지에서 세션을 두 번 확인하는 것을 피할 수 있습니다.
 
 그러나 이는 올바른 `pageProps`를 건네준 페이지에서만 유효합니다. 보통은 다음과 같이 `getInitialProps`나 `getServerSideProps`에서 개별 페이지 단위로 수행됩니다.
 
@@ -473,7 +473,7 @@ export default function App({
 
 #### 기본 경로
 
-커스텀 기본 경로를 사용 중이고 앱 진입점이 도메인의 루트 `/`가 아니라 다른 곳(예: `/my-app/`)인 경우, `basePath` 프랍을 사용하여 넥스트인증이 이를 인식하게 만들고 모든 리디렉션 및 세션 처리가 예상대로 작동되게 합니다.
+커스텀 기본 경로를 사용 중이고 앱 진입점이 도메인의 루트 `/`가 아니라 다른 곳(예: `/my-app/`)인 경우, `basePath` 프롭을 사용하여 넥스트인증이 이를 인식하게 만들고 모든 리디렉션 및 세션 처리가 예상대로 작동되게 합니다.
 
 #### 다시 가져오기 간격
 
@@ -501,7 +501,7 @@ export default function App({
 
 넥스트 앱이 커스텀 기본 경로를 사용하는 경우, 아래 예시와 [이곳](https://next-auth.js.org/configuration/options#nextauth_url)에 설명된 대로 `NEXTAUTH_URL` 환경 변수를 API 엔드포인트의 전체 경로로 설정합니다.
 
-또한 아래 예시와 같이 `<SessionProvider>`에 `basePath` 페이지 프랍을 전달하여 넥스트인증에서 커스텀 기본 경로를 완전히 설정하고 사용되게 합니다.
+또한 아래 예시와 같이 `<SessionProvider>`에 `basePath` 페이지 프롭을 전달하여 넥스트인증에서 커스텀 기본 경로를 완전히 설정하고 사용되게 합니다.
 
 다음 예시에서 사용된 커스텀 기본 경로는 `/custom-route`입니다.
 
