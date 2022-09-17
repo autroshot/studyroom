@@ -57,7 +57,7 @@ const colors = {
 
 const theme = extendTheme({ colors })
 
-// 3. theme 프랍을 ChakraProvider에 건네줍니다.
+// 3. theme 프롭을 ChakraProvider에 건네줍니다.
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
@@ -79,7 +79,7 @@ export default MyApp;
 
 > 색상 모드를 처음 설정할 때 `ColorModeScript`를 테마에 설정으로 추가하고 이를 참조하는 것을 권장합니다.
 
-> 사이트에서 `ColorModeScript`를 엄격한 `Content-Security-Policy`로 사용하려면, `<script>` 태그에 전달될 `nonce` 프랍을 사용할 수 있습니다.
+> 사이트에서 `ColorModeScript`를 엄격한 `Content-Security-Policy`로 사용하려면, `<script>` 태그에 전달될 `nonce` 프롭을 사용할 수 있습니다.
 
 ```jsx live=false ln={14}
 // pages/_document.js
@@ -109,7 +109,7 @@ export default class Document extends NextDocument {
 
 타입스크립트 프로젝트에 차크라 UI를 추가할 때 타입스크립트 버전은 최소 4.1.0이 필요합니다.
 
-### ChakraProvider의 프랍
+### ChakraProvider의 프롭
 
 | Name | Type | Default | Description |
 | ---------------- | ---------------- | --------------------- | --------------------------------------------------- |
