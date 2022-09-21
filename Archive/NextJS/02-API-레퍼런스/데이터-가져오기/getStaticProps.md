@@ -22,3 +22,63 @@ export async function getStaticProps(context) {
 - `locale`에는 활성 로케일이 포함된다. (활성화된 경우)
 - `locales`에는 지원되는 모든 로케일이 포함된다. (활성화된 경우)
 - `defaultLocale`에는 설정된 기본 로케일이 포함된다. (활성화된 경우)
+
+## `process.cwd()`를 사용해 파일 읽기
+
+파일은 `getStaticProps`의 파일 시스템에서 직접 읽을 수 있습니다.
+
+파일을 읽으려면 파일의 전체 경로를 가져와야 합니다.
+
+넥스트는 코드를 별도의 디렉터리로 컴파일하므로 `__dirname`을 사용할 수 없습니다. 여기에서 반환되는 경로는 실제 페이지 디렉터리와 다릅니다.
+
+넥스트가 실행되는 디렉터리를 제공하는 `process.cwd()`를 대신 사용하면 됩니다.
+
+```jsx
+import { promises as fs } from 'fs'
+import path from 'path'
+
+// posts는 빌드 타임에 getStaticProps()에 의해 채워집니다.
+function Blog({ posts }) {
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li>
+          <h3>{post.filename}</h3>
+          <p>{post.content}</p>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+// 이 함수는 서버 측에서 빌드 타임에 호출됩니다.
+// 클라이언트 측에서는 호출되지 않으므로
+// 직접 데이터베이스 쿼리를 수행할 수도 있습니다.
+export async function getStaticProps() {
+  const postsDirectory = path.join(process.cwd(), 'posts')
+  const filenames = await fs.readdir(postsDirectory)
+
+  const posts = filenames.map(async (filename) => {
+    const filePath = path.join(postsDirectory, filename)
+    const fileContents = await fs.readFile(filePath, 'utf8')
+
+    // 보통은 여기서 콘텐츠를 파싱하거나 변환합니다.
+    // 예를 들어 마크다운을 HTML로 변환할 수 있습니다.
+
+    return {
+      filename,
+      content: fileContents,
+    }
+  })
+  // { props: { posts } }를 반환합니다.
+  // Blog 컴포넌트는 빌드 타임에 프롭으로 posts를 받습니다.
+  return {
+    props: {
+      posts: await Promise.all(posts),
+    },
+  }
+}
+
+export default Blog
+```
+
