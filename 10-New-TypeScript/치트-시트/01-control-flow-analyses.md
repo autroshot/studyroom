@@ -2,7 +2,7 @@
 
 CFA nearly always takes a union and reduces the number of types inside the union based on logic in your code.
 
-Most of the time CFA works inside natural JavaScript boolean logic, but there are wars to define your own functions which affect how TypeScript narrows types.
+Most of the time CFA works inside natural JavaScript boolean logic, but there are ways to define your own functions which affect how TypeScript narrows types.
 
 ## If Statements
 
