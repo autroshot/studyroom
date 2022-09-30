@@ -11,17 +11,12 @@
   - [ ] bisect
   - [ ] patch
   - [ ] reflog
-- 코딩 스타일 - Airbnb
-- 정규표현식 - 책
 - 생활 코딩
-  - [x] HTTP
-  - [x] 쿠키와 인증
-  - [x] 세션과 인증
   - [ ] OAuth 2.0
 - 리액트
   - [ ] HOC
-
 - styled-components
-
 - 넥스트
   - 커스텀 앱
+
+- 테스트
