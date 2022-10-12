@@ -29,6 +29,36 @@ position: 2.5 # 부동 위치 지원
 label: 'Tutorial'
 ```
 
+## 코드 블록
+
+### 제목
+
+````
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+````
+
+### 줄 강조
+
+````
+```jsx {1,4-6,11}
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+````
+
 ## 준수 사항
 
 ```
