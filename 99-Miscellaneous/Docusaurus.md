@@ -93,3 +93,18 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 :::
 ```
 
+## 이미지
+
+```
+import Image from '@theme/IdealImage';
+import compiling from '/img/docs/next-js/넥스트의-작동-방식/compiling.png';
+
+<Image img={compiling} alt={'컴파일'} />
+```
+
+## 마크다운 링크
+
+```
+[file path to another document](./installation.md)
+```
+
