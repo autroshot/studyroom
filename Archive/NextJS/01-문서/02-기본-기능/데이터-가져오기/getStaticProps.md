@@ -29,7 +29,7 @@ export async function getStaticProps(context) {
 
 - `getStaticProps`는 `next build` 과정에서 항상 실행됨
 - `getStaticProps`는 [`fallback: true`](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-true)를 사용할 때 백그라운드에서 실행됨
-- `getStaticProps`는 [`fallback: blocking`](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-blocking)를 사용할 때 첫 랜더링 전에 호출됨
+- `getStaticProps`는 [`fallback: blocking`](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-blocking)를 사용할 때 첫 렌더링 전에 호출됨
 - `getStaticProps`는 `revalidate`를 사용할 때 백그라운드에서 실행됨
 - `getStaticProps`는 [`revalidate()`](./점진적인-정적-재생성.md/#주문형-재검증)을 사용할 때 백그라운드에서 주문형으로 실행됨
 
