@@ -491,7 +491,7 @@ useEffect(() => {
 
 > :information_source: **알림**
 >
-> 이 최적화를 사용한다면 시간에 따라서 바뀌고 부작용에서 사용하는 컴포넌트 스코프의 모든 값(props, 상태)이 반드시 배열에 포함되야 한다. 그렇지 않으면 코드가 이전 렌더링의 오래된 값을 참조하게 될 것이다.  [함수를 다루는 방법](https://ko.reactjs.org/docs/hooks-faq.html#is-it-safe-to-omit-functions-from-the-list-of-dependencies)과 [배열이 너무 자주 바뀌는 경우에는 무엇을 해야 하는가](https://ko.reactjs.org/docs/hooks-faq.html#what-can-i-do-if-my-effect-dependencies-change-too-often)에서 자세한 내용을 확인할 수 있다.
+> 이 최적화를 사용한다면 시간에 따라서 바뀌고 부작용에서 사용하는 컴포넌트 스코프의 모든 값(props, 상태)이 반드시 배열에 포함되야 한다. 그러지 않으면 코드가 이전 렌더링의 오래된 값을 참조하게 될 것이다.  [함수를 다루는 방법](https://ko.reactjs.org/docs/hooks-faq.html#is-it-safe-to-omit-functions-from-the-list-of-dependencies)과 [배열이 너무 자주 바뀌는 경우에는 무엇을 해야 하는가](https://ko.reactjs.org/docs/hooks-faq.html#what-can-i-do-if-my-effect-dependencies-change-too-often)에서 자세한 내용을 확인할 수 있다.
 >
 > 부작용의 실행과 정리를 한 번씩만 실행하고 싶다면 빈 배열 `[]`을 두 번째 인수로 넘겨주면 된다. 이는 React에게 부작용이 pros나 상태의 어떤 값에도 의존하지 말라고 말하는 것이다. 그 결과 부작용은 재실행될 필요가 없어진다. 이 방법은 의존성 배열의 동작 방식을 그대로 따르므로 특별한 방법이 아니다.
 >

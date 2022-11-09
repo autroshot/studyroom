@@ -330,7 +330,7 @@ URL은 [리디렉션 콜백 핸들러](https://next-auth.js.org/configuration/ca
   ok: boolean
   /**
    * 오류가 있었다면 null입니다.
-   * 그렇지 않으면 사용자가 리디렉션될 url입니다.
+   * 그러지 않으면 사용자가 리디렉션될 url입니다.
    */
   url: string | null
 }

@@ -20,7 +20,7 @@ function cachingDecorator(func) {
       return cache.get(x); // 대응하는 값을 cache에서 읽어온다.
     }
 
-    let result = func(x);  // 그렇지 않은 경우에는 func를 호출하고,
+    let result = func(x);  // 그러지 않은 경우에는 func를 호출하고,
 
     cache.set(x, result);  // 그 결과를 캐싱(저장)한다.
     return result;

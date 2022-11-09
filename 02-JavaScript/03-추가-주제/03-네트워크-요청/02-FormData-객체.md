@@ -51,7 +51,7 @@ let formData = new FormData([form]);
 |`formData.append(name, blob, fileName)`|`<input type="file">` 형태의 필드를 추가. 세 번째 인수 `fileName`은 필드 이름이 아니라 파일 이름을 설정|
 |`formData.delete(name)`|`name`에 해당하는 필드를 삭제|
 |`formData.get(name)`|`name`에 해당하는 필드의 값을 가져옴|
-|`formData.has(name)`|`name`에 해당하는 필드가 있으면 `true`를, 그렇지 않으면 `false`를 반환|
+|`formData.has(name)`|`name`에 해당하는 필드가 있으면 `true`를, 그러지 않으면 `false`를 반환|
 
 폼은 기술적으로 `name`이 같은 복수의 필드를 허용하기 때문에 `append` 메서드를 여러 번 호출하면 이름이 같은 필드가 추가된다.
 
