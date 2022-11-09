@@ -108,3 +108,30 @@ import compiling from '/img/docs/next-js/넥스트의-작동-방식/compiling.pn
 [file path to another document](./installation.md)
 ```
 
+## 탭
+
+이 기능은 MDX 파일에서만 지원된다.
+
+~~~react
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs groupId="package-manager">
+  <TabItem value="npm" label="npm" default>
+
+```bash
+npx create-next-app@latest
+```
+
+  </TabItem>
+  <TabItem value="yarn" label="Yarn">
+
+```bash
+yarn create next-app
+```
+
+  </TabItem>
+</Tabs>
+~~~
+
+`groupId` 속성으로 여러 탭을 동기화할 수 있다.
