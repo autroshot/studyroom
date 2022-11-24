@@ -43,6 +43,8 @@ function HelloCodeTitle(props) {
 
 ### 줄 강조
 
+줄 번호는 0부터 시작한다.
+
 ````
 ```jsx {1,4-6,11}
 import React from 'react';
