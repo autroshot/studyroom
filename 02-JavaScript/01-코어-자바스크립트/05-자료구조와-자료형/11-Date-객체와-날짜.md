@@ -21,7 +21,7 @@ alert(Jan01_1970);
 // 1970년 1월 1일의 24시간 후는 1970년 1월 2일(UTC+0)이다.
 let Jan02_1970 = new Date(24 * 3600 * 1000);
 alert(Jan02_1970);
-```
+ ```
 
 1970년의 첫날을 기준으로 흘러간 밀리초를 나타내는 정수를 <strong>타임스탬프(timestamp)</strong>라고 부른다.
 
@@ -54,18 +54,23 @@ alert(date); // 2011년 1월 1일, 02시 03분 04.567초
 ```
 
 ## 날짜 구성요소 얻기
+
 `Date` 객체의 메서드를 이용하면 연, 월, 일 등의 값을 얻을 수 있다.
 
-[getFullYear()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear)  
+### [getFullYear()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear)
+
 연도(네 자릿수)를 반환한다.
 
-[getMonth()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth)  
+### [getMonth()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth)
+
 월을 반환한다(**0 이상 11 이하**).
 
-[getDate()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate)  
+### [getDate()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate)
+
 일을 반환한다(1 이상 31 이하). 메서드 이름을 주의해야 한다.
 
-[getHours()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours),  [getMinutes()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes),  [getSeconds()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds),  [getMilliseconds()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds)  
+### [getHours()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours),  [getMinutes()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes),  [getSeconds()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds),  [getMilliseconds()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds)
+
 시, 분, 초, 밀리초를 반환한다.
 
 ---
@@ -75,7 +80,8 @@ alert(date); // 2011년 1월 1일, 02시 03분 04.567초
 
 ---
 
-[getDay()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay)  
+### [getDay()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay)
+
 일요일을 나타내는  `0`부터 토요일을 나타내는  `6`까지의 숫자 중 하나를 반환한다. 몇몇 나라에서 요일의 첫날이 일요일이 아니지만, **getDay에서는 항상  `0`이 일요일을 나타낸다.**
 
 **위에서 소개한 메서드는 모두 현지 시간을 기준으로 날짜 구성요소를 반환한다.**
@@ -84,11 +90,14 @@ alert(date); // 2011년 1월 1일, 02시 03분 04.567초
 
 아래 두 메서드는 위에서 소개한 메서드와 달리 표준시(UTC+0) 기준의 날짜 구성 요소를 반환해주는 메서드가 없다.
 
-[getTime()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)  
+### [getTime()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
+
 주어진 일시와 1970년 1월 1일 00시 00분 00초 사이의 간격인 타임스탬프(밀리초)를 반환한다.
 
-[getTimezoneOffset()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset)  
+### [getTimezoneOffset()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset)
+
 현지 시간과 표준 시간의 차이(분)를 반환한다.
+
 ```js
 // UTC-1 시간대에서 이 예시를 실행하면 60이 출력된다.
 // UTC+3 시간대에서 이 예시를 실행하면 -180이 출력된다.
