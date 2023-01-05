@@ -11,3 +11,7 @@ HTTP Response message는 다음과 같은 형식을 가진다.
 ![HTTP Response Message Format](https://user-images.githubusercontent.com/95019875/176104273-328a648a-7db1-470e-9c05-82b41879a9f5.png)
 
 HTTP 상태 코드에 대한 자세한 내용은 [이곳](./HTTP-상태-코드.md)에서 확인할 수 있다.
+
+HTTP는 무상태이다. 이를 보완하기 위해 쿠키를 사용한다.
+
+HTTP 기반의 가장 일반적인 API는 XMLHttpRequest API이다. Ajax, Fetch가 이에 속한다.
