@@ -18,4 +18,5 @@
   - 정규 표현식 - 손에 잡히는 10분 정규 표현식, 벤 포터, 인사이트
   - Emmet - [Emmet 공식 문서](https://docs.emmet.io/)
   - 명명 규칙 - [위키피디아](https://en.wikipedia.org/wiki/Naming_convention_(programming))
+  - 컴퓨터 과학 - 면접을 위한 CS 전공지식 노트, 주홍철, 길벗
 
