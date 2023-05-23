@@ -102,7 +102,7 @@ GET : /users/{userid}/devices
 예시:
 
 ```
- http:// restapi.example.com/sports/soccer/players/13
+http://restapi.example.com/sports/soccer/players/13
 ```
 
 `sports`와 `players`는 컬렉션을, `soccer`와 `13`은 도큐먼트를 표현한다.
