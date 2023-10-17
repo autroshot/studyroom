@@ -38,7 +38,6 @@
 
 ​	여기서 3을 **지수**, 2를 **밑**이라고 부른다.
 
-- 제곱(power)
 - 0을 제외한 모든 수의 0제곱은 1이 된다. 그 이유는 [링크](https://youtu.be/TWv6f7rwjF4)에서 확인할 수 있다. (참고로 $0^0$은 정의되지 않는다.)
 
 ### 소인수분해
@@ -63,7 +62,7 @@
 
 - 음수(negative): 0보다 작은 수
 
-  예) 1은 2보다 -2는 -1보다 작다.
+  예) 1은 2보다 작다. -2는 -1보다 작다.
 
 수직선 위에서 움직이는 상상을 하면 쉽다. ([링크](https://youtu.be/Hlal9ME2Aig))
 
@@ -99,14 +98,6 @@ $$
 - 덧셈에 대한 곱셈의 분배법칙(distributive law)
 
   예) $(a + b) \times c = (a \times c) + (b \times c)$
-
-- 분수(fraction)
-
-- 분자(numerator)
-
-- 분모(denominator)
-
-- 역수(reciprocal)
 
 - 번분수(compound fraction): 분수의 분자·분모 중 적어도 하나가 분수인 복잡한 분수
 
