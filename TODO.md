@@ -2,19 +2,14 @@
 
 앞으로 공부할 주제를 정리하는 곳이다.
 
-- Git - 생활코딩
-  - [x] Cherry-pick & rebase
-  - [x] github pull reqeust
-  - [ ] flow model
-  - [ ] interactive rebase
-  - [ ] reset & revert
-  - [ ] bisect
-  - [ ] patch
-  - [ ] reflog
-
+- 생산성
+  - [ ] ESLint & Prettier
+  
 - 프런트엔드
   - [ ] Redux
   - [ ] Three.js
+  - [ ] npm
+  - [ ] webpack
 
 - 컴퓨터공학
   - [ ] 데이터베이스
