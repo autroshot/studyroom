@@ -82,24 +82,25 @@ TRUNCATE TABLE Reservation;
 
 ```mysql
 INSERT INTO Reservation(ID, Name, ReserveDate, RoomNum) 
-    VALUES(5, '이순신', '2016-02-16', 1108);
+VALUES(5, '이순신', '2016-02-16', 1108);
+
 INSERT INTO Reservation 
-    VALUES(5, '이순신', '2016-02-16', 1108);
+VALUES(5, '이순신', '2016-02-16', 1108);
 ```
 
 ### `UPDATE`
 
 ```mysql
 UPDATE Reservation 
-    SET RoomNum = 2002 
-    WHERE Name = '홍길동';
+SET RoomNum = 2002 
+WHERE Name = '홍길동';
 ```
 
 ### `DELETE`
 
 ```mysql
 DELETE FROM Reservation 
-    WHERE Name = '홍길동';
+WHERE Name = '홍길동';
 ```
 
 ### `SELECT`
@@ -107,24 +108,44 @@ DELETE FROM Reservation
 ```mysql
 # 모든 필드 선택
 SELECT * FROM Reservation;
+
 # 조건 넣기
 SELECT * FROM Reservation 
-    WHERE Name = '홍길동';
+WHERE 
+    Name = '홍길동' AND 
+    ReserveDate = '2023-11-04';
+    
 # 아래 두 명령은 동일한 작업을 한다.
 SELECT * FROM Reservation 
     WHERE RoomNum BETWEEN 201 AND 250;
 SELECT * FROM Reservation 
     WHERE RoomNum >= 201 AND RoomNum <= 250;
+    
 # 중복되는 값 제거
 SELECT DISTINCT Name FROM Reservation;
+
 # 정렬
 SELECT * FROM Reservation ORDER BY ReserveDate;
 SELECT * FROM Reservation ORDER BY ReserveDate DESC;
 SELECT * FROM Reservation 
     ORDER BY ReserveDate DESC, RoomNum ASC;
+    
 # 별칭
 SELECT ReserveDate, CONCAT(RoomNum, " : ", Name) AS ReserveInfo 
     FROM Reservation;
+    
+# 전체 예시
+SELECT 
+[DISTINCT]
+    select_expr [, select_expr] ...
+[FROM table_references]
+[JOIN table_references]
+    [ON on_condition]
+[WHERE where_condition]
+[GROUP BY {col_name | expr | position}, ...]
+[HAVING where_condition]
+[ORDER BY {col_name | expr | position} [ASC | DESC], ...]
+[LIMIT {[offset,] row_count | row_count OFFSET offset}]
 ```
 
 ## 타입
@@ -179,11 +200,45 @@ MySQL에서는 불 타입을 원시적으로 지원하지 않으나 `TINYINT` �
 
 ```mysql
 SELECT COUNT(*) AS NumberOfRervation 
-    FROM Reservation;
+FROM Reservation;
+
 SELECT Address, Name, MAX(Age) AS MaxAge 
-    FROM Customer 
-    GROUP BY Address 
-    HAVING MaxAge > 15;
+FROM Customer 
+GROUP BY Address 
+HAVING MaxAge > 15;
+```
+
+## 흐름 제어
+
+### `IF()`
+
+```mysql
+IF(expr1, expr2, expr3)
+```
+
+`expr1`이 참이면 `expr2`를 반환하고, 거짓이면 `expr3`을 반환한다.
+
+### `IFNULL()`
+
+```mysql
+IFNULL(expr1, expr2)
+```
+
+`expr1`의 값이 `NULL`이 아니면 `expr1`을 반환하고, `NULL`이면 `expr2`를 반환한다.
+
+### `CASE`
+
+프로그래밍 언어의 스위치문과 비슷하다.
+
+```mysql
+SELECT COUNT(*) AS "count", 
+    CASE 
+        WHEN number_grade > 90 THEN "A" 
+        WHEN number_grade > 80 THEN "B" 
+        WHEN number_grade > 70 THEN "C" 
+        ELSE "F" 
+    END as "letter_grade" 
+FROM student_grades GROUP BY letter_grade;
 ```
 
 ## 다중 테이블 연산
@@ -193,23 +248,26 @@ SELECT Address, Name, MAX(Age) AS MaxAge
 ```mysql
 # INNER JOIN
 SELECT column_list 
-    FROM table_1 
-    INNER JOIN table_2 
+FROM table_1 
+INNER JOIN table_2 
     ON join_condition;
+    
 # LEFT JOIN
 SELECT column_list 
-    FROM table_1 
-    LEFT JOIN table_2 
+FROM table_1 
+LEFT JOIN table_2 
     ON join_condition;
+    
 # RIGHT JOIN
 SELECT column_list 
-    FROM table_1 
-    RIGHT JOIN table_2 
+FROM table_1 
+RIGHT JOIN table_2 
     ON join_condition;
+    
 # CROSS JOIN
 SELECT select_list 
-    FROM table_1 
-    CROSS JOIN table_2;
+FROM table_1 
+CROSS JOIN table_2;
 ```
 
 ### `UNION`
@@ -230,16 +288,52 @@ SELECT Name FROM Customer;
 
 ```mysql
 SELECT ID, ReserveDate, RoomNum 
-    FROM Reservation 
-    WHERE Name IN (SELECT Name 
+FROM Reservation 
+WHERE Name IN (SELECT Name 
                        FROM Customer
                        WHERE Address = '서울');
 
 SELECT Name, ReservedRoom 
-    FROM (SELECT Name, ReserveDate, (RoomNum + 1) AS ReservedRoom 
-              FROM Reservation 
-              WHERE RoomNum > 1001) AS ReservationInfo;
+FROM (SELECT Name, ReserveDate, (RoomNum + 1) AS ReservedRoom 
+      FROM Reservation 
+      WHERE RoomNum > 1001) AS ReservationInfo;
 ```
 
 서브쿼리가 복잡한 `JOIN`보다 더 읽기 편할 때가 있다.
+
+## 함수
+
+### 수학
+
+반올림은 `ROUND()`를 사용한다. 다음은 셋째 자리에서 반올림한다.
+
+```mysql
+SELECT ROUND(135.375, 2);
+```
+
+### 날짜
+
+#### `DATE_ADD()`/`DATE_SUB()`
+
+날짜나 시간을 더하거나 뺀다.
+
+```mysql
+SELECT DATE_SUB('2017-06-15', INTERVAL 10 DAY);
+```
+
+#### `DATE_FORMAT()`
+
+날짜의 형식을 변경한다.
+
+```mysql
+SELECT DATE_FORMAT('2017-06-15', '%Y-%m-%d %h:%k:%s');
+```
+
+#### `DATEDIFF()`, `TIMEDIFF()`
+
+두 날짜의 차이를 구한다. 앞 날짜에서 뒤 날짜를 뺀다.
+
+```mysql
+SELECT DATEDIFF("2017-06-25", "2017-06-15");
+```
 
