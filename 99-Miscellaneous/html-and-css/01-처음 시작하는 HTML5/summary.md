@@ -22,6 +22,7 @@ HTML(HyperText Markup Language)
 특수 문자나 특수 기호를 표시하려면 [엔티티 코드](https://dev.w3.org/html5/html-author/charref)를 사용한다. 한자 키를 이용한 특수문자로도 입력 가능하다.
 
 ## 주석
+
 - HTML - \<!-- 주석 내용 -->
 - CSS - /* 주석 내용 */
 
