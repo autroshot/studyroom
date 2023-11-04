@@ -117,9 +117,9 @@ WHERE
     
 # 아래 두 명령은 동일한 작업을 한다.
 SELECT * FROM Reservation 
-    WHERE RoomNum BETWEEN 201 AND 250;
+WHERE RoomNum BETWEEN 201 AND 250;
 SELECT * FROM Reservation 
-    WHERE RoomNum >= 201 AND RoomNum <= 250;
+WHERE RoomNum >= 201 AND RoomNum <= 250;
     
 # 중복되는 값 제거
 SELECT DISTINCT Name FROM Reservation;
@@ -128,7 +128,7 @@ SELECT DISTINCT Name FROM Reservation;
 SELECT * FROM Reservation ORDER BY ReserveDate;
 SELECT * FROM Reservation ORDER BY ReserveDate DESC;
 SELECT * FROM Reservation 
-    ORDER BY ReserveDate DESC, RoomNum ASC;
+ORDER BY ReserveDate DESC, RoomNum ASC;
     
 # 별칭
 SELECT ReserveDate, CONCAT(RoomNum, " : ", Name) AS ReserveInfo 
@@ -290,8 +290,8 @@ SELECT Name FROM Customer;
 SELECT ID, ReserveDate, RoomNum 
 FROM Reservation 
 WHERE Name IN (SELECT Name 
-                       FROM Customer
-                       WHERE Address = '서울');
+               FROM Customer
+               WHERE Address = '서울');
 
 SELECT Name, ReservedRoom 
 FROM (SELECT Name, ReserveDate, (RoomNum + 1) AS ReservedRoom 
@@ -318,7 +318,7 @@ SELECT ROUND(135.375, 2);
 날짜나 시간을 더하거나 뺀다.
 
 ```mysql
-SELECT DATE_SUB('2017-06-15', INTERVAL 10 DAY);
+SELECT DATE_ADD('2017-06-15', INTERVAL 10 DAY);
 ```
 
 #### `DATE_FORMAT()`
