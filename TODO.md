@@ -5,11 +5,13 @@
 - 생산성
   - [ ] ESLint & Prettier
 - 프런트엔드
+  - [ ] JavaScript: 스코프, 렉시컬, 이벤트 루프
+  - [ ] React: 복습
   - [ ] Redux
   - [ ] Three.js
   - [ ] npm
   - [ ] webpack
-
+  
 - 디버깅
 
 - 컴퓨터공학
