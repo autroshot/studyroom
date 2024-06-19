@@ -114,7 +114,7 @@ HTTP는 상태 코드에 '사유 구절(reason phrase)'도 함께 보낸다. 이
 
 HTTP 메시지는 단순한 줄 단위의 문자열이다. HTTP 메시지는 요청 메시지와 응답 메시지로 분류되며 두 메시지의 형식은 매우 비슷하다.
 
-[이미지]
+![http-메시지-구조](https://github.com/autroshot/studyroom/assets/95019875/e9004611-683b-44f2-8084-df79bc6814b8)
 
 메시지는 세 부분으로 나뉜다.
 
