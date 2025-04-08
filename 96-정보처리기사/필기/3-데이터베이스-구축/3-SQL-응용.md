@@ -88,7 +88,7 @@ FROM 테이블명, ...
 [ORDER BY 속성명 [ASC | DESC]];
 ```
 
-다음은 GROUP BY와 함께 사용하는 **그룹 함수**의 종류이다.
+다음은 **GROUP BY와 함께 사용하는 그룹 함수**의 종류이다.
 
 - COUNT
 - SUM
@@ -99,6 +99,8 @@ FROM 테이블명, ...
 - VARIANCE
 - ROLLUP: n+1 레벨. 하위 레벨에서 상위 레벨 순
 - CUBE: $2^n$ 레벨. 상위 레벨에서 하위 레벨 순
+
+ROLLUP과 CUBE 두 함수는 GROUP BY 뒤에 위치한다.
 
 다음은 **WINDOW 함수**의 종류이다.
 
