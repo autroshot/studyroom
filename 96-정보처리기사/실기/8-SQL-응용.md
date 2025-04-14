@@ -31,6 +31,14 @@ ON 고객(고객번호 DESC);
 ```
 
 ```sql
+CREATE VIEW 강좌교수(강좌명, 강의실, 수강제한인원, 교수이름)
+AS SELECT 강좌명, 강의실, 수강인원, 이름
+FROM 강좌, 교수
+WHERE 강좌.교수번호=교수.교수번호
+WITH CHECK OPTION;
+```
+
+```sql
 ALTER TABLE 학생 ADD 학년 VARCHAR(3);
 ALTER TABLE 학생 ALTER 학번 VARCHAR(10) NOT NULL;
 ```
@@ -149,6 +157,14 @@ FROM 테이블명, ...
 - VARIANCE
 - ROLLUP: n+1 레벨. 하위 레벨에서 상위 레벨 순
 - CUBE: $2^n$ 레벨. 상위 레벨에서 하위 레벨 순
+
+ROLLUP과 CUBE 두 함수는 GROUP BY 뒤에 위치한다.
+
+다음은 WINDOW 함수의 종류이다.
+
+- ROW_NUMBER()
+- RANK(): 공동 순위 있음
+- DENSE_RANK(): 공동 순위 무시
 
 **집합 연산자**를 사용하여 2개 이상의 테이블을 하나로 통합할 수 있다. 다음은 집합 연산자의 종류이다.
 
